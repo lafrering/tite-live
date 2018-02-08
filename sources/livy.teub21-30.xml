@@ -75,7 +75,8 @@ Editio Stereotypica</title>
 	<item>
 
 </item>
-	<change when="2018-02-08" who="Léa Frering">(1) Mise en place du lien avec le schema tei-epidoc.rng.<lb/>(2) Transformation de la balise racine TEI.2 en TEI.<lb/>(3) Transformation des balises div1 en div.<lb/>(4) Transformation des balises : type="textpart" subtype="book" ==> type="textpart" subtype="textpart" subtype="book" ; div ==> div ; type="textpart" subtype="chapter" ==> type="textpart" subtype="chapter" ; type="textpart" subtype="section" ==> type="textpart" subtype="section".<lb/>(5) Transformation des paragraphes en balises vides (sauf dans l'INDEX.)<lb/>(6) Transformation des balises vides CHAPTER et SECTION en balises ouvrantes et fermantes.</change></change></revisionDesc></teiHeader>
+</change>
+	<change when="2018-02-08" who="Léa Frering">(1) Mise en place du lien avec le schema tei-epidoc.rng.<lb/>(2) Transformation de la balise racine TEI.2 en TEI.<lb/>(3) Transformation des balises div1 en div.<lb/>(4) Transformation des balises : type="textpart" subtype="book" ==> type="textpart" subtype="textpart" subtype="book" ; div ==> div ; type="textpart" subtype="chapter" ==> type="textpart" subtype="chapter" ; type="textpart" subtype="section" ==> type="textpart" subtype="section".<lb/>(5) Transformation des paragraphes en balises vides (sauf dans l'INDEX.)<lb/>(6) Transformation des balises vides CHAPTER et SECTION en balises ouvrantes et fermantes.</change></revisionDesc></teiHeader>
 <text>
 <body>
 <div type="textpart" subtype="book" n="index"><head>Index notarum.</head>
