@@ -76,13 +76,9 @@ Fragmenta. Index.</title>
 	<item>
 
       </item></change>
-     <change when="2018-02-07" who="Marie-Laurence Bonhomme">(1) Mise en place du lien avec le schema tei-epidoc.rng.
-      <lb/>(2) Transformation de la balise racine TEI.2 en TEI.
-      <lb/>(3) Transformation des balises div1 en div.
-      <lb/>(4) Transformation des balises : type="book" ==> type="textpart" subtype="book" ; milestone ==> div ; unit="chapter" ==> type="textpart" subtype="chapter" ; unit="section" ==> type="textpart" subtype="section".
-      <lb/>(5) Transformation des paragraphes en balises vides (sauf dans l'INDEX.)
-      <lb/>(6) Transformation des balises vides CHAPTER et SECTION en balises ouvrantes et fermantes.
+     <change when="2018-02-07" who="Marie-Laurence Bonhomme">(1) Linking the file to the schema tei-epidoc.rng.<lb/>(2) Transformed TEI.2 root tag into TEI root tag.<lb/>(3) Transformed div1 into div.<lb/>(4) Transformed tags : type="textpart" subtype="book" ==> type="textpart" subtype="textpart" subtype="book" ; div ==> div ; type="textpart" subtype="chapter" ==> type="textpart" subtype="chapter" ; type="textpart" subtype="section" ==> type="textpart" subtype="section".<lb/>(5) Transformed paragraphs into empty tags (except in the INDEX.)<lb/>(6) Transformed the empty tags CHAPTER and SECTION into opening and closing tags.
      </change>
+     <change when="2018-02-09" who="Léa Frering">Translating the changelog from French to English.</change>
     </revisionDesc></teiHeader>
 <text><body>
 
