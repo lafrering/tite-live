@@ -75,13 +75,9 @@ Editio Stereotypica</title>
 	<item>
 
       </item></change>
-    	<change when="2018-02-07" who="Marie-Laurence Bonhomme">(1) Mise en place du lien avec le schema tei-epidoc.rng.
-    		<lb/>(2) Transformation de la balise racine TEI.2 en TEI.
-    		<lb/>(3) Transformation des balises div1 en div.
-    		<lb/>(4) Transformation des balises : type="book" ==> type="textpart" subtype="book" ; milestone ==> div ; unit="chapter" ==> type="textpart" subtype="chapter" ; unit="section" ==> type="textpart" subtype="section".
-    		<lb/>(5) Transformation des paragraphes en balises vides (sauf dans l'INDEX.)
-    		<lb/>(6) Transformation des balises vides CHAPTER et SECTION en balises ouvrantes et fermantes.
+    	<change when="2018-02-07" who="Marie-Laurence Bonhomme">(1) Linking the file to the schema tei-epidoc.rng.<lb/>(2) Transformed TEI.2 root tag into TEI root tag.<lb/>(3) Transformed div1 into div.<lb/>(4) Transformed tags : type="textpart" subtype="book" ==> type="textpart" subtype="textpart" subtype="book" ; div ==> div ; type="textpart" subtype="chapter" ==> type="textpart" subtype="chapter" ; type="textpart" subtype="section" ==> type="textpart" subtype="section".<lb/>(5) Transformed paragraphs into empty tags (except in the INDEX.)<lb/>(6) Transformed the empty tags CHAPTER and SECTION into opening and closing tags.
     	</change>
+    	<change when="2018-02-09" who="Léa Frering">Changing the corr sic="..." tags into choice-sic-corr tags</change>
     </revisionDesc></teiHeader>
 <text><body>
 
@@ -141,7 +137,7 @@ infesta insidiis; hostis levis et velox et repentinus, qui
 nullum  usquam  tempus, nullum   locum  quietum aut
 securum esse sineret; oppugnatio necessaria munitorum
 castellorum, laboriosa simul periculosaque; inops regio,
-quae parsimonia astringeret milites, praedae haud <corr sic="multur">multum</corr> praeberet.  </div><div type="textpart" subtype="section" n="7"> itaque non lixa sequebatur, non iumentorum longus ordo agmen extendebat. nihil praeter
+quae parsimonia astringeret milites, praedae haud <choice><sic>multur</sic><corr>multum</corr></choice> praeberet.  </div><div type="textpart" subtype="section" n="7"> itaque non lixa sequebatur, non iumentorum longus ordo agmen extendebat. nihil praeter
 arma et viros omnem    spem  in armis habentes erat.
 </div><div type="textpart" subtype="section" n="8"> nec deerat umquam cum iis vel materia belli vel causa,
 quia propter domesticam inopiam vicinos agros incursabant. nec tamen in discrimen summae rerum pugnabatur.
@@ -178,7 +174,7 @@ tenentibus, deussit depopulatusque est.  </div><div type="textpart" subtype="sec
 in montibus erant, adortus primo levibus proeliis fatigavit, postremo coactos in aciem descendere iusto
 
 proelio devicit, in quo et aedem Dianae vovit.  </div><div type="textpart" subtype="section" n="9"> subactis
-cis Appenninum omnibus, <corr sic="turn">tum</corr> transmontanos adortus
+cis Appenninum omnibus, <choice><sic>turn</sic><corr>tum</corr></choice> transmontanos adortus
 &mdash; in his et Friniates Ligures erant, quos non adierat
 C. Flaminius&mdash;omnes Aemilius subegit armaque
 
@@ -203,11 +199,11 @@ est. his querentibus magnam   multitudinem  civium
 
 suorum Romam commigrasse et ibi censos esse,  </div><div type="textpart" subtype="section" n="5"> Q.
 Terentio Culleoni praetori negotium datum est, ut eos
-conquireret, et <corr sic="quern">quem</corr> C. Claudio M. Livio censoribus
+conquireret, et <choice><sic>quern</sic><corr>quem</corr></choice> C. Claudio M. Livio censoribus
 postve eos censores ipsum parentemve eius apud se
 censum esse probassent socii, ut redire eo cogeret, ubi
 
-censi essent.  </div><div type="textpart" subtype="section" n="6"> hac conquisitione duodecim milia Latinorum domos redierunt, iam <corr sic="tur">tum</corr>   multitudine alienigenarum urbem onerante.
+censi essent.  </div><div type="textpart" subtype="section" n="6"> hac conquisitione duodecim milia Latinorum domos redierunt, iam <choice><sic>tur</sic><corr>tum</corr></choice>   multitudine alienigenarum urbem onerante.
 
 <pb id="p.4"/>
 
@@ -265,7 +261,7 @@ ludibrio esse sinant.
 </div></div><div type="textpart" subtype="chapter" n="5"><div type="textpart" subtype="section" n="1">undique omnes alii deprecari
 tribunum, alii castigare. Ti. Gracchi collegae plurimum
 
-oratio movit.  </div><div type="textpart" subtype="section" n="2"> ne suas quidem    simultates pro magistratu exercere boni exempli esse: <corr sic="a]ienarum">alienarum</corr> vero
+oratio movit.  </div><div type="textpart" subtype="section" n="2"> ne suas quidem    simultates pro magistratu exercere boni exempli esse: <choice><sic>a]ienarum</sic><corr>alienarum</corr></choice> vero
 simultatum tribunum plebis cognitorem fieri turpe et
 indignum  collegii eius potestate et sacratis legibus
 
@@ -278,7 +274,7 @@ tribunatum  sibi a populo Romano mandatum oblivisci,
 et mandatum pro auxilio ac libertate privatorum, non
 
 pro consulari regno.  </div><div type="textpart" subtype="section" n="5"> ne hoc quidem cernere eum, fore
-ut memoriae ac posteritati mandetur <corr sic="einsdem">eiusdem</corr> collegii
+ut memoriae ac posteritati mandetur <choice><sic>einsdem</sic><corr>eiusdem</corr></choice> collegii
 
 alterum e duobus tribunis plebis suas inimicitias remisisse rei publicae, alterum alienas et mandatas exercuisse.  </div><div type="textpart" subtype="section" n="6"> his victus castigationibus tribunus cum templo
 excessisset, referente Ser. Sulpicio praetore triumphus
@@ -291,7 +287,7 @@ in aerario positurus esset, id aurum secerni iuberent.
 
 senatus pontificum collegium consuli iussit,  </div><div type="textpart" subtype="section" n="9"> num omne
 
-id aurum  in ludos consumi <corr sic="necess">necesse</corr> esset.  </div><div type="textpart" subtype="section" n="10"> cum pontifices negassent ad religionem pertinere, quanta impensa in ludos fieret, senatus Fulvio quantum impenderet permisit, dum ne summam octoginta milium
+id aurum  in ludos consumi <choice><sic>necess</sic><corr>necesse</corr></choice> esset.  </div><div type="textpart" subtype="section" n="10"> cum pontifices negassent ad religionem pertinere, quanta impensa in ludos fieret, senatus Fulvio quantum impenderet permisit, dum ne summam octoginta milium
 
 excederet.  </div><div type="textpart" subtype="section" n="11"> triumphare mense Ianuario statuerat: sed
 cum audisset consulem M. Aemilium, litteris M. Aburii
@@ -352,7 +348,7 @@ convivalia alia ludorum oblectamenta addita epulis; epulae
 quoque ipsae et cura et sumptu maiore apparari coeptae.
 
 tum coquus,  </div><div type="textpart" subtype="section" n="9"> vilissimum  antiquis mancipium et aestimatione et usu, in pretio esse, et quod ministerium
-fuerat, ars haberi coepta. vix tamen illa quae <corr sic="turn">tum</corr>
+fuerat, ars haberi coepta. vix tamen illa quae <choice><sic>turn</sic><corr>tum</corr></choice>
 conspiciebantur, semina erant futurae luxuriae. 
 </div></div><div type="textpart" subtype="chapter" n="7"><div type="textpart" subtype="section" n="1">in
 triumpho tulit Cn. Manlius coronas aureas ducenta
@@ -368,7 +364,7 @@ stipendium  duplex <del>in pedites</del> dedit;  </div><div type="textpart" subt
 ordinum donati militaribus donis currum  secuti sunt.
 carminaque a militibus ea in imperatorem dicta, ut
 facile appareret in ducem indulgentem ambitiosumque
-ea dici, <corr sic="triumphurn">triumphum</corr> esse militari magis favore quam
+ea dici, <choice><sic>triumphurn</sic><corr>triumphum</corr></choice> esse militari magis favore quam
 
 populari celebrem.   </div><div type="textpart" subtype="section" n="4"> sed ad populi quoque gratiam
 
@@ -381,7 +377,7 @@ aeris quaestores urbani cum fide et cura solverunt.
 </div><div type="textpart" subtype="section" n="6"> <sic corr="Per">per</sic> idem  tempus tribuni militum  duo ex duabus
 Hispaniis cum litteris C. Atinii et L. Manlii, qui eas
 
-provincias obtinebant, venerunt.  </div><div type="textpart" subtype="section" n="7"> ex iis litteris <corr sic="cogniturn">cognitum</corr> est Celtiberos Lusitanosque in armis esse et sociorum agros populari. de ea re consultationem integram senatus ad novos magistratus reiecit.
+provincias obtinebant, venerunt.  </div><div type="textpart" subtype="section" n="7"> ex iis litteris <choice><sic>cogniturn</sic><corr>cognitum</corr></choice> est Celtiberos Lusitanosque in armis esse et sociorum agros populari. de ea re consultationem integram senatus ad novos magistratus reiecit.
 
 Ludis Romanis eo anno,  </div><div type="textpart" subtype="section" n="8"> quos P. Cornelius Cethegus
 A. Postumius Albinus faciebant, malus in circo instabilis 
@@ -441,9 +437,9 @@ nulla vox quiritantium  inter stupra et caedes exaudiri
 poterat.
 
 <p/>
-</div></div><div type="textpart" subtype="chapter" n="9"><div type="textpart" subtype="section" n="1">huius mali labes ex Etruria Romam veluti contagione morbi penetravit.   primo urbis <corr sic="magnitude">magnitudo</corr>
+</div></div><div type="textpart" subtype="chapter" n="9"><div type="textpart" subtype="section" n="1">huius mali labes ex Etruria Romam veluti contagione morbi penetravit.   primo urbis <choice><sic>magnitude</sic><corr>magnitudo</corr></choice>
 
-capacior patientiorque talium malorum ea celavit:  </div><div type="textpart" subtype="section" n="2"> tandem indicium hoc maxime modo ad Postumium <corr sic="consuler">consulem</corr> pervenit. P. Aebutius, cuius pater publico equo
+capacior patientiorque talium malorum ea celavit:  </div><div type="textpart" subtype="section" n="2"> tandem indicium hoc maxime modo ad Postumium <choice><sic>consuler</sic><corr>consulem</corr></choice> pervenit. P. Aebutius, cuius pater publico equo
 
 stipendia fecerat, pupillus relictus, mortuis deinde tutoribus sub tutela Duroniae matris et vitrici T. Sempronii Rutili educatus fuerat.  </div><div type="textpart" subtype="section" n="3"> et mater dedita viro
 erat, et vitricus, quia tutelam ita gesserat, ut rationem
@@ -467,29 +463,29 @@ eo processerat consuetudine capta, ut post patroni
 mortem, quia in nullius manu erat, tutore ab tribunis
 et praetore petito, cum  testamentum  faceret, unum
 Aebutium  institueret heredem. 
-</div></div><div type="textpart" subtype="chapter" n="10"><div type="textpart" subtype="section" n="1">haec amoris pignora cum essent, <corr sic="nee">nec</corr> quicquam secretum alter ab altero
-haberent, per iocum adulescens vetat <corr sic="ear">eam</corr> mirari, si
+</div></div><div type="textpart" subtype="chapter" n="10"><div type="textpart" subtype="section" n="1">haec amoris pignora cum essent, <choice><sic>nee</sic><corr>nec</corr></choice> quicquam secretum alter ab altero
+haberent, per iocum adulescens vetat <choice><sic>ear</sic><corr>eam</corr></choice> mirari, si
 
 per aliquot noctes secubuisset:  </div><div type="textpart" subtype="section" n="2"> religionis se causa, ut
 voto pro valetudine sua facto liberetur, Bacchis initiari velle. id ubi mulier audivit, perturbata "dii meliora!" inquit: mori et sibi et illi satius esse quam id
 faceret; et in caput eorum detestari minas periculaque,
 
-qui id suasissent.  </div><div type="textpart" subtype="section" n="3"> admiratus cum verba <corr sic="tur">tum</corr> perturbationem <pb id="p.10"/>   tantam  adulescens parcere exsecrationibus
+qui id suasissent.  </div><div type="textpart" subtype="section" n="3"> admiratus cum verba <choice><sic>tur</sic><corr>tum</corr></choice> perturbationem <pb id="p.10"/>   tantam  adulescens parcere exsecrationibus
 iubet: matrem id sibi adsentiente vitrico imperasse.
 
 "vitricus ergo" inquit "tuus&mdash; </div><div type="textpart" subtype="section" n="4"> matrem enim insimulare forsitan fas non sit&mdash;pudicitiam famam spem
 
 vitamque tuam perditum ire hoc facto properat."   </div><div type="textpart" subtype="section" n="5"> eo
 magis mirabundo quaerentique, quid rei esset, pacem
-veniamque precata deorum dearumque, si coacta caritate eius silenda enuntiasset, <corr sic="ancilliam">ancillam</corr> se ait dominae
+veniamque precata deorum dearumque, si coacta caritate eius silenda enuntiasset, <choice><sic>ancilliam</sic><corr>ancillam</corr></choice> se ait dominae
 comitem id sacrarium intrasse, liberam  numquam eo
 
-accessisse.   </div><div type="textpart" subtype="section" n="6"> scire corruptelarum  omnis generis <corr sic="ear">eam</corr>
+accessisse.   </div><div type="textpart" subtype="section" n="6"> scire corruptelarum  omnis generis <choice><sic>ear</sic><corr>eam</corr></choice>
 officinam esse; et iam biennio constare neminem initiatum ibi maiorem annis viginti.  </div><div type="textpart" subtype="section" n="7"> ut quisque introductus sit, velut victimam tradi sacerdotibus. eos deducere in locum, qui circumsonet ululatibus cantuque
 symphoniae et cymbalorum et tympanorum pulsu, ne
-vox quiritantis, cum per vim stuprum inferatur, exaudiri possit.  </div><div type="textpart" subtype="section" n="8"> orare inde atque obsecrare, ut <corr sic="ear">eam</corr> rem
+vox quiritantis, cum per vim stuprum inferatur, exaudiri possit.  </div><div type="textpart" subtype="section" n="8"> orare inde atque obsecrare, ut <choice><sic>ear</sic><corr>eam</corr></choice> rem
 quocumque modo discuteret nec se eo praecipitaret,
-ubi omnia infanda patienda primum, <corr sic="deitlde">deinde</corr> facienda
+ubi omnia infanda patienda primum, <choice><sic>deitlde</sic><corr>deinde</corr></choice> facienda
 
 essent.  </div><div type="textpart" subtype="section" n="9"> neque ante dimisit eum, quam fidem dedit
 adulescens ab his sacris se temperaturum. 
@@ -557,7 +553,7 @@ audisset.
 </div></div><div type="textpart" subtype="chapter" n="13"><div type="textpart" subtype="section" n="1">mulier haud dubie, id quod erat, Aebutium 
 indicem  arcani rata esse, ad pedes Sulpiciae procidit,
 
-et <corr sic="earn">eam</corr> primo orare coepit,  </div><div type="textpart" subtype="section" n="2"> ne mulieris libertinae cum
+et <choice><sic>earn</sic><corr>eam</corr></choice> primo orare coepit,  </div><div type="textpart" subtype="section" n="2"> ne mulieris libertinae cum
 
 
 <pb id="p.12"/>
@@ -569,7 +565,7 @@ et <corr sic="earn">eam</corr> primo orare coepit,  </div><div type="textpart" s
 amatore sermonem in rem non seriam modo sed capitalem etiam verti vellet: se terrendi eius causa, non
 
 quod sciret quicquam, ea locutam esse.  </div><div type="textpart" subtype="section" n="3"> hic Postumius
-accensus ira <corr sic="turn">tum</corr> quoque ait <corr sic="ear">eam</corr>     cum  Aebutio se
+accensus ira <choice><sic>turn</sic><corr>tum</corr></choice> quoque ait <choice><sic>ear</sic><corr>eam</corr></choice>     cum  Aebutio se
 amatore cavillari credere, non in domo gravissimae
 feminae et cum consule loqui. et Sulpicia attollere
 paventem, simul illam   adhortari, simul iram generi
@@ -584,15 +580,15 @@ qui se indicem manibus suis discerpturi essent.  </div><div type="textpart" subt
 hoc se Sulpiciam, hoc consulem orare, ut se extra
 Italiam aliquo ablegarent, ubi reliquum vitae degere
 
-tuto posset.  </div><div type="textpart" subtype="section" n="7"> bono animo esse iubere <corr sic="earn">eam</corr> consul, et
+tuto posset.  </div><div type="textpart" subtype="section" n="7"> bono animo esse iubere <choice><sic>earn</sic><corr>eam</corr></choice> consul, et
 
-sibi curae fore dicere, ut Romae tuto habitaret.  </div><div type="textpart" subtype="section" n="8"> <corr sic="turn">tum</corr>
+sibi curae fore dicere, ut Romae tuto habitaret.  </div><div type="textpart" subtype="section" n="8"> <choice><sic>turn</sic><corr>tum</corr></choice>
 Hispala originem sacrorum expromit. primo sacrarium
 id feminarum fuisse, nec quemquam eo virum admitti
 solitum.  tres in anno statos dies habuisse, quibus
 interdiu Bacchis initiarentur; sacerdotes in vice matronas creari solitas.  </div><div type="textpart" subtype="section" n="9">Pacullam Anniam Campanam
 sacerdotem omnia, tamquam deum monitu, immutasse:
-nam et viros <corr sic="ear">eam</corr> primam filios suos initiasse, Minium
+nam et viros <choice><sic>ear</sic><corr>eam</corr></choice> primam filios suos initiasse, Minium
 et Herennium    Cerrinios; et nocturnum   sacrum  ex
 diurno, et pro tribus in anno diebus quinos singulis
 
@@ -636,7 +632,7 @@ senatum Postumius defert, omnibus ordine expositis,
 quae delata primo, quae deinde ab se inquisita forent.
 
 patres pavor ingens cepit,  </div><div type="textpart" subtype="section" n="4"> cum   publico nomine, ne
-quid eae coniurationes coetusque nocturni fraudis occultae aut periculi importarent, <corr sic="turn">tum</corr> privatim suorum
+quid eae coniurationes coetusque nocturni fraudis occultae aut periculi importarent, <choice><sic>turn</sic><corr>tum</corr></choice> privatim suorum
 
 cuiusque vicem, ne quis adfinis ei noxae esset.  </div><div type="textpart" subtype="section" n="5"> censuit autem senatus gratias consuli agendas, quod eam
 
@@ -666,7 +662,7 @@ comprehensosque libero conclavi ad quaestionem servarent; aediles plebis videren
 fierent.  </div><div type="textpart" subtype="section" n="10"> triumviris capitalibus mandatum est, ut vigilias
 disponerent per urbem servarentque, ne qui nocturni
 coetus fierent, utque ab incendiis caveretur; adiutores
-triumviris quinqueviri <corr sic="uls">uti</corr> cis Tiberim  suae quisque
+triumviris quinqueviri <choice><sic>uls</sic><corr>uti</corr></choice> cis Tiberim  suae quisque
 regionis aedificiis praeessent.
 
 <p/>
@@ -691,7 +687,7 @@ quidquid dixero,  </div><div type="textpart" subtype="section" n="5"> minus quam
 sit, dabitur opera a nobis.  </div><div type="textpart" subtype="section" n="6">Bacchanalia tota iam pridem Italia et nunc per urbem etiam multis locis esse,
 non fama solum accepisse vos sed crepitibus etiam
 ululatibusque nocturnis, qui personant tota urbe, certum habeo, ceterum quae ea res sit, ignorare:  </div><div type="textpart" subtype="section" n="7"> alios
-deorum aliquem cultum, alios <corr sic="concesssum">concessum</corr> ludum et
+deorum aliquem cultum, alios <choice><sic>concesssum</sic><corr>concessum</corr></choice> ludum et
 lasciviam credere esse, et qualecumque sit, ad paucos
 
 pertinere.   </div><div type="textpart" subtype="section" n="8"> quod ad multitudinem   eorum  attinet, si
@@ -740,7 +736,7 @@ consultabunt de sua salute simul ac vestra pernicie:
 
 tum singulis vobis universi timendi erunt.  </div><div type="textpart" subtype="section" n="5"> optare igitur
 unusquisque vestrum debet, ut bona mens suis omnibus
-fuerit. si quem libido, si furor in <corr sic="ilium">illum</corr> gurgitem
+fuerit. si quem libido, si furor in <choice><sic>ilium</sic><corr>illum</corr></choice> gurgitem
 
 
 <pb id="p.16"/>
@@ -785,14 +781,14 @@ citatus respondisset, absens damnaretur. si quis eorum,
 
 
 qui tum  extra terram Italiam  essent, nominaretur, ei
-<corr sic="lasiorem">laxiorem</corr> diem daturos, si venire ad causam dicendam
+<choice><sic>lasiorem</sic><corr>laxiorem</corr></choice> diem daturos, si venire ad causam dicendam
 
 pellet.  </div><div type="textpart" subtype="section" n="3"> edixerunt deinde, ne quis quid fugae causa
-<corr sic="rendidisse">vendidisse</corr> neve emisse vellet; ne quis reciperet, celaret,
+<choice><sic>rendidisse</sic><corr>vendidisse</corr></choice> neve emisse vellet; ne quis reciperet, celaret,
 ope ulla iuvaret fugientes.
 
 <sic corr="Contione">contione</sic> dimissa terror magnus urbe tota fuit,  </div><div type="textpart" subtype="section" n="4"> nec
-<corr sic="noenibus">moenibus</corr> se tantum   urbis aut finibus Romanis continuit, sed passim per totam Italiam, litteris hospitum
+<choice><sic>noenibus</sic><corr>moenibus</corr></choice> se tantum   urbis aut finibus Romanis continuit, sed passim per totam Italiam, litteris hospitum
 de senatus consulto et contione et edicto consulum
 
 acceptis, trepidari coeptum est.  </div><div type="textpart" subtype="section" n="5"> multi ea nocte, quae
@@ -875,7 +871,7 @@ eorum opera indicata Bacchanalia essent,  </div><div type="textpart" subtype="se
 quaestores urbani ex aerario darent; utique consul cum
 tribunis plebis ageret, ut ad plebem primo quoque
 tempore ferrent, ut P. Aebutio emerita stipendia essent,
-ne invitus militaret neve censor ei invito equum publicum  <corr sic="adsiguaret;">adsignaret;</corr>  </div><div type="textpart" subtype="section" n="5"> utique <sic corr="Faeceniae">Feceniae</sic> Hispalae datio,
+ne invitus militaret neve censor ei invito equum publicum  <choice><sic>adsiguaret;</sic><corr>adsignaret;</corr></choice>  </div><div type="textpart" subtype="section" n="5"> utique <sic corr="Faeceniae">Feceniae</sic> Hispalae datio,
 
 <pb id="p.19"/>
 
@@ -885,7 +881,7 @@ ne invitus militaret neve censor ei invito equum publicum  <corr sic="adsiguaret
 
 deminutio, gentis enuptio, tutoris optio item  esset,
 quasi ei vir testamento dedisset; utique ei ingenuo
-nubere liceret, neu quid ei qui <corr sic="ear">eam</corr> duxisset ob id
+nubere liceret, neu quid ei qui <choice><sic>ear</sic><corr>eam</corr></choice> duxisset ob id
 
 fraudi ignominiaeve esset;  </div><div type="textpart" subtype="section" n="6"> utique consules praetoresque,
 qui nunc essent quive postea futuri essent, curarent,
@@ -942,11 +938,11 @@ non tamen <sic corr="obliterare">oblitterare</sic> famam rei male gestae potuit:
 appellatus.
 
 <p/>
-</div></div><div type="textpart" subtype="chapter" n="21"><div type="textpart" subtype="section" n="1">sub hunc nuntium      ex Ligustinis <corr sic="vulgatun">vulgatum</corr>
+</div></div><div type="textpart" subtype="chapter" n="21"><div type="textpart" subtype="section" n="1">sub hunc nuntium      ex Ligustinis <choice><sic>vulgatun</sic><corr>vulgatum</corr></choice>
 litterae ex Hispania  mixtam   gaudio tristitiam  adferentes recitatae sunt.  </div><div type="textpart" subtype="section" n="2"> C. Atinius, qui biennio ante
-praetor in <corr sic="earn">eam</corr> provinciam profectus erat, cum Lusitanis in agro Hastensi signis collatis pugnavit: ad sex
+praetor in <choice><sic>earn</sic><corr>eam</corr></choice> provinciam profectus erat, cum Lusitanis in agro Hastensi signis collatis pugnavit: ad sex
 milia hostium sunt caesa, ceteri fusi et fugati castrisque exuti.  </div><div type="textpart" subtype="section" n="3"> ad oppidum deinde Hastam oppugnandum
-legiones ducit: id quoque <corr sic="baud">haud</corr> multo maiore certamine
+legiones ducit: id quoque <choice><sic>baud</sic><corr>haud</corr></choice> multo maiore certamine
 cepit quam castra; sed dum incautius subit muros,
 
 ictus ex vulnere post dies paucos moritur.  </div><div type="textpart" subtype="section" n="4"> litteris de
@@ -961,9 +957,9 @@ C. Atinius in provinciam  ierat, cum  Celtiberis acie
 
 conflixit.  </div><div type="textpart" subtype="section" n="7"> incerta victoria discessum  est, nisi quod
 Celtiberi castra inde nocte proxima moverunt, Romanis
-et suos sepeliendi et spolia legendi ex hostibus potestas facta est.  </div><div type="textpart" subtype="section" n="8"> paucos post dies <corr sic="naiore">maiore</corr> coacto exercitu Celtiberi ad Calagurrim oppidum ultro lacessiverunt
+et suos sepeliendi et spolia legendi ex hostibus potestas facta est.  </div><div type="textpart" subtype="section" n="8"> paucos post dies <choice><sic>naiore</sic><corr>maiore</corr></choice> coacto exercitu Celtiberi ad Calagurrim oppidum ultro lacessiverunt
 
-proelio Romanos.  </div><div type="textpart" subtype="section" n="9"> nihil traditur, <corr sic="(luae">quae</corr> causa numero
+proelio Romanos.  </div><div type="textpart" subtype="section" n="9"> nihil traditur, <choice><sic>(luae</sic><corr>quae</corr></choice> causa numero
 aucto infirmiores eos fecerit. superati proelio sunt:
 ad duodecim milia hominum caesa, plus duo capta, et
 
@@ -981,7 +977,7 @@ decem  deinde <hi rend="italics">dies magno</hi> apparatu ludos M. Fulvius,
 
 
 quos voverat Aetolico bello, fecit.  </div><div type="textpart" subtype="section" n="2"> multi artifices ex
-<corr sic="(iraecia">Graecia</corr> venerunt honoris eius causa. athletarum quoque certamen <corr sic="tur">tum</corr> primo Romanis spectaculo fuit, et
+<choice><sic>(iraecia</sic><corr>Graecia</corr></choice> venerunt honoris eius causa. athletarum quoque certamen <choice><sic>tur</sic><corr>tum</corr></choice> primo Romanis spectaculo fuit, et
 venatio data leonum et pantherarum, et prope huius
 saeculi copia ac varietate ludicrum  celebratum  est.
 
@@ -990,11 +986,11 @@ novemdiale deinde sacrum tenuit,  </div><div type="textpart" subtype="section" n
 triduum lapidibus pluerat, ignesque caelestes multifariam orti adussisse complurium levi adflatu vestimenta maxime dicebantur.  </div><div type="textpart" subtype="section" n="4"> addita et unum diem supplicatio est ex decreto pontificum, quod aedis Opis in
 
 Capitolio de caelo tacta erat.  </div><div type="textpart" subtype="section" n="5"> hostiis maioribus consules procurarunt urbemque lustraverunt. sub idem
-tempus et ex Umbria nuntiatum   est semimarem duodecim ferme annos natum    inventum.  id <corr sic="prodigiunl">prodigium</corr>
+tempus et ex Umbria nuntiatum   est semimarem duodecim ferme annos natum    inventum.  id <choice><sic>prodigiunl</sic><corr>prodigium</corr></choice>
 abominantes arceri Romano agro necarique quam
 primum iusserunt.
 
-</div><div type="textpart" subtype="section" n="6"> eodem anno Galli Transalpini transgressi in Venetiam sine populatione aut bello <corr sic="baud">haud</corr> procul inde, ubi
+</div><div type="textpart" subtype="section" n="6"> eodem anno Galli Transalpini transgressi in Venetiam sine populatione aut bello <choice><sic>baud</sic><corr>haud</corr></choice> procul inde, ubi
 nunc Aquileia est, locum oppido condendo ceperunt.
 
 </div><div type="textpart" subtype="section" n="7"> legatis Romanis de ea re trans Alpes missis responsum est neque profectos ex auctoritate gentis eos, nec
@@ -1005,8 +1001,8 @@ quid in Italia facerent sese scire.
 vovisse sese dicebat, ex collata ad id pecunia ab regibus civitatibusque per dies decem fecit.  </div><div type="textpart" subtype="section" n="9"> legatum eum
 post damnationem  et bona vendita missum in Asiani
 
-ad dirimenda inter Antiochum et Eumenem reges certamina Valerius Antias est auctor:  </div><div type="textpart" subtype="section" n="10"> <corr sic="turn">tum</corr> collatas ei
-pecunias congregatosque per Asiam  artifices, et quorum ludorum post bellum, in quo <corr sic="votes">votos</corr> diceret, mentionem non fecisset, de iis post legationem demum in
+ad dirimenda inter Antiochum et Eumenem reges certamina Valerius Antias est auctor:  </div><div type="textpart" subtype="section" n="10"> <choice><sic>turn</sic><corr>tum</corr></choice> collatas ei
+pecunias congregatosque per Asiam  artifices, et quorum ludorum post bellum, in quo <choice><sic>votes</sic><corr>votos</corr></choice> diceret, mentionem non fecisset, de iis post legationem demum in
 senatu actum.
 
 <p/>
@@ -1026,7 +1022,7 @@ Stellio C. Atilius Serranus L. Postumius Tempsanus
 
 M. Claudius Marcellinus.  </div><div type="textpart" subtype="section" n="3"> extremo anni, quia Sp. Postumius consul renuntiaverat peragrantem se propter
 quaestiones utrumque litus Italiae desertas colonias
-Sipontum  supero, Buxentum    infero <corr sic="mariaZZZ--how did we catch this?">mari</corr> invenisse,
+Sipontum  supero, Buxentum    infero <choice><sic>mariaZZZ--how did we catch this?</sic><corr>mari</corr></choice> invenisse,
 
 </div><div type="textpart" subtype="section" n="4"> triumviri ad colonos eo scribendos ex senatus consulto
 ab T. Maenio praetore urbano creati sunt L. Scribonius
@@ -1117,7 +1113,7 @@ adventum ad Thessalica Tempe omnibus iis civitatibus, quibus cum rege disceptati
 Thessali Perrhaebique et Athamanes haud dubii accusatores, Philippus ad audienda crimina tamquam reus
 
 consedissent,  </div><div type="textpart" subtype="section" n="2"> pro ingenio quisque eorum, qui principes
-legationum erant, et gratia cum Philippo aut <corr sic="odic">odio</corr>
+legationum erant, et gratia cum Philippo aut <choice><sic>odic</sic><corr>odio</corr></choice>
 
 acerbius leniusve egerunt.   </div><div type="textpart" subtype="section" n="3"> in controversiam  autem
 veniebant Philippopolis Tricca Phaloria et Eurymenae
@@ -1139,7 +1135,7 @@ deserta redditurus esset:  </div><div type="textpart" subtype="section" n="8"> n
 amissos quingentos principes iuventutis in Macedoniam
 abduxisse, et opera eorum in servilibus abuti ministeriis; et quae reddiderit coactus Thessalis, inutilia ut
 
-redderet curasse.   </div><div type="textpart" subtype="section" n="9">Thebas <corr sic="Pthias">Phthias</corr> unum    maritimum
+redderet curasse.   </div><div type="textpart" subtype="section" n="9">Thebas <choice><sic>Pthias</sic><corr>Phthias</corr></choice> unum    maritimum
 emporium   fuisse quondam Thessalis quaestuosum et
 frugiferum: ibi navibus onerariis comparatis regem,
 quae praeter Thebas Demetriadem cursum derigerent.
@@ -1155,7 +1151,7 @@ liberum esse?  </div><div type="textpart" subtype="section" n="12"> nunc se fidu
 ingemiscere magis quam   loqui. nisi provideant aliquid <pb id="p.25"/>  Romani, quo et Graecis Macedoniam accolentibus
 metus et audacia Philippo minuatur, nequiquam    et
 
-<corr sic="ilium">illum</corr> victum et se liberatos esse.  </div><div type="textpart" subtype="section" n="13"> ut equum tenacem,
+<choice><sic>ilium</sic><corr>illum</corr></choice> victum et se liberatos esse.  </div><div type="textpart" subtype="section" n="13"> ut equum tenacem,
 non parentem   frenis asperioribus castigandum  esse.
 
 haec acerbe postremi,  </div><div type="textpart" subtype="section" n="14"> cum priores leniter permulsissent
@@ -1174,10 +1170,10 @@ quam rei speciem haberet, et ipse a querellis orsus
 Menelaidem in Dolopia, quae regni sui fuisset, Thessalos vi atque armis expugnasse questus est; item
 Petram  in Pieria ab iisdem Thessalis Perrhaebisque
 
-captam.  </div><div type="textpart" subtype="section" n="2">Xynias quidem, <corr sic="baud">haud</corr> dubie Aetolicum oppidum, sibi contribuisse eos; et Paracheloida, quae sub
+captam.  </div><div type="textpart" subtype="section" n="2">Xynias quidem, <choice><sic>baud</sic><corr>haud</corr></choice> dubie Aetolicum oppidum, sibi contribuisse eos; et Paracheloida, quae sub
 Athamania esset, nullo iure Thessalorum formulae
 
-factam.  </div><div type="textpart" subtype="section" n="3"> nam quae sibi crimina obiciantur de <corr sic="insidii.s">insidiis</corr>
+factam.  </div><div type="textpart" subtype="section" n="3"> nam quae sibi crimina obiciantur de <choice><sic>insidii.s</sic><corr>insidiis</corr></choice>
 legatorum  et maritimis portubus   frequentatis aut
 
 desertis,  </div><div type="textpart" subtype="section" n="4"> alterum ridiculum esse, se reddere rationem,
@@ -1192,7 +1188,7 @@ non adici. quaerentium quod falso obiciant, cum veri
 
 nihil habeant, ea crimina esse.  </div><div type="textpart" subtype="section" n="7"> insolenter et immodice
 abuti Thessalos indulgentia populi Romani, velut ex
-diutina siti <corr sic="nimls">nimis</corr> avide meram haurientes libertatem:
+diutina siti <choice><sic>nimls</sic><corr>nimis</corr></choice> avide meram haurientes libertatem:
 
 </div><div type="textpart" subtype="section" n="8">ita servorum  modo praeter spem   repente manumissorum licentiam  vocis et linguae experiri et iactare
 
@@ -1208,7 +1204,7 @@ sese insectatione et conviciis dominorum.  </div><div type="textpart" subtype="s
 ira adiecit nondum  omnium   dierum  solem occidisse
 id minaciter dictum non Thessali modo in sese, sed
 
-etiam Romani acceperunt.  </div><div type="textpart" subtype="section" n="10"> et cum fremitus post <corr sic="earn">eam</corr>
+etiam Romani acceperunt.  </div><div type="textpart" subtype="section" n="10"> et cum fremitus post <choice><sic>earn</sic><corr>eam</corr></choice>
 vocem  ortus et tandem sedatus esset, Perrhaeborum
 inde Athamanumque legatis respondit eandem, de
 
@@ -1298,7 +1294,7 @@ magis quam urbes. ea quoque ipsa vos mihi, Q. Caecili,
 
 
 
-<corr sic="lt;ucos">paucos</corr> ante dies ademistis.  </div><div type="textpart" subtype="section" n="5"> pro non dubio paulo sante,
+<choice><sic>lt;ucos</sic><corr>paucos</corr></choice> ante dies ademistis.  </div><div type="textpart" subtype="section" n="5"> pro non dubio paulo sante,
 si diis placet, legati Eumenis sumebant, quae Antiochi
 fuerunt, Eumenem aequius esse quam me habere. id
 ego longe aliter iudico esse. Eumenes enim non, nisi
@@ -1307,7 +1303,7 @@ in regno suo non potuit. itaque ille vestrum meritum
 
 habet, non vos illius.  </div><div type="textpart" subtype="section" n="6"> mei autem regni tantum aberat
 ut ulla pars in discrimine fuerit, ut tria milia talentum
-et quinquaginta tectas naves et omnes Graeciae civitates, quas antea tenuissem, pollicentem  ultro Antiochum in mercedem societatis sim <corr sic="aspernatlus;">aspernatus;</corr>  </div><div type="textpart" subtype="section" n="7"> hostemque ei me esse prius etiam quam M'. Acilius
+et quinquaginta tectas naves et omnes Graeciae civitates, quas antea tenuissem, pollicentem  ultro Antiochum in mercedem societatis sim <choice><sic>aspernatlus;</sic><corr>aspernatus;</corr></choice>  </div><div type="textpart" subtype="section" n="7"> hostemque ei me esse prius etiam quam M'. Acilius
 exercitum in Graeciam  traiceret praetuli.  et cum eo
 consule belli partem, quamcumque mihi delegavit,
 
@@ -1463,7 +1459,7 @@ qui inter tela hostium praetorem conspexerunt. itaque
 urgere signiferos pro se quisque, iubere inferre signa
 
 et confestim  militem  sequi.  </div><div type="textpart" subtype="section" n="10"> renovatur ab omnibus
-clamor: impetus fit velut ex superiore loco.   <corr sic="hand">haud</corr>
+clamor: impetus fit velut ex superiore loco.   <choice><sic>hand</sic><corr>haud</corr></choice>
 secus ergo quam torrentis modo fundunt sternuntque
 perculsos, nec sustineri alii super alios inferentes sese
 
@@ -1471,7 +1467,7 @@ possunt.  </div><div type="textpart" subtype="section" n="11"> fugientes in cast
 permixti turbae hostium  intra vallum penetraverunt;
 ubi ab relictis in praesidio castrorum proelium instauratum, coactique sunt Romani equites descendere
 
-ex equis.  </div><div type="textpart" subtype="section" n="12"> dimicantibus iis legio quinta supervenit; deinde, ut quaeque potuerant, copiae adfluebant.  </div><div type="textpart" subtype="section" n="13"> <corr sic="caedlutur">caeduntur</corr> <pb id="p.32"/>  passim Hispani per tota castra; nec plus quam
+ex equis.  </div><div type="textpart" subtype="section" n="12"> dimicantibus iis legio quinta supervenit; deinde, ut quaeque potuerant, copiae adfluebant.  </div><div type="textpart" subtype="section" n="13"> <choice><sic>caedlutur</sic><corr>caeduntur</corr></choice> <pb id="p.32"/>  passim Hispani per tota castra; nec plus quam
 quattuor milia hominum   effugerunt. inde tria milia
 fere, qui arma retinuerant, montem propinquum  ceperunt; mille semiermes maxime per agros palati sunt.
 
@@ -1506,7 +1502,7 @@ aequavit secundis aliquot proeliis. sex praeterea oppida
 eorum expugnavit; multa milia hominum in iis cepit;
 belli auctores tres et quadraginta securi percussit.
 
-<corr sic="lam">iam</corr>  comitiorum  appetebat tempus.    </div><div type="textpart" subtype="section" n="5"> prior tamen
+<choice><sic>lam</sic><corr>iam</corr></choice>  comitiorum  appetebat tempus.    </div><div type="textpart" subtype="section" n="5"> prior tamen
 Claudius quam Sempronius, cui sors comitia habendi
 obtigerat, Romam venit, quia <sic corr="P">P.</sic>. Claudius frater eius
 
@@ -1533,13 +1529,13 @@ Licinus.  </div><div type="textpart" subtype="section" n="10"> sed Claudius cons
 
 toto foro volitando,  </div><div type="textpart" subtype="section" n="11"> clamitantibus adversariis et maiore parte senatus, meminisse eum  debere se prius
 consulem populi Romani quam fratrem <sic corr="P">P.</sic>. Claudii esse:
-quin ille sedens pro tribunali aut arbitrum <corr sic="ant">aut</corr> tacitum
+quin ille sedens pro tribunali aut arbitrum <choice><sic>ant</sic><corr>aut</corr></choice> tacitum
 spectatorem comitiorum se praeberet? &mdash; coerceri tamen
 
-ab effuso studio nequit.  </div><div type="textpart" subtype="section" n="12"> magnis contentionibus tribunorum quoque plebis, qui <corr sic="ant">aut</corr> contra consulem  <corr sic="ant">aut</corr>
+ab effuso studio nequit.  </div><div type="textpart" subtype="section" n="12"> magnis contentionibus tribunorum quoque plebis, qui <choice><sic>ant</sic><corr>aut</corr></choice> contra consulem  <choice><sic>ant</sic><corr>aut</corr></choice>
 pro studio eius pugnabant, comitia aliquotiens turbata,
 
-donec pervicit Appius, ut deiecto Fabio fratrem traheret.  </div><div type="textpart" subtype="section" n="13"> creatus <corr sic="P">P.</corr> Claudius Pulcher praeter spem suam
+donec pervicit Appius, ut deiecto Fabio fratrem traheret.  </div><div type="textpart" subtype="section" n="13"> creatus <choice><sic>P</sic><corr>P.</corr></choice> Claudius Pulcher praeter spem suam
 et ceterorum. locum suum tenuit L. Porcius Licinus,
 quia moderatis studiis, non vi Claudiana inter plebeios
 
@@ -1581,13 +1577,13 @@ Thessalis et Perrhaebis essent.  </div><div type="textpart" subtype="section" n=
 ab Aeno et Maronea praesidia deducerentur, maritimaque omnis Thraciae ora a Philippo et Macedonibus
 
 liberaretur.  </div><div type="textpart" subtype="section" n="5">Peloponnesum  quoque adire iussi, unde
-prior legatio discesserat incertiore statu rerum, <corr sic="quan">quam</corr>
-si non venissent: nam super cetera etiam sine <corr sic="response">responso</corr>
+prior legatio discesserat incertiore statu rerum, <choice><sic>quan</sic><corr>quam</corr></choice>
+si non venissent: nam super cetera etiam sine <choice><sic>response</sic><corr>responso</corr></choice>
 dimissi, nec datum  petentibus erat Achaeorum concilium.  </div><div type="textpart" subtype="section" n="6"> de qua re querente graviter Q. Caecilio et simul
 Lacedaemoniis deplorantibus moenia diruta, abductam
 plebem in Achaiam et venumdatam, ademptas, quibus
 
-ad <corr sic="earn">eam</corr> diem civitas stetisset,  </div><div type="textpart" subtype="section" n="7">Lycurgi leges, Achaei
+ad <choice><sic>earn</sic><corr>eam</corr></choice> diem civitas stetisset,  </div><div type="textpart" subtype="section" n="7">Lycurgi leges, Achaei
 maxime concilii negati crimen excusabant recitando
 legem, quae nisi belli pacisve causa, et cum legati ab
 senatu cum   litteris aut scriptis mandatis venirent,
@@ -1625,10 +1621,10 @@ primo adeo perturbavit ea vox regem,  </div><div type="textpart" subtype="sectio
 non vultus ei constaret; deinde collecto tandem animo
 Casandrum, qui Maroneae fuisset, si utique vellent, se
 
-missurum dixit:  </div><div type="textpart" subtype="section" n="8"> ad Onomastum quidem quid <corr sic="ear">eam</corr> rem
+missurum dixit:  </div><div type="textpart" subtype="section" n="8"> ad Onomastum quidem quid <choice><sic>ear</sic><corr>eam</corr></choice> rem
 pertinere, qui non modo Maroneae, sed ne in regione
 
-quidem  propinqua fuisset?   </div><div type="textpart" subtype="section" n="9"> et parcebat magis Onomasto, honoratiori amico, et eundem   indicem  <corr sic="baud">haud</corr>
+quidem  propinqua fuisset?   </div><div type="textpart" subtype="section" n="9"> et parcebat magis Onomasto, honoratiori amico, et eundem   indicem  <choice><sic>baud</sic><corr>haud</corr></choice>
 paulo plus timebat, quia et ipse sermonem cum eo
 contulerat et multorum talium ministrum et conscium
 
@@ -1658,7 +1654,7 @@ bellantes fuissent.  quippe in bello sociis Romanis
 Achaeos usos:  </div><div type="textpart" subtype="section" n="7"> nunc eosdem Romanos aequiores Lacedaemoniis quam   Achaeis esse, ubi Areus etiam   et
 Alcibiades, ambo exsules, suo beneficio restituti, legationem <pb id="p.36"/>  Romam    adversus gentem  Achaeorum   ita de
 ipsis meritam  suscepissent, adeoque infesta oratione
-usi essent, ut pulsi patria, non restituti in <corr sic="earn">eam</corr> viderentur.   </div><div type="textpart" subtype="section" n="8"> clamor undique ortus, referret nominatim de
+usi essent, ut pulsi patria, non restituti in <choice><sic>earn</sic><corr>eam</corr></choice> viderentur.   </div><div type="textpart" subtype="section" n="8"> clamor undique ortus, referret nominatim de
 iis; et cum omnia ira, non consilio gererentur, capitis
 damnati sunt. paucos post dies Romani legati venerunt. his Clitore in Arcadia datum est concilium.
 
@@ -1723,7 +1719,7 @@ maritima oppida, se petitos credentes, in eos, quorum
 opera patria extorres ne in tuto quidem exsilio posse
 consenescere se indignabantur, impetum    fecerunt.
 
-Lacedaemonii igitur Lacedaemonios,  </div><div type="textpart" subtype="section" n="16"> non Achaei interfecerunt; nec iure an iniuria caesi sint, <corr sic="argulnentari">argumentari</corr>
+Lacedaemonii igitur Lacedaemonios,  </div><div type="textpart" subtype="section" n="16"> non Achaei interfecerunt; nec iure an iniuria caesi sint, <choice><sic>argulnentari</sic><corr>argumentari</corr></choice>
 refert.
 
 <p/>
@@ -1753,11 +1749,11 @@ velut compedibus circumdatis vincti per centum annos
 servistis.  </div><div type="textpart" subtype="section" n="6"> quod ad leges ademptas attinet, ego antiquas Lacedaemoniis leges tyrannos ademisse arbitror;
 nos non suas ademisse, quas non habebant, sed nostras
 
-leges dedisse;  </div><div type="textpart" subtype="section" n="7"> nec male consuluisse civitati, cum concilii nostri <corr sic="ear">eam</corr>  fecerimus et nobis miscuerimus, ut
+leges dedisse;  </div><div type="textpart" subtype="section" n="7"> nec male consuluisse civitati, cum concilii nostri <choice><sic>ear</sic><corr>eam</corr></choice>  fecerimus et nobis miscuerimus, ut
 corpus unum et concilium totius Peloponnesi esset.
 
 tunc,  </div><div type="textpart" subtype="section" n="8"> ut opinor, si aliis ipsi legibus viveremus, alias
-istis iniunxissemus, queri se iniquo <corr sic="lure">iure</corr> esse et indignari possent.  </div><div type="textpart" subtype="section" n="9"> scio ego, Ap. Claudi, hanc orationem,
+istis iniunxissemus, queri se iniquo <choice><sic>lure</sic><corr>iure</corr></choice> esse et indignari possent.  </div><div type="textpart" subtype="section" n="9"> scio ego, Ap. Claudi, hanc orationem,
 qua sum adhuc usus, neque sociorum apud socios neque liberae gentis esse, sed vere servorum disceptantium  apud dominos.  </div><div type="textpart" subtype="section" n="10"> nam si non vana illa vox praeconis fuit, qua liberos esse omnium primos Achaeos
 iussistis, si foedus ratum est, si societas et amicitia
 ex aequo observatur, cur ego, quid Capua capta feceritis Romani, non quaero, vos rationem reposcitis, quid
@@ -1783,7 +1779,7 @@ parum est victis, quod victoribus satis est; plus postulant hostes quam socii ha
 
 
 monumentis litterarum in lapide insculptis in aeternam
-<corr sic="miemoriam">memoriam</corr> sancta atque sacrata sunt, ea cum periurio
+<choice><sic>miemoriam</sic><corr>memoriam</corr></choice> sancta atque sacrata sunt, ea cum periurio
 
 nostro tollere parant.  </div><div type="textpart" subtype="section" n="17"> veremur quidem vos, Romani,
 et si ita vultis, etiam timemus: sed plus et veremur
@@ -1793,7 +1789,7 @@ partis est auditus, et locutum omnes pro maiestate
 magistratus censebant, ut facile appareret molliter
 agendo dignitatem  suam  tenere Romanos non posse.
 
-<corr sic="tur">tum</corr> Appius suadere se magnopere Achaeis dixit,  </div><div type="textpart" subtype="section" n="19"> ut,
+<choice><sic>tur</sic><corr>tum</corr></choice> Appius suadere se magnopere Achaeis dixit,  </div><div type="textpart" subtype="section" n="19"> ut,
 dum liceret voluntate sua facere, gratiam inirent, ne
 
 mox inviti et coacti facerent.  </div><div type="textpart" subtype="section" n="20"> haec vox audita quidem cum omnium gemitu est, sed metum iniecit imperata recusandi.  </div><div type="textpart" subtype="section" n="21"> id modo petierunt, ut Romani, quae
@@ -1834,7 +1830,7 @@ senatus consulto, si deportandos censerent exercitus,
 denuntiabant: illi, si haec intercessio fieret, nullam
 
 rem aliam se decerni passuros.  </div><div type="textpart" subtype="section" n="10"> victa postremo absentium gratia est et senatus consultum factum, ut
-praetores quattuor milia peditum <corr sic="Romauorum">Romanorum</corr> scriberent, trecentos equites, et quinque milia peditum sociorum Latini nominis, quingentos equites, quos secum in
+praetores quattuor milia peditum <choice><sic>Romauorum</sic><corr>Romanorum</corr></choice> scriberent, trecentos equites, et quinque milia peditum sociorum Latini nominis, quingentos equites, quos secum in
 
 Hispaniam portarent.  </div><div type="textpart" subtype="section" n="11"> cum ea quattuor milia <hi rend="italics">in</hi> legiones
 discripsissent, quo plus quam  quina milia peditum,
@@ -1874,19 +1870,19 @@ ne impedimento esset, quo minus comitia praetoris in
 
 locum C. Decimii subrogandi e lege haberentur.  </div><div type="textpart" subtype="section" n="8"> agenti
 consuli ex senatus consulto respondit Flaccus    iihil,
-quod se indignum    esset, facturum.  medio <corr sic="respVonso">responso</corr>
+quod se indignum    esset, facturum.  medio <choice><sic>respVonso</sic><corr>responso</corr></choice>
 spemn ad voluntatem interpretantibus fecerat cessurum
 
-patrum  auctoritati esse.  </div><div type="textpart" subtype="section" n="9"> comitiis acrius <corr sic="etiai">etiam</corr>  quam
+patrum  auctoritati esse.  </div><div type="textpart" subtype="section" n="9"> comitiis acrius <choice><sic>etiai</sic><corr>etiam</corr></choice>  quam
 ante petebat criminando, extorqueri sibi a consule et
 senatu populi Romani beneficium, et invidiam fieri geminati honoris, tamquam non appareret, ubi designatus praetor esset, extemplo aedilitate se abdicaturum.
 
-consul cum  </div><div type="textpart" subtype="section" n="10">et pertinaciam petentis crescere et <corr sic="favorein">favorem</corr>
+consul cum  </div><div type="textpart" subtype="section" n="10">et pertinaciam petentis crescere et <choice><sic>favorein</sic><corr>favorem</corr></choice>
 populi magis magisque in     eum   inclinari cerneret,
-dimissis comitiis senatum   vocavit.  censuerunt frequentes, quoniam Flaccum auctoritas patrum <corr sic="niilh!">nihil</corr>
+dimissis comitiis senatum   vocavit.  censuerunt frequentes, quoniam Flaccum auctoritas patrum <choice><sic>niilh!</sic><corr>nihil</corr></choice>
 
-movisset, ad populum   cum Flacco agendum.  </div><div type="textpart" subtype="section" n="11"> <corr sic="coutione">contione</corr>
-advocata cum egisset consul, ne <corr sic="turn">tum</corr> quidem de sententia motus gratias populo Romano egit, quod <corr sic="tailto">tanto</corr>
+movisset, ad populum   cum Flacco agendum.  </div><div type="textpart" subtype="section" n="11"> <choice><sic>coutione</sic><corr>contione</corr></choice>
+advocata cum egisset consul, ne <choice><sic>turn</sic><corr>tum</corr></choice> quidem de sententia motus gratias populo Romano egit, quod <choice><sic>tailto</sic><corr>tanto</corr></choice>
 studio, quotienscumque declarandae voluntatis potestas
 
 facta esset, praetorem se voluisset facere:  </div><div type="textpart" subtype="section" n="12"> ea sibi studia
@@ -1895,11 +1891,11 @@ vero tam  obstinata vox tantum   ei favorem accendit,
 ut haud dubius praetor esset, si consul accipere nomen
 
 vellet.  </div><div type="textpart" subtype="section" n="13"> ingens certamen tribunis et inter se ipsos et
-cum consule fuit, <corr sic="donee">donec</corr> senatus a consule est <corr sic="habits">habitus</corr>
+cum consule fuit, <choice><sic>donee</sic><corr>donec</corr></choice> senatus a consule est <choice><sic>habits</sic><corr>habitus</corr></choice>
 
 decretumque:  </div><div type="textpart" subtype="section" n="14"> quoniam praetoris subrogandi comitia ne
 legibus fierent, pertinacia Q. Flacci et prava studia
-hominum impedirent, senatum censere satis <corr sic="praetorumn">praetorum</corr>
+hominum impedirent, senatum censere satis <choice><sic>praetorumn</sic><corr>praetorum</corr></choice>
 
 esse;  </div><div type="textpart" subtype="section" n="15"> P. Cornelius utramque in urbe iurisdictionem
 haberet, Apollinique ludos faceret.
@@ -1909,14 +1905,14 @@ haberet, Apollinique ludos faceret.
 
 inter plures potentioresque viros, sunt exorta.  </div><div type="textpart" subtype="section" n="2"> censuram summa contentione petebant L. Valerius Flaccus
 
-P. et L. Scipiones Cn. Manlius Vulso L. Furius Purpurio patricii,  </div><div type="textpart" subtype="section" n="3"> plebeii autem M. Porcius Cato M. Fulvius Nobilior Ti. et M. Sempronii, Longus et Tuditanus. sed omnes patricios plebeiosque <corr sic="nobilissimarumu">nobilissimarum</corr>
+P. et L. Scipiones Cn. Manlius Vulso L. Furius Purpurio patricii,  </div><div type="textpart" subtype="section" n="3"> plebeii autem M. Porcius Cato M. Fulvius Nobilior Ti. et M. Sempronii, Longus et Tuditanus. sed omnes patricios plebeiosque <choice><sic>nobilissimarumu</sic><corr>nobilissimarum</corr></choice>
 
 familiarum  M. Porcius longe anteibat.  </div><div type="textpart" subtype="section" n="4"> in hoc viro tanta <pb id="p.42"/>  vis animi ingeniique fuit, ut quocumque loco
 natus esset, fortunam sibi ipse facturus fuisse videretur. nulla ars neque privatae neque publicae rei
 gerendae ei defuit; urbanas rusticasque res pariter
 
 callebat.  </div><div type="textpart" subtype="section" n="5"> ad summos honores alios scientia iuris, alios
-eloquentia, alios gloria militaris provexit: huic versatile ingenium sic pariter ad omnia fuit, ut <corr sic="nature">natum</corr>
+eloquentia, alios gloria militaris provexit: huic versatile ingenium sic pariter ad omnia fuit, ut <choice><sic>nature</sic><corr>natum</corr></choice>
 
 ad id unum diceres, quodcumque ageret:  </div><div type="textpart" subtype="section" n="6"> in bello manu
 fortissimus multisque insignibus clarus pugnis, idem
@@ -1934,25 +1930,25 @@ exercuit eas; nec facile dixeris, utrum magis presserit
 
 eum nobilitas, an ille agitaverit nobilitatem.  </div><div type="textpart" subtype="section" n="10"> asperi
 procul dubio animi et linguae acerbae et immodice
-<corr sic="iiberae">liberae</corr> fuit, sed invicti a cupiditatibus animi, rigidae
+<choice><sic>iiberae</sic><corr>liberae</corr></choice> fuit, sed invicti a cupiditatibus animi, rigidae
 
 innocentiae, contemptor gratiae, divitiarum.  </div><div type="textpart" subtype="section" n="11"> in parsimonia, in patientia laboris periculique ferrei prope
 corporis animique, quem   ne senectus quidem, quae
 
 solvit omnia,  </div><div type="textpart" subtype="section" n="12"> fregerit, qui sextum  et octogesimum
-<corr sic="tInnum">annum</corr>  agens causam   dixerit, ipse pro se oraverit
+<choice><sic>tInnum</sic><corr>annum</corr></choice>  agens causam   dixerit, ipse pro se oraverit
 scripseritque, nonagesimo anno Ser. Galbam ad populi
 adduxerit iudicium. 
 </div></div><div type="textpart" subtype="chapter" n="41"><div type="textpart" subtype="section" n="1">hunc, sicut omni vita, tum
 petentem premebat nobilitas; coierantque praeter
-<sic corr="L.">C.</sic> Flaccum, qui collega in consulatu fuerat, <corr sic="candidate">candidati</corr>
+<sic corr="L.">C.</sic> Flaccum, qui collega in consulatu fuerat, <choice><sic>candidate</sic><corr>candidati</corr></choice>
 
 omnes ad deiciendum honore,  </div><div type="textpart" subtype="section" n="2"> non solum ut ipsi potius adipiscerentur, nec quia indignabantur novum
 hominem   censorem  videre, sed etiam  quod tristem
 censuram periculosamque multorum famae et ab laeso
 
 a plerisque et laedendi cupido exspectabant.  </div><div type="textpart" subtype="section" n="3"> etenim
-<corr sic="turn">tum</corr> quoque minitabundus petebat, refragari sibi, qui
+<choice><sic>turn</sic><corr>tum</corr></choice> quoque minitabundus petebat, refragari sibi, qui
 
 <pb id="p.43"/>
 
@@ -1962,7 +1958,7 @@ a plerisque et laedendi cupido exspectabant.  </div><div type="textpart" subtype
 liberam et fortem censuram timerent, criminando.  </div><div type="textpart" subtype="section" n="4"> et
 simul <sic corr="L.">C.</sic> Valerio suffragabatur: illo uno collega castigare se nova flagitia et priscos revocare mores posse.
 his accensi homines, adversa nobilitate, non M. Porcium
-<corr sic="mlodo">modo</corr> censorem fecerunt, sed collegam ei <sic corr="L.">C.</sic> Valerium
+<choice><sic>mlodo</sic><corr>modo</corr></choice> censorem fecerunt, sed collegam ei <sic corr="L.">C.</sic> Valerium
 Flaccum adiecerunt.
 
 </div><div type="textpart" subtype="section" n="5"> secundum  comitia censorum  consules praetoresque
@@ -1995,7 +1991,7 @@ pondo argenti.  </div><div type="textpart" subtype="section" n="4"> paucos post 
 ex iisdem Lusitanis et Celtiberis triumphavit: tantundem auri atque argenti in eo triumpho praelatum.
 
 <sic corr="Censores">censores</sic> M. Porcius  </div><div type="textpart" subtype="section" n="5">et <sic corr="L">L.</sic>. Valerius metu mixta exspectatione senatum  legerunt;  </div><div type="textpart" subtype="section" n="6"> septem  moverunt senatu, ex quibus unum insignem et nobilitate et honoribus, <sic corr="L">L.</sic>. Quinctium Flamininum consularem. patrum
-<corr sic="meinoria">memoria</corr> institutum fertur, ut censores motis senatu
+<choice><sic>meinoria</sic><corr>memoria</corr></choice> institutum fertur, ut censores motis senatu
 
 
 <pb id="p.44"/>
@@ -2005,10 +2001,10 @@ ex iisdem Lusitanis et Celtiberis triumphavit: tantundem auri atque argenti in e
 
 
 adscriberent notas. Catonis et aliae quidem acerbae
-orationes exstant in eos, quos aut senatorio loco movit aut quibus equos ademit,  </div><div type="textpart" subtype="section" n="7"> longe gravissima in <corr sic="L">L.</corr>
+orationes exstant in eos, quos aut senatorio loco movit aut quibus equos ademit,  </div><div type="textpart" subtype="section" n="7"> longe gravissima in <choice><sic>L</sic><corr>L.</corr></choice>
 Quinctium oratlo, qua si accusator ante notam, non
 censor post notam usus esset, retinere <sic corr="L">L.</sic>. Quinctium
-in senatu ne frater quidem T. Quinctius, si <corr sic="turn">tum</corr> censor esset, potuisset.  </div><div type="textpart" subtype="section" n="8"> inter cetera obiecit ei Philippum
+in senatu ne frater quidem T. Quinctius, si <choice><sic>turn</sic><corr>tum</corr></choice> censor esset, potuisset.  </div><div type="textpart" subtype="section" n="8"> inter cetera obiecit ei Philippum
 Poenum, carum ac nobile scortum, ab Roma in Galliam
 provinciam spe ingentium donorum perductum<corr>.</corr> 
 </div><div type="textpart" subtype="section" n="9"> eum
@@ -2044,14 +2040,14 @@ censor ohiecit, sive, ut Valerius tradit, commissum est,
 saevum  atque atrox: inter pocula atque epulas, ubi
 libare diis dapes, ubi bene precari mos esset, ad
 
-spectaculum scorti procacis, in sinu consulis recubantis, mactatam humanam <corr sic="victinam">victimam</corr> esse et cruore mensam respersam!  </div><div type="textpart" subtype="section" n="5"> in extrema oratione Catonis condicio
+spectaculum scorti procacis, in sinu consulis recubantis, mactatam humanam <choice><sic>victinam</sic><corr>victimam</corr></choice> esse et cruore mensam respersam!  </div><div type="textpart" subtype="section" n="5"> in extrema oratione Catonis condicio
 Quinctio fertur, ut si id factum negaret ceteraque,
-quae obiecisset, sponsione <corr sic="defenlderet">defenderet</corr> sese: sin fateretur,
+quae obiecisset, sponsione <choice><sic>defenlderet</sic><corr>defenderet</corr></choice> sese: sin fateretur,
 ignominiane sua quemquam doliturum censeret, cum
 ipse vino et venere amens sanguine hominis in convivio lusisset?
 
 <p/>
-</div></div><div type="textpart" subtype="chapter" n="44"><div type="textpart" subtype="section" n="1">in equitatu recognoscendo L. Scipioni Asiatico ademptus equus. in censibus <corr sic="quoqute">quoque</corr> accipiendis
+</div></div><div type="textpart" subtype="chapter" n="44"><div type="textpart" subtype="section" n="1">in equitatu recognoscendo L. Scipioni Asiatico ademptus equus. in censibus <choice><sic>quoqute</sic><corr>quoque</corr></choice> accipiendis
 
 tristis et aspera in omnes ordines censure fuit.  </div><div type="textpart" subtype="section" n="2"> ornamenta et vestem muliebrem et vehicula, quae pluris
 quam quindecim milium aeris essent, <hi rend="italics">deciens tanto pltris</hi>
@@ -2075,7 +2071,7 @@ Titium, in lautumiis, et quattuor tabernas in publicum
 emit basilicamque ibi fecit, quae Porcia appellata est.
 
 et vectigalia summis pretiis, ultro tributa infimis locaverunt.  </div><div type="textpart" subtype="section" n="8"> quas locationes cum   senatus precibus et lacrimis victus publicanorum induci et de integro locari
-iussisset, censores, edicto summotis ab hasta qui ludificati <pb id="p.46"/>  priorem locationem erant, omnia eadem <corr sic="paulunmZZZ">paululum</corr>
+iussisset, censores, edicto summotis ab hasta qui ludificati <pb id="p.46"/>  priorem locationem erant, omnia eadem <choice><sic>paulunmZZZ</sic><corr>paululum</corr></choice>
 
 imminutis pretiis locaverunt.    </div><div type="textpart" subtype="section" n="9"> nobilis censura fuit
 simultatiumque plena, quae M. Porcium, cui acerbitas
@@ -2089,7 +2085,7 @@ deduxerunt iidem tresviri, Q. Fabius Labeo, et M. et
 Q. Fulvii, Flaccus et Nobilior.   </div><div type="textpart" subtype="section" n="11"> consules eius anni
 nec domi nec militiae memorabile quicquam egerunt.
 
-</div></div><div type="textpart" subtype="chapter" n="45"><div type="textpart" subtype="section" n="1">in insequentem annum crearunt consules M. Claudium <corr sic="AMarcellum">Marcellum</corr> Q. Fabium Labeonem.
+</div></div><div type="textpart" subtype="chapter" n="45"><div type="textpart" subtype="section" n="1">in insequentem annum crearunt consules M. Claudium <choice><sic>AMarcellum</sic><corr>Marcellum</corr></choice> Q. Fabium Labeonem.
 
 <p/>M. Claudius Q. Fabius idibus Martiis, quo die consulatum inierunt, de provinciis suis praetorumque rettulerunt.  </div><div type="textpart" subtype="section" n="2"> praetores creati erant C. Valerius flamen Dialis
 qui et priore anno petierat, et Sp. Postumius Albinus
@@ -2130,7 +2126,7 @@ et ludi funebres per triduum facti, post ludos epulum.
 
 in quo cum toto foro strata triclinia essent,  </div><div type="textpart" subtype="section" n="3"> tempestas
 
-<corr sic="curm">cum</corr> magnis procellis coorta coegit plerosque tabernacula statuere in foro:  </div><div type="textpart" subtype="section" n="4"> eadem paulo post, cum undique disserenasset, sublata; defunctosque vulgo ferebant
+<choice><sic>curm</sic><corr>cum</corr></choice> magnis procellis coorta coegit plerosque tabernacula statuere in foro:  </div><div type="textpart" subtype="section" n="4"> eadem paulo post, cum undique disserenasset, sublata; defunctosque vulgo ferebant
 
 quod inter fatalia vates cecinissent, necesse esse tabernacula in foro statui.   </div><div type="textpart" subtype="section" n="5"> hac religione levatis altera
 iniecta, quod sanguine per biduum pluvisset in area
@@ -2152,8 +2148,8 @@ querendum  simul quod non deducerentur ex Thracia
 praesidia, simul quod in Bithyniam Prusiae bellum
 adversus Eumenem gerenti auxilia missa forent.
 
-</div></div><div type="textpart" subtype="chapter" n="47"><div type="textpart" subtype="section" n="1">respondendum ad omnia iuveni <corr sic="turn">tum</corr> admodum
-Demetrio erat. cum <corr sic="baud">haud</corr> facile esset aut ea, quae
+</div></div><div type="textpart" subtype="chapter" n="47"><div type="textpart" subtype="section" n="1">respondendum ad omnia iuveni <choice><sic>turn</sic><corr>tum</corr></choice> admodum
+Demetrio erat. cum <choice><sic>baud</sic><corr>haud</corr></choice> facile esset aut ea, quae
 
 obicerentur, aut quae adversus ea dicenda erant, memoria complecti&mdash; </div><div type="textpart" subtype="section" n="2"> nec enim multa solum, sed etiam
 pleraque oppido quam parva erant, de controversia
@@ -2173,7 +2169,7 @@ ab eo senatus cum cerneret posse, simul et tirocinio
 
 et perturbatione iuvenis moveretur, quaeri iussit ab
 eo, ecquem de his rebus commentarium a patre accepisset.  </div><div type="textpart" subtype="section" n="4"> cum respondisset accepisse se, nihil prius
-<corr sic="nee">nec</corr> potius visum   est quam  regis ipsius de singulis
+<choice><sic>nee</sic><corr>nec</corr></choice> potius visum   est quam  regis ipsius de singulis
 responsa accipere. librum extemplo poposcerunt, deinde
 
 ut ipse recitaret permiserunt.  </div><div type="textpart" subtype="section" n="5"> erant autem de singulis
@@ -2182,10 +2178,10 @@ stetisse, quo minus faceret, sed per eos ipsos, qui
 
 accusarent.  </div><div type="textpart" subtype="section" n="6"> interposuerat et querellas de iniquitate
 decretorum,  et quam non ex aequo disceptatum apud
-<corr sic="Caeciiunm">Caecilium</corr> foret indigneque sibi nec ullo suo merito
+<choice><sic>Caeciiunm</sic><corr>Caecilium</corr></choice> foret indigneque sibi nec ullo suo merito
 
 insultatum ab omnibus esset.  </div><div type="textpart" subtype="section" n="7"> has notas irritati eius
-<corr sic="alini">animi</corr> collegit senatus: ceterum alia excusanti iuveni,
+<choice><sic>alini</sic><corr>animi</corr></choice> collegit senatus: ceterum alia excusanti iuveni,
 alia recipienti futura ita, ut maxime vellet senatus,
 
 responderi placuit nihil patrem eius neque rectius  </div><div type="textpart" subtype="section" n="8">nec magis quod ex voluntate senatus esset fecisse, quam
@@ -2204,7 +2200,7 @@ praetermissarum fiat. velle etiam sentire Philippum
 integra omnia sibi cum populo Romano Demetrii filii
 beneficio esse. 
 </div></div><div type="textpart" subtype="chapter" n="48"><div type="textpart" subtype="section" n="1">haec, quae augendae amplitudinis eius causa facta erant, extemplo in invidiam,
-<corr sic="iox">mox</corr> etiam in perniciem adulescenti verterunt.
+<choice><sic>iox</sic><corr>mox</corr></choice> etiam in perniciem adulescenti verterunt.
 
 <p/>Lacedaemonii deinde introducti sunt.  </div><div type="textpart" subtype="section" n="2"> multae et parvae disceptationes iactabantur: sed quae maxime rem
 continerent, erant, utrum  restituerentur, quos Achaei
@@ -2219,7 +2215,7 @@ concilio Lacedaemonii, an, ut ante fuerat, secretum
 
 
 eius unius in Peloponneso civitatis ius esset.  </div><div type="textpart" subtype="section" n="4"> restitui
-iudiciaque facta tolli placuit, <corr sic="Lacedaemonein">Lacedaemonem</corr> manere
+iudiciaque facta tolli placuit, <choice><sic>Lacedaemonein</sic><corr>Lacedaemonem</corr></choice> manere
 in Achaico concilio scribique id decretum et consignari
 a Lacedaemoniis et Achaeis.
 
@@ -2236,11 +2232,11 @@ sed pudor relinquendi equites, nobilissimos gentis, ab
 
 ipso nuper lectos, tenuit.  </div><div type="textpart" subtype="section" n="3"> quibus dum locum ad evadendas angustias cogendo ipse agmen praebet, sustinens
 impetus hostium, prolapso equo et suo ipse casu et
-onere equi super eum ruentis <corr sic="baud">haud</corr> multum afuit, quin
+onere equi super eum ruentis <choice><sic>baud</sic><corr>haud</corr></choice> multum afuit, quin
 
 exalimaretur,  </div><div type="textpart" subtype="section" n="4"> septuaginta annos iam natus et diutino
 
-morbo, ex quo <corr sic="turn">tum</corr> primum reficiebatur, viribus admodum attenuatis.  </div><div type="textpart" subtype="section" n="5"> iacentem hostes superfusi oppresserunt; cognitumque <del>primum</del> a verecundia memoriaque meritorum haud secus quam ducem suum attollunt
+morbo, ex quo <choice><sic>turn</sic><corr>tum</corr></choice> primum reficiebatur, viribus admodum attenuatis.  </div><div type="textpart" subtype="section" n="5"> iacentem hostes superfusi oppresserunt; cognitumque <del>primum</del> a verecundia memoriaque meritorum haud secus quam ducem suum attollunt
 reficiuntque et ex valle devia in viam portant, vix
 
 sibimet ipsi prae necopinato gaudio credentes;  </div><div type="textpart" subtype="section" n="6"> pars
@@ -2262,7 +2258,7 @@ se quisque, nisi ipse oculis suis credidisset, vix pro
 
 
 
-comperta tantam rem habiturus videtur.  </div><div type="textpart" subtype="section" n="9"> aegre <corr sic="sunimoventes">submoventes</corr> obvios intrare portam, qui adducebant Philopoemenem, potuerunt. aeque conferta turba iter reliquum clauserat;  </div><div type="textpart" subtype="section" n="10"> et cum pars maxima exclusa a spectaculo esset, theatrum repente, quod propinquum viae
+comperta tantam rem habiturus videtur.  </div><div type="textpart" subtype="section" n="9"> aegre <choice><sic>sunimoventes</sic><corr>submoventes</corr></choice> obvios intrare portam, qui adducebant Philopoemenem, potuerunt. aeque conferta turba iter reliquum clauserat;  </div><div type="textpart" subtype="section" n="10"> et cum pars maxima exclusa a spectaculo esset, theatrum repente, quod propinquum viae
 erat, compleverunt, et, ut eo adduceretur in conspectum
 
 populi, una voce omnes exposcebant.  </div><div type="textpart" subtype="section" n="11"> magistratus et
@@ -2305,7 +2301,7 @@ is alter imperator Achaeorum erat&mdash;equitesque evasissent.  </div><div type=
 habet" inquit et poculo impavide exhausto haud ita
 
 multo post exspiravit.   </div><div type="textpart" subtype="section" n="9"> non diuturnum  mortis eius
-<corr sic="vaudium">gaudium</corr>  auctoribus crudelitatis fuit.  victa namque
+<choice><sic>vaudium</sic><corr>gaudium</corr></choice>  auctoribus crudelitatis fuit.  victa namque
 Messene bello exposcentibus Achaeis dedidit noxios,
 ossaque reddita Philopoemenis sunt, et sepultus ab
 universo Achaico est concilio, adeo omnibus humanis
@@ -2315,7 +2311,7 @@ congestis honoribus, ut ne divinis quidem abstineretur.
 viro tribuitur, ut a quibusdam eorum, velut ad insignem notam huius anni, memoriae mandatum sit
 
 tres claros imperatores eo anno decessisse, Philopoemenem, Hannibalem, P. Scipionem:  </div><div type="textpart" subtype="section" n="11"> adeo in aequo eum
-duarum potentissimarum <corr sic="gentiunl">gentium</corr> summis imperatoribus
+duarum potentissimarum <choice><sic>gentiunl</sic><corr>gentium</corr></choice> summis imperatoribus
 posuerunt.
 
 <p/>
@@ -2349,7 +2345,7 @@ saepirentur.  </div><div type="textpart" subtype="section" n="6"> sed grave impe
 inde elabi posset.  </div><div type="textpart" subtype="section" n="7">Hannibal, postquam est nuntiatum
 milites regios in vestibulo esse, postico, quod devium
 
-maxime atque <corr sic="occultissimli">occultissimi</corr> exitus erat,  </div><div type="textpart" subtype="section" n="8"> fugere conatus,
+maxime atque <choice><sic>occultissimli</sic><corr>occultissimi</corr></choice> exitus erat,  </div><div type="textpart" subtype="section" n="8"> fugere conatus,
 ut id quoque occursu militum obsaeptum sensit et
 omnia circa clausa custodiis dispositis esse venenum,
 quod multo ante praeparatum ad tales habebat casus,
@@ -2368,7 +2364,7 @@ exhausit. hic vitae exitus fuit Hannibalis.
 <p/>
 </div></div><div type="textpart" subtype="chapter" n="52"><div type="textpart" subtype="section" n="1">Scipionem  et Polybius et Rutilius hoc anno
 mortuum scribunt. ego neque his neque Valerio adsentior, his, quod censoribus M. Porcio L. Valerio
-<hi rend="italics">L. Valerium</hi> principem senatus ipsum <corr sic="censorern">censorem</corr> lectum
+<hi rend="italics">L. Valerium</hi> principem senatus ipsum <choice><sic>censorern</sic><corr>censorem</corr></choice> lectum
 invenio, cum  superioribus duobus lustris Africanus
 
 fuisset,  </div><div type="textpart" subtype="section" n="2"> quo vivo, nisi ut ille senatu moveretur, quam
@@ -2402,7 +2398,7 @@ favore conspiciebant, simul et spe haud dubia regnum
 
 ei post mortem  patris destinabant.  </div><div type="textpart" subtype="section" n="3"> nam etsi minor
 aetate quam Perseus esset, hunc iusta matre familiae,
-illum paelice ortum esse; <corr sic="ilium">illum</corr> ut ex vulgato corpore
+illum paelice ortum esse; <choice><sic>ilium</sic><corr>illum</corr></choice> ut ex vulgato corpore
 
 genitum  nullam  certi patris notam habere, hunc insignem Philippi similitudinem prae se ferre.  </div><div type="textpart" subtype="section" n="4"> ad hoc
 Romanos Demetrium in paterno solio locaturos, Persei
@@ -2457,7 +2453,7 @@ egestate ad quaerendam    sedem  Alpes transgressos,
 quae inculta per solitudines viderent, ibi sine ullius
 
 iniuria consedisse.  </div><div type="textpart" subtype="section" n="6"> oppidum quoque aedificare coepisse,
-quod indicium esset <corr sic="nee">nec</corr> agro nec urbi ulli vim adlaturos venisse. nuper M. Claudium ad se nuntium
+quod indicium esset <choice><sic>nee</sic><corr>nec</corr></choice> agro nec urbi ulli vim adlaturos venisse. nuper M. Claudium ad se nuntium
 misisse bellum  se cum  iis, ni dederentur, gesturum.
 
 se certam,  </div><div type="textpart" subtype="section" n="7"> etsi non speciosam pacem quam incerta
@@ -2492,7 +2488,7 @@ iniuria habebant, Italia excesserunt.
 </div></div><div type="textpart" subtype="chapter" n="55"><div type="textpart" subtype="section" n="1">legatis Romanis Transalpini populi benigne responderunt.  seniores eorum  nimiam   lenitatem  populi Romani castigarunt,
 
  </div><div type="textpart" subtype="section" n="2">  quod eos homines, qui gentis iniussu profecti
-occupare agrum   <corr sic="imperil">imperii</corr> Romani et in alieno solo
+occupare agrum   <choice><sic>imperil</sic><corr>imperii</corr></choice> Romani et in alieno solo
 aedificare oppidum conati sint, impunitos dimiserint:
 
 debuisse gravem  temeritatis mercedem  statui.  
@@ -2508,7 +2504,7 @@ M. Claudius consul Gallis ex provincia exactis Histricum bellum moliri coepit li
 
 ut sibi in Histriam traducere legiones liceret.  </div><div type="textpart" subtype="section" n="5"> id senatui
 <hi rend="italics">non</hi> placuit. illud agitabant, uti colonia Aquileia
-deduceretur, <corr sic="nee">nec</corr> satis constabat, utrum Latinam an civium
+deduceretur, <choice><sic>nee</sic><corr>nec</corr></choice> satis constabat, utrum Latinam an civium
 
 Romanorum deduci placeret.   postremo Latinam potius coloniam deducendam patres censuerunt.
 </div><div type="textpart" subtype="section" n="6"> triumviri creati
@@ -2553,12 +2549,12 @@ iterum M. Ogulnius Gallus L. Caecilius Denter C. Terentius Istra.
 
 <p/>supplicatio extremo anno fuit prodigiorum causa,
 </div><div type="textpart" subtype="section" n="6"> quod sanguine per biduum pluvisse in area Concordiae
-satis credebant, nuntiatumque erat <corr sic="baud">haud</corr> procul Sicilia
+satis credebant, nuntiatumque erat <choice><sic>baud</sic><corr>haud</corr></choice> procul Sicilia
 insulam, quae non ante fuerat, novam editam e mari
 
 esse.   </div><div type="textpart" subtype="section" n="7">Hannibalem hoc anno Antias Valerius decessisse
-est auctor legatis ad <corr sic="ear">eam</corr>  rem  ad Prusiam  missis
-praeter <corr sic="T.">T</corr> Quinctium Flamininum, cuius in ea re celebre
+est auctor legatis ad <choice><sic>ear</sic><corr>eam</corr></choice>  rem  ad Prusiam  missis
+praeter <choice><sic>T.</sic><corr>T</corr></choice> Quinctium Flamininum, cuius in ea re celebre
 est nomen, L. Scipione Asiatico et P. Scipione Nasica.</div>
 </div>
 	</div>
@@ -2642,7 +2638,7 @@ et diem unum supplicatio fuit.
 </div><div type="textpart" subtype="section" n="5"><p/>per eos dies ex litteris A. Terentii propraetoris
 cognitum  P. Sempronium in ulteriore provincia, cum
 plus annum aeger fuisset, mortuum esse. eo maturius
-in Hispaniam praetores <corr sic="inssi">iussi</corr> proficisci.
+in Hispaniam praetores <choice><sic>inssi</sic><corr>iussi</corr></choice> proficisci.
 
 </div><div type="textpart" subtype="section" n="6"><p/>legationes deinde transmarinae in senatum   introductae sunt, primae Eumenis et Pharnacis regum et
 
@@ -2663,15 +2659,15 @@ appareret non diutius quam   necesse esset facturum.
 neque obscurum erat rebellaturum,  </div><div type="textpart" subtype="section" n="2"> omniaque, quae tunc
 
 ageret diceretque, eo spectare.  </div><div type="textpart" subtype="section" n="3"> iam primum  omnem
-fere multitudinem civium ex <corr sic="maritimrs">maritimis</corr> civitatibus cum
-familiis suis in Emathiam, quae <corr sic="nune">nunc</corr> dicitur, quondam
+fere multitudinem civium ex <choice><sic>maritimrs</sic><corr>maritimis</corr></choice> civitatibus cum
+familiis suis in Emathiam, quae <choice><sic>nune</sic><corr>nunc</corr></choice> dicitur, quondam
 
 appellata Paeonia est,  </div><div type="textpart" subtype="section" n="4"> traduxit, Thracibusque et aliis
 barbaris urbes tradidit habitandas, fidiora haec genera
 
 hominum   fore ratus in Romano bello.  </div><div type="textpart" subtype="section" n="5"> ingentem ea
 res fremitum  Macedonia tota fecit, relinquentesque
-penates suos cum coniugibus ac liberis pauci <corr sic="taciturn">tacitum</corr>
+penates suos cum coniugibus ac liberis pauci <choice><sic>taciturn</sic><corr>tacitum</corr></choice>
 dolorem  continebant; exsecrationesque in agminibus
 
 proficiscentium in regem vincente odio metum exaudiebantur.  </div><div type="textpart" subtype="section" n="6"> his ferox animus omnes homines, omnia
@@ -2693,7 +2689,7 @@ admodum relictis omnibus, decessit.  </div><div type="textpart" subtype="section
 suis manibus liberi sororis educarentur, Poridi nupsit;
 et tamquam omnes ipsa enixa foret, suum sororisque
 
-filios in eadem habebat cura.  </div><div type="textpart" subtype="section" n="6"> postquam regis <corr sic="edicturm">edictum</corr>
+filios in eadem habebat cura.  </div><div type="textpart" subtype="section" n="6"> postquam regis <choice><sic>edicturm</sic><corr>edictum</corr></choice>
 
 
 <pb id="p.60"/>
@@ -2714,11 +2710,11 @@ ipsum fugae futurum esse.  </div><div type="textpart" subtype="section" n="9"> p
 conditori cum  magna caerimonia quotannis faciunt.
 
 </div><div type="textpart" subtype="section" n="10"> ibi die per sollemnes epulas consumpto navem praeparatam  a Poride sopitis omnibus de tertia vigilia
-conscendunt <corr sic="tanlquam">tamquam</corr> redituri <del>in</del> Thessalonicam: sed
+conscendunt <choice><sic>tanlquam</sic><corr>tamquam</corr></choice> redituri <del>in</del> Thessalonicam: sed
 
 traicere in Euboeam erat propositum.  </div><div type="textpart" subtype="section" n="11"> ceterum in adversum ventum nequiquam eos tendentes prope terram
 lux oppressit, et regii, qui praeerant custodiae portus,
-lembum armatum ad retrahendam <corr sic="ear">eam</corr> navem miserunt
+lembum armatum ad retrahendam <choice><sic>ear</sic><corr>eam</corr></choice> navem miserunt
 
 cum gravi edicto, ne reverterentur sine ea.  </div><div type="textpart" subtype="section" n="12"> cum iam
 appropinquabant, Poris quidem ad hortationem remigum
@@ -2781,7 +2777,7 @@ agitabat.  </div><div type="textpart" subtype="section" n="10"> redierant forte,
 ad arcessenda auxilia, adduxerantque inde nobiles iuvenes et regii quosdam generis, quorum unus sororem
 suam  in  matrimonium    Philippi filio  pollicebatur;
 
-erexeratque consociatio gentis eius animum regis.  </div><div type="textpart" subtype="section" n="11"> <corr sic="tur">tum</corr>
+erexeratque consociatio gentis eius animum regis.  </div><div type="textpart" subtype="section" n="11"> <choice><sic>tur</sic><corr>tum</corr></choice>
 Perseus "quid ista prosunt?" inquit. "nequaquam tantum in externis auxiliis est praesidii, quantum periculi
 
 <hi rend="italics">in</hi> fraude domestica.    </div><div type="textpart" subtype="section" n="12"> proditorem  nolo dicere, certe
@@ -2793,7 +2789,7 @@ speculatorem habemus in siuu, cuius, ex quo obses
 
 
 
-Romae fuit, corpus nobis reddiderunt Romani, <corr sic="animur">animum</corr>
+Romae fuit, corpus nobis reddiderunt Romani, <choice><sic>animur</sic><corr>animum</corr></choice>
 
 ipsi habent.  </div><div type="textpart" subtype="section" n="13"> omnium   paene Macedonum in eum ora
 conversa sunt, nec regem   se alium  habituros aiunt
@@ -2835,10 +2831,10 @@ invitatio et hilaritas iuvenalis utrosque in vinum traxit.
 commemoratio ibi certaminis ludicri  </div><div type="textpart" subtype="section" n="3">et iocosa dicta
 in adversarios, ita ut ne ipsis quidem ducibus abstineretur, iactabantur.  </div><div type="textpart" subtype="section" n="4"> ad has excipiendas voces speculator
 ex convivis Persei missus cum incautior obversaretur,
-exceptus a iuvenibus forte triclinio egressis male <corr sic="mulcattur.">mulcatur.</corr> <pb id="p.63"/>   </div><div type="textpart" subtype="section" n="5"> huius rei ignarus Demetrius "quin comisatum"
+exceptus a iuvenibus forte triclinio egressis male <choice><sic>mulcattur.</sic><corr>mulcatur.</corr></choice> <pb id="p.63"/>   </div><div type="textpart" subtype="section" n="5"> huius rei ignarus Demetrius "quin comisatum"
 inquit "ad fratrem imus et iram eius, si qua ex certamine residet, simplicitate et hilaritate nostra lenimus?"
 
-<corr sic="ones">omnes</corr> ire se conclamarunt praeter eos,  </div><div type="textpart" subtype="section" n="6"> qui speculatoris
+<choice><sic>ones</sic><corr>omnes</corr></choice> ire se conclamarunt praeter eos,  </div><div type="textpart" subtype="section" n="6"> qui speculatoris
 ab se pulsati praesentem   ultionem  metuebant. cum
 eos quoque Demetrius traheret, ferrum veste abdiderunt,
 
@@ -2861,13 +2857,13 @@ in conspectu patris tacitus procul constitit.   </div><div type="textpart" subty
 pater "satin salve?" et, quaenam  ea maestitia esset,
 interrogaret eum, "de lucro tibi" inquit "vivere me
 scito.  iam  non  occultis a fratre  petimur insidiis;
-nocte cum armatis domum ad <corr sic="ilnterficiendum">interficiendum</corr> me venit,
+nocte cum armatis domum ad <choice><sic>ilnterficiendum</sic><corr>interficiendum</corr></choice> me venit,
 clausisque foribus parietum praesidio me a furore eius
 
 sum tutatus."  </div><div type="textpart" subtype="section" n="3"> cum pavorem mixtum admiratione patri
 iniecisset, "atqui si aures praebere potes" inquit,
 
-"manifestanm rem  teneas faciam."   </div><div type="textpart" subtype="section" n="4"> enimvero se <corr sic="Phiiippus">Philippus</corr> dicere auditurum, vocarique extemplo Demetrium
+"manifestanm rem  teneas faciam."   </div><div type="textpart" subtype="section" n="4"> enimvero se <choice><sic>Phiiippus</sic><corr>Philippus</corr></choice> dicere auditurum, vocarique extemplo Demetrium
 iussit; et seniores amicos duos, expertes iuvenalium
 <sic corr="Inter">inter</sic> fratres certaminum, infrequentes iam in regia,
 Lysimachum et Onomastum arcessit, quos in consilio
@@ -2891,7 +2887,7 @@ cum  consedisset, "sedeo" inquit "miserrimus pater
 iudex inter duos filios, accusatorem parricidii et reum
 aut conficti aut admissi criminis labem apud meos
 
-inventurus.  </div><div type="textpart" subtype="section" n="8"> iam  pridem  <corr sic="quidemr">quidem</corr> hanc procellam imminentem timebam, cum vultus inter vos minime fraternos cernerem, cum voces quasdam exaudirem.  </div><div type="textpart" subtype="section" n="9"> sed
+inventurus.  </div><div type="textpart" subtype="section" n="8"> iam  pridem  <choice><sic>quidemr</sic><corr>quidem</corr></choice> hanc procellam imminentem timebam, cum vultus inter vos minime fraternos cernerem, cum voces quasdam exaudirem.  </div><div type="textpart" subtype="section" n="9"> sed
 interdum spes animum subibat deflagrare iras vestras
 purgari suspiciones posse. etiam hostes armis positis
 foedus icisse, et privatas multorum simultates finitas:
@@ -2914,7 +2910,7 @@ ab tam exiguis rebus, prope ut puderet regii nominis,
 mihi Antiocho, cuilibet regum huius aetatis, nulla re
 magis quam fraterna unanimitate, regnum aequasse.
 
-ne <corr sic="Ronmanis">Romanis</corr> quidem exemplis abstinui,  </div><div type="textpart" subtype="section" n="15"> quae aut visa
+ne <choice><sic>Ronmanis</sic><corr>Romanis</corr></choice> quidem exemplis abstinui,  </div><div type="textpart" subtype="section" n="15"> quae aut visa
 aut audita habebam, T. et L. Quinctiorum, qui bellum
 mecum gesserunt, P. et L. Scipionum, qui Antiochum
 devicerunt, patris patruique eorum, quorum perpetuam
@@ -2927,8 +2923,8 @@ fortuna ad sanitatem  flectere.  </div><div type="textpart" subtype="section" n=
 hereditatem meam ambo et spe et cupiditate improba
 
 crevistis.  </div><div type="textpart" subtype="section" n="18"> eo usque me vivere vultis, donec alterius
-vestrum superstes <corr sic="baud">haud</corr> ambiguum regem alterum mea
-morte faciam. nec fratrem <corr sic="nee">nec</corr> patrem potestis pati
+vestrum superstes <choice><sic>baud</sic><corr>haud</corr></choice> ambiguum regem alterum mea
+morte faciam. nec fratrem <choice><sic>nee</sic><corr>nec</corr></choice> patrem potestis pati
 
 <pb id="p.65"/>
 
@@ -2938,7 +2934,7 @@ nihil cari, nihil sancti est. in omnium  vicem regni
 
 unius insatiabilis amor successit.  </div><div type="textpart" subtype="section" n="19"> agite, conscelerate
 aures paternas, decernite criminibus, mox ferro decreturi, dicite palam quidquid aut veri potestis aut libet
-comminisci: </div><div type="textpart" subtype="section" n="20"> reseratae aures sunt, quae posthac <corr sic="seeretis">secretis</corr>
+comminisci: </div><div type="textpart" subtype="section" n="20"> reseratae aures sunt, quae posthac <choice><sic>seeretis</sic><corr>secretis</corr></choice>
 alterius ab altero criminibus claudentur." haec furens
 ira cum  dixisset, lacrimae omnibus obortae, et diu
 maestum silentium tenuit.
@@ -2946,16 +2942,16 @@ maestum silentium tenuit.
 <p/>
 </div></div><div type="textpart" subtype="chapter" n="9"><div type="textpart" subtype="section" n="1">Turn Perseus "aperienda nimirum nocte ianua l
 fuit et armati comisatores accipiendi praebendumque
-ferro iugulum, quando non creditur nisi <corr sic="perpetratilln">perpetratum</corr>
+ferro iugulum, quando non creditur nisi <choice><sic>perpetratilln</sic><corr>perpetratum</corr></choice>
 
 facinus, et eadem petitus insidiis audio, quae latro atque insidiator.  </div><div type="textpart" subtype="section" n="2"> non nequiquam isti unum Demetrium
 
 filium te habere, me subditum et paelice genitum  appellant.   </div><div type="textpart" subtype="section" n="3"> nam  si gradum, si caritatem  filii apud te
 haberem, non in me querentem   deprehensas insidias,
-sed in eum, qui fecisset, saevires, </div><div type="textpart" subtype="section" n="4">  <corr sic="nee">nec</corr> adeo vilis tibi 
+sed in eum, qui fecisset, saevires, </div><div type="textpart" subtype="section" n="4">  <choice><sic>nee</sic><corr>nec</corr></choice> adeo vilis tibi 
 
-vita esset nostra, ut <corr sic="nee">nec</corr> praeterito periculo meo movereris, neque futuro, si insidiantibus <hi rend="italics">sit</hi> impune.  </div><div type="textpart" subtype="section" n="5"> itaque si mori tacitum oportet, taceamus, precati tantum
-deos, ut a me coeptum scelus in me finem habeat, <corr sic="nee">nec</corr>
+vita esset nostra, ut <choice><sic>nee</sic><corr>nec</corr></choice> praeterito periculo meo movereris, neque futuro, si insidiantibus <hi rend="italics">sit</hi> impune.  </div><div type="textpart" subtype="section" n="5"> itaque si mori tacitum oportet, taceamus, precati tantum
+deos, ut a me coeptum scelus in me finem habeat, <choice><sic>nee</sic><corr>nec</corr></choice>
 
 per meum   latus tu petaris:  </div><div type="textpart" subtype="section" n="6"> sin autem, quod circumventis in solitudine natura ipsa subicit, ut hominum,
 quos numquam viderint, fidem tamen implorent, mihi
@@ -3017,7 +3013,7 @@ epulae, non nox ad quietem   data naturae beneficio
 mortalibus tuta est?   </div><div type="textpart" subtype="section" n="4"> si iero ad fratrem  invitatus,
 moriendum  est; si recepero intra ianuam comisatum
 
-fratrem, moriendum est:  </div><div type="textpart" subtype="section" n="5"> nec eundo <corr sic="nee">nec</corr> manendo insidias evito. quo me conferam? nihil praeter deos,
+fratrem, moriendum est:  </div><div type="textpart" subtype="section" n="5"> nec eundo <choice><sic>nee</sic><corr>nec</corr></choice> manendo insidias evito. quo me conferam? nihil praeter deos,
 pater, et te colui. non Romanos habeo, ad quos confugiam: <pb id="p.67"/>  perisse expetunt, quia tuis iniuriis doleo, quia
 tibi ademptas tot urbes, tot gentes, modo Thraciae
 maritimam oram, indignor. nec me nec te incolumi
@@ -3039,7 +3035,7 @@ pro isto omnes urbes tuo imperio liberatae, pro isto
 Macedones qui pace Romana gaudent. mihi praeter
 te, pater, quid usquam  aut spei aut praesidii est?
 
-</div></div><div type="textpart" subtype="chapter" n="11"><div type="textpart" subtype="section" n="1">quo spectare illas litteras ad te <corr sic="nune">nunc</corr> missas l
+</div></div><div type="textpart" subtype="chapter" n="11"><div type="textpart" subtype="section" n="1">quo spectare illas litteras ad te <choice><sic>nune</sic><corr>nunc</corr></choice> missas l
 T. Quinctii credis, quibus et bene te consuluisse rebus
 tuis ait, quod Demetrium Romam miseris, et hortatur,
 ut iterum et cum pluribus legatis et primoribus eum
@@ -3125,7 +3121,7 @@ noctis huius, sed proditionis me ante accusatum:  </div><div type="textpart" sub
 illa, separata hac, vana accusatio erat invidiamque
 tuam adversus me magis quam crimen meum indicatura,
 
-hodie quoque <corr sic="earn">eam</corr> aut praetermitti aut in aliud tempus differri,  </div><div type="textpart" subtype="section" n="11"> ut per se quaereretur, utrum ego tibi an
+hodie quoque <choice><sic>earn</sic><corr>eam</corr></choice> aut praetermitti aut in aliud tempus differri,  </div><div type="textpart" subtype="section" n="11"> ut per se quaereretur, utrum ego tibi an
 tu mihi, novo quidem et singulari genere odii, insidias
 
 fecisses.  </div><div type="textpart" subtype="section" n="12"> ego tamen, quantum    in hac subita perturbatione potero, separabo ea, quae tu confudisti, et
@@ -3287,7 +3283,7 @@ pater, si quid scelerate in fratrem admisi, nullam deprecor poenam: si innocens 
 cum crimine non possim, deprecor.  </div><div type="textpart" subtype="section" n="10"> non hodie me
 primum frater accusat, sed hodie primum aperte, nullo
 meo in se merito. si mihi pater suscenseret, te maiorem fratrem pro minore deprecari oportebat, te
-adulescentiae, te errori <corr sic="venitm">veniam</corr> impetrare meo. ubi
+adulescentiae, te errori <choice><sic>venitm</sic><corr>veniam</corr></choice> impetrare meo. ubi
 
 praesidium esse oportebat, ibi exitium est.  </div><div type="textpart" subtype="section" n="11"> e convivio
 
@@ -3306,7 +3302,7 @@ iubentem dicere causam, fratrem accusantem audivi.
 </div><div type="textpart" subtype="section" n="13"> ille diu ante praeparata ac meditata in me oratione
 est usus: ego id tantum temporis, quo accusatus sum,
 
-ad cognoscendum, quid ageretur, habui.  </div><div type="textpart" subtype="section" n="14"> <corr sic="rtrum">utrum</corr>   momento illo horae accusatorem audirem an defensionem
+ad cognoscendum, quid ageretur, habui.  </div><div type="textpart" subtype="section" n="14"> <choice><sic>rtrum</sic><corr>utrum</corr></choice>   momento illo horae accusatorem audirem an defensionem
 meditarer?  attonitus repentino atque inopinato malo,
 vix, quid obiceretur, intellegere potui, nedum satis
 
@@ -3317,12 +3313,12 @@ caritate a fratre maiore vincor, misericordia certe reus
 vinci non debeo.  </div><div type="textpart" subtype="section" n="16"> ego enim ut me mihi tibique serves,
 precor; ille ut me in securitatem suam occidas, postulat.
 quid eum, cum regnum ei tradideris, facturum credis
-in me esse, qui iam  nunc <corr sic="sangumem">sanguinem</corr>   meum sibi indulgeri aequum censet?"
+in me esse, qui iam  nunc <choice><sic>sangumem</sic><corr>sanguinem</corr></choice>   meum sibi indulgeri aequum censet?"
 
 <p/>
-</div></div><div type="textpart" subtype="chapter" n="16"><div type="textpart" subtype="section" n="1">dicenti haec lacrimae simul <corr sic="spiritur">spiritum</corr> et vocem
+</div></div><div type="textpart" subtype="chapter" n="16"><div type="textpart" subtype="section" n="1">dicenti haec lacrimae simul <choice><sic>spiritur</sic><corr>spiritum</corr></choice> et vocem
 
-intercluserunt.  </div><div type="textpart" subtype="section" n="2">Philippus summotis iis paulisper collocutus cum  amicis pronuntiavit, non verbis se <corr sic="nee">nec</corr>
+intercluserunt.  </div><div type="textpart" subtype="section" n="2">Philippus summotis iis paulisper collocutus cum  amicis pronuntiavit, non verbis se <choice><sic>nee</sic><corr>nec</corr></choice>
 unius horae disceptatione causam eorum diiudicaturum,
 sed inquirendo in utriusque vitam <hi rend="italics">ac</hi> mores, et dicta
 
@@ -3346,11 +3342,11 @@ reciperentur, orantes. Marcellus opperiri eodem loco
 
 Liguribus iussis senatum  per litteras consuluit.  </div><div type="textpart" subtype="section" n="6"> senatus rescribere M. Ogulnium praetorem Marcello
 iussit verius fuisse consules, quorum provincia esset,
-quam se, quid e re publica esset, decernere; <corr sic="turn">tum</corr> quoque non placere nisi per deditionem Ligures recipi,
+quam se, quid e re publica esset, decernere; <choice><sic>turn</sic><corr>tum</corr></choice> quoque non placere nisi per deditionem Ligures recipi,
 et receptis arma adimi atque eos ad consules mitti
 senatum aequum censere.
 
-<p/>praetores eodem tempore,  </div><div type="textpart" subtype="section" n="7"> P. Manlius in <corr sic="ulterioreni">ulteriorem</corr>
+<p/>praetores eodem tempore,  </div><div type="textpart" subtype="section" n="7"> P. Manlius in <choice><sic>ulterioreni</sic><corr>ulteriorem</corr></choice>
 Hispaniam, quam et priore praetura provinciam obtinuerat, Q. Fulvius Flaccus in citeriorem pervenit, exercitumque <hi rend="italics">ab</hi> A. Terentio accepit: nam ulterior morte
 
 P. Sempronii proconsulis sine imperio fuerat.  </div><div type="textpart" subtype="section" n="8">Fulvium
@@ -3372,9 +3368,9 @@ viginti, auri octoginta pondo et duo, coronae aureae
 <p/>
 </div></div><div type="textpart" subtype="chapter" n="17"><div type="textpart" subtype="section" n="1">eodem anno inter populum Carthaginiensem
 et regem Masinissam in re praesenti disceptatores Romani de agro fuerunt.  </div><div type="textpart" subtype="section" n="2"> ceperat eum ab Carthaginiensibus pater Masinissae Gala; Galam Syphax inde expulerat, postea in gratiam soceri Hasdrubalis Carthaginiensibus dono dederat;  </div><div type="textpart" subtype="section" n="3">Carthaginienses eo anno
-Masinissa expulerat. haud minore certamine animorum, quam cum ferro et acie dimicarunt, <corr sic="reg">res</corr> acta <corr sic="apuu">apud</corr>
+Masinissa expulerat. haud minore certamine animorum, quam cum ferro et acie dimicarunt, <choice><sic>reg</sic><corr>res</corr></choice> acta <choice><sic>apuu</sic><corr>apud</corr></choice>
 
-Romanos.    </div><div type="textpart" subtype="section" n="4">Carthaginienses, quod maiorum   <corr sic="suornm">suorum</corr>
+Romanos.    </div><div type="textpart" subtype="section" n="4">Carthaginienses, quod maiorum   <choice><sic>suornm</sic><corr>suorum</corr></choice>
 
 <pb id="p.75"/>
 
@@ -3396,7 +3392,7 @@ in vicos castellaque sua dilapsi sunt.  </div><div type="textpart" subtype="sect
 dimittere exercitum voluerunt, ac de ea re patres consuluerunt. alterum ex iis dimisso exercitu ad magistratus in annum  creandos venire Romam    iusserunt,
 alterum cum legionibus suis Pisis hiemare. </div><div type="textpart" subtype="section" n="8">  fama erat
 Gallos Transalpinos iuventutem armare, nec, in quam
-regionem Italiae effusura se <corr sic="multitude">multitudo</corr> esset, sciebatur.
+regionem Italiae effusura se <choice><sic>multitude</sic><corr>multitudo</corr></choice> esset, sciebatur.
 ita inter se consules compararunt, ut Cn. Baebius ad
 comitia iret, quia M. Baebius frater eius consulatum
 petebat.
@@ -3425,11 +3421,11 @@ equites.  </div><div type="textpart" subtype="section" n="6"> in Hispaniis proro
 
 
 imperium est cum exercitibus, quos haberent, et in
-supplementum   <corr sic="decretl">decreta</corr> tria milia civium Romanorulm
+supplementum   <choice><sic>decretl</sic><corr>decreta</corr></choice> tria milia civium Romanorulm
 ducenti equites, et socium  Latini nominis sex milia
 
 peditum, trecenti equites.  </div><div type="textpart" subtype="section" n="7"> nec rei navalis cura omissa.
-duumviros in <corr sic="earn">eam</corr> rem consules creare iussi, per quos
+duumviros in <choice><sic>earn</sic><corr>eam</corr></choice> rem consules creare iussi, per quos
 naves viginti deductae navalibus sociis civibus Romanis, qui servitutem servissent, complerentur, ingenui
 
 tantum ut iis praeessent.  </div><div type="textpart" subtype="section" n="8"> inter duumviros ita divisa
@@ -3450,13 +3446,13 @@ tanta erat, ut Libitina <hi rend="italics">funeribus</hi> vix sufficeret.  </div
 indicta est. iisdem  auctoribus et senatus censuit et
 consules edixerunt, ut per totam Italiam triduum supplicatio et feriae essent.  </div><div type="textpart" subtype="section" n="6"> pestilentiae tanta vis erat, ut,
 cum propter defectionem  Corsorum   bellumque ab Iliensibus concitatum  in Sardinia octo milia peditum ex
-sociis Latini nominis placuisset scribi et trecentos equites, quos M. Pinarius praetor secum in Sardiniam traiceret,  </div><div type="textpart" subtype="section" n="7"> tantum  hominum  demortuum esse, tantum ubique aegrorum  <corr sic="consults">consules</corr> renuntiaverint, ut is numerus
+sociis Latini nominis placuisset scribi et trecentos equites, quos M. Pinarius praetor secum in Sardiniam traiceret,  </div><div type="textpart" subtype="section" n="7"> tantum  hominum  demortuum esse, tantum ubique aegrorum  <choice><sic>consults</sic><corr>consules</corr></choice> renuntiaverint, ut is numerus
 
 effici militum  non  potuerit.   </div><div type="textpart" subtype="section" n="8"> quod deerat militum,
 sumere a Cn. Baebio proconsule, qui Pisis hibernabat,
 iussus praetor atque inde in Sardiniam traicere.
 
-<p/><corr sic="L.">L</corr> Duronio praetori,  </div><div type="textpart" subtype="section" n="9"> cui provincia Apulia evenerat,
+<p/><choice><sic>L.</sic><corr>L</corr></choice> Duronio praetori,  </div><div type="textpart" subtype="section" n="9"> cui provincia Apulia evenerat,
 adiecta de Bacchanalibus quaestio est, cuius residua
 quaedam   velut semina ex prioribus malis iam priore
 
@@ -3465,7 +3461,7 @@ quaedam   velut semina ex prioribus malis iam priore
 
 
 
-<corr sic="gano">anno</corr> apparuerant;  </div><div type="textpart" subtype="section" n="10"> sed magis inchoatae apud <sic corr="L.">L</sic> <corr sic="Puplum">Pupium</corr>  praetorem  quaestiones erant quam  ad exitum
+<choice><sic>gano</sic><corr>anno</corr></choice> apparuerant;  </div><div type="textpart" subtype="section" n="10"> sed magis inchoatae apud <sic corr="L.">L</sic> <choice><sic>Puplum</sic><corr>Pupium</corr></choice>  praetorem  quaestiones erant quam  ad exitum
 ullum  perductae. id persecare novum praetorem, ne
 
 serperet iterum latius, patres iusserunt.  </div><div type="textpart" subtype="section" n="11"> et legem de
@@ -3502,7 +3498,7 @@ simul avertendae suspicionis causa quicquam   a se
 agitari de Romano bello, Stobos Paeoniae exercitu
 
 indicto in Maedicam  ducere pergit.  </div><div type="textpart" subtype="section" n="2"> cupido eum ceperat in verticem Haemi montis ascendendi, quia vulgatae <pb id="p.78"/>  opinioni crediderat Ponticum simul et Hadriaticum mare et Histrum amnem et Alpes conspici posse:
-subiecta oculis ea <corr sic="baud">haud</corr> parvi sibi momenti futura ad
+subiecta oculis ea <choice><sic>baud</sic><corr>haud</corr></choice> parvi sibi momenti futura ad
 
 cogitationem  Romani belli.    </div><div type="textpart" subtype="section" n="3"> percunctatus regionis
 peritos de ascensu Haemi, cum satis inter omnes constaret viam exercitui nullam esse, paucis et expeditis
@@ -3527,7 +3523,7 @@ faceret.  </div><div type="textpart" subtype="section" n="9"> ut tamen iter ei t
 Didas ex praetoribus regiis unus, qui Paeoniae praeerat, iussus est prosequi eum cum modico praesidio.
 
 hunc quoque Perseus,  </div><div type="textpart" subtype="section" n="10"> sicut plerosque patris amicorum,
-ex quo <corr sic="baud">haud</corr> cuiquam dubium esse coeperat, ad quem
+ex quo <choice><sic>baud</sic><corr>haud</corr></choice> cuiquam dubium esse coeperat, ad quem
 regis animo ita inclinato hereditas regni pertineret,
 
 inter coniuratos in fratris perniciem habuit.  </div><div type="textpart" subtype="section" n="11"> in praesentia
@@ -3540,7 +3536,7 @@ specularique abditos eius sensus posset. ita digreditur Demetrius cum infestiori
 
 
 <p/>
-</div></div><div type="textpart" subtype="chapter" n="22"><div type="textpart" subtype="section" n="1">Philippus Maedicam primum, deinde solitudines interiacentes Maedicae atque Haemo <corr sic="transgrlessus">transgressus</corr>
+</div></div><div type="textpart" subtype="chapter" n="22"><div type="textpart" subtype="section" n="1">Philippus Maedicam primum, deinde solitudines interiacentes Maedicae atque Haemo <choice><sic>transgrlessus</sic><corr>transgressus</corr></choice>
 septimis demum castris ad radices montis pervenit.
 ibi unum moratus diem ad deligendos, quos duceret
 
@@ -3597,7 +3593,7 @@ urbem  adgrederetur.   </div><div type="textpart" subtype="section" n="14"> oppi
 instaret, obsidibus datis in praesentia dediderunt sese:
 iidem, postquam exercitus recessit, obliti obsidum relicta urbe in loca munita et montes refugerunt.
 
-</div><div type="textpart" subtype="section" n="15"><p/>Philippus omni genere laboris sine ullo effectu fatigatis militibus et fraude Didae praetoris auctis in <corr sic="filiurn">filium</corr>
+</div><div type="textpart" subtype="section" n="15"><p/>Philippus omni genere laboris sine ullo effectu fatigatis militibus et fraude Didae praetoris auctis in <choice><sic>filiurn</sic><corr>filium</corr></choice>
 suspicionibus in Macedoniam  rediit.  
 </div></div><div type="textpart" subtype="chapter" n="23"><div type="textpart" subtype="section" n="1">missus
 hic comes, ut ante dictum est, cum simplicitatem iuvenis incauti et suis haud immerito suscensentis adsentando indignandoque et ipse vicem   eius captaret
@@ -3608,7 +3604,7 @@ videbatur Paeoniae praetor, per cuius provinciam spem
 
 ceperat elabi tuto posse.  </div><div type="textpart" subtype="section" n="3"> hoc consilium extemplo et
 
-<corr sic="fiatri">fratri</corr> proditur et auctore eo indicatur patri.  </div><div type="textpart" subtype="section" n="4"> litterae
+<choice><sic>fiatri</sic><corr>fratri</corr></choice> proditur et auctore eo indicatur patri.  </div><div type="textpart" subtype="section" n="4"> litterae
 primum ad obsidentem Petram adlatae sunt. inde
 Herodorus&mdash;princeps hic amicorum   Demetrii erat
 &mdash; in custodian est coniectus et Demetrius dissimulanter adservari iussus.   </div><div type="textpart" subtype="section" n="5"> haec super cetera tristem
@@ -3631,11 +3627,11 @@ excruciatus sine indicio rei ullius in tormentis moritur.
 fuga per Paeoniam praeparata arguebatur et corrupti
 quidam, ut comites itineris essent; maxime falsae litterae <pb id="p.81"/>  T. Quinctii urgebant.  </div><div type="textpart" subtype="section" n="2"> nihil tamen palam gravius pronuntiatum de eo est, ut dolo potius interficeretur, nec id cura ipsius, sed ne poena eius consilia
 
-adversus Romanos nudaret.  </div><div type="textpart" subtype="section" n="3"> ab Thessalonice Demetriadem ipsi cum iter esset, <corr sic="Astraeurm">Astraeum</corr> Paeoniae Demetrium mittit cum eodem comite Dida, Perseum Amphipolin ad obsides Thracum accipiendos.  </div><div type="textpart" subtype="section" n="4"> digredienti ab
+adversus Romanos nudaret.  </div><div type="textpart" subtype="section" n="3"> ab Thessalonice Demetriadem ipsi cum iter esset, <choice><sic>Astraeurm</sic><corr>Astraeum</corr></choice> Paeoniae Demetrium mittit cum eodem comite Dida, Perseum Amphipolin ad obsides Thracum accipiendos.  </div><div type="textpart" subtype="section" n="4"> digredienti ab
 se Didae mandata dedisse dicitur de filio occidendo.
 
 sacrificium ab Dida seu institutum seu simulatum est,
-</div><div type="textpart" subtype="section" n="5"> ad quod <corr sic="celebrandurn">celebrandum</corr> invitatus Demetrius ab Astraeo
+</div><div type="textpart" subtype="section" n="5"> ad quod <choice><sic>celebrandurn</sic><corr>celebrandum</corr></choice> invitatus Demetrius ab Astraeo
 Heracleam venit. in ea cena dicitur venenum datum.
 
 poculo epoto extemplo sensit,  </div><div type="textpart" subtype="section" n="6"> et mox coortis doloribus, relicto convivio cum in cubiculum recepisset
@@ -3661,7 +3657,7 @@ ut generi agresti hominum   persuaderetur.   </div><div type="textpart" subtype=
 decem dierum indutiae cum darentur, petierunt deinde,
 ne trans montes proximos castris pabulatum lignatumque milites irent: culta ea loca suorum finium esse.
 
-id ubi impetravere,  </div><div type="textpart" subtype="section" n="5"> post eos ipsos montes, unde <corr sic="avertyrant">averterant</corr> hostem, exercitu omni coacto, repente multitudine ingenti castra Romanorum oppugnare simul
+id ubi impetravere,  </div><div type="textpart" subtype="section" n="5"> post eos ipsos montes, unde <choice><sic>avertyrant</sic><corr>averterant</corr></choice> hostem, exercitu omni coacto, repente multitudine ingenti castra Romanorum oppugnare simul
 
 omnibus portis adgressi sunt.  </div><div type="textpart" subtype="section" n="6"> summa vi totum diem
 oppugnarunt, ita ut ne efferendi quidem signa Romanis
@@ -3677,7 +3673,7 @@ spatium  nec ad explicandam aciem locus esset.  </div><div type="textpart" subty
 
 
 
-conferti in portis obstando magis quam <corr sic="pugnaudo">pugnando</corr> castra
+conferti in portis obstando magis quam <choice><sic>pugnaudo</sic><corr>pugnando</corr></choice> castra
 tutabantur. sub occasum solis cum recessissent hostes,
 duos equites ad Cn. Baebium proconsulem cum litteris
 Pisas mittit, ut obsesso per indutias sibi quam  primum subsidio veniret.  </div><div type="textpart" subtype="section" n="8">Baebius exercitum M. Pinario
@@ -3686,8 +3682,8 @@ praetori eunti in Sardiniam tradiderat: ceterum et senatum  litteris certiorem  
 L. Aemilium,  </div><div type="textpart" subtype="section" n="9"> et M. Claudio Marcello, cuius proxima
 inde provincia erat, scripsit, ut, si videretur ei, exercitum e Gallia traduceret in Ligures et L. Aemilium
 
-liberaret obsidione.  </div><div type="textpart" subtype="section" n="10"> <corr sic=".haec">haec</corr> sera futura auxilia erant.
-Ligures ad castra postero die redeunt. <corr sic="Aetnilius">Aemilius</corr> cum
+liberaret obsidione.  </div><div type="textpart" subtype="section" n="10"> <choice><sic>.haec</sic><corr>haec</corr></choice> sera futura auxilia erant.
+Ligures ad castra postero die redeunt. <choice><sic>Aetnilius</sic><corr>Aemilius</corr></choice> cum
 et venturos scisset et educere in aciem potuisset, intra
 vallum  suos tenuit, ut extraheret rem in id tempus,
 quo Baebius cum exercitu venire a Pisis posset.
@@ -3699,7 +3695,7 @@ tradito exercitu Fabio Romam    cum  venisset, spem
 ademit eum, qui in Gallia esset, exercitum in Ligures
 posse traduci, quia bellum cum Histris esset prohibentibus coloniam Aquileiam deduci:  </div><div type="textpart" subtype="section" n="3"> eo profectum Fabium,
 
-neque inde regredi <corr sic="hello">bello</corr> inchoato posse.  </div><div type="textpart" subtype="section" n="4"> una, et ea
+neque inde regredi <choice><sic>hello</sic><corr>bello</corr></choice> inchoato posse.  </div><div type="textpart" subtype="section" n="4"> una, et ea
 ipsa tardior quam   tempus postulabat, subsidii spes
 erat, si consules maturassent in provinciam ire. id ut
 
@@ -3728,7 +3724,7 @@ ad quattuor portas exercitum instruxit, ut signo dato
 
 simul ex omnibus partibus eruptionem facerent.  </div><div type="textpart" subtype="section" n="3"> quattuor extraordinariis cohortibus duas adiunxit praeposito M. Valerio legato, erumpere praetoria porta iussit.
 
-</div><div type="textpart" subtype="section" n="4"> ad dexteram  principalem hastatos legionis primae <corr sic="illstruxit;">instruxit;</corr> principes ex eadem legione in subsidiis posuit:
+</div><div type="textpart" subtype="section" n="4"> ad dexteram  principalem hastatos legionis primae <choice><sic>illstruxit;</sic><corr>instruxit;</corr></choice> principes ex eadem legione in subsidiis posuit:
 
 M. Servilius et L. Sulpicius tribuni militum his praepositi.   </div><div type="textpart" subtype="section" n="5"> tertia legio adversus sinistram  principalem
 
@@ -3773,7 +3769,7 @@ et Romanos et Ligures esse.
 </div></div><div type="textpart" subtype="chapter" n="28"><div type="textpart" subtype="section" n="1">bina cis montes
 castra Ligurum erant. ex iis primis diebus sole orto
 
-pariter omnes compositi et instructi procedebant;  </div><div type="textpart" subtype="section" n="2"> <corr sic="turn">tum</corr>
+pariter omnes compositi et instructi procedebant;  </div><div type="textpart" subtype="section" n="2"> <choice><sic>turn</sic><corr>tum</corr></choice>
 nisi exsatiati cibo vinoque arma non capiebant, dispersi inordinati exibant, ut quibus prope certum esset
 
 hostes extra vallum non elaturos signa.  </div><div type="textpart" subtype="section" n="3"> adversus ita
@@ -3912,7 +3908,7 @@ mittit;  </div><div type="textpart" subtype="section" n="4"> quos ubi et propius
 soliti erant, Celtiberi conspexerunt, omnis equitatus
 
 effunditur castris, simul et peditibus signum ad exeundum  datur.   </div><div type="textpart" subtype="section" n="5">Scribonius, uti praeceptum erat, ubi
-primum   <corr sic="fremitulm">fremitum</corr> equestrem  audivit, avertit equos
+primum   <choice><sic>fremitulm</sic><corr>fremitum</corr></choice> equestrem  audivit, avertit equos
 
 et castra repetit.   </div><div type="textpart" subtype="section" n="6"> eo effusius sequi hostes.  primo
 equites, mox et peditum   acies aderat, haud dubia
@@ -3924,13 +3920,13 @@ ratus est, intra vallum exercitu instructo tribus partibus simul erumpit, clamor
 in montibus erant, exaudirent.  </div><div type="textpart" subtype="section" n="8"> nec morati sunt, quin
 decurrerent, sicut imperatum erat, ad castra; ubi quinque milium   armatorum  non amplius relictum   erat
 
-praesidium.  </div><div type="textpart" subtype="section" n="9"> quos cum et paucitas sua et <corr sic="multitude">multitudo</corr>
+praesidium.  </div><div type="textpart" subtype="section" n="9"> quos cum et paucitas sua et <choice><sic>multitude</sic><corr>multitudo</corr></choice>
 hostium  et improvisa res terruisset, prope sine certamine capiuntur castra. captis, quae pars maxime a
 pugnantibus conspici poterat, iniecit Acilius ignem.
 
 </div></div><div type="textpart" subtype="chapter" n="32"><div type="textpart" subtype="section" n="1">postremi Celtiberorum qui in acie erant, primi
 flammam conspexere, deinde per totam aciem vulgatum
-est castra amissa esse et <corr sic="turn">tum</corr> cum maxime ardere.
+est castra amissa esse et <choice><sic>turn</sic><corr>tum</corr></choice> cum maxime ardere.
 
 unde illis terror, inde Romanis animus crevit.  </div><div type="textpart" subtype="section" n="2"> iam
 
@@ -4014,7 +4010,7 @@ altera in foro holitorio Pietatis.  </div><div type="textpart" subtype="section"
 M'. Acilius Glabrio duumvir; statuamque auratam,
 quae prima omnium in Italia est statuta aurata, patris
 
-Glabrionis posuit.  </div><div type="textpart" subtype="section" n="6"> is erat, qui ipse <corr sic="earn">eam</corr> aedem voverat,
+Glabrionis posuit.  </div><div type="textpart" subtype="section" n="6"> is erat, qui ipse <choice><sic>earn</sic><corr>eam</corr></choice> aedem voverat,
 quo die cum   rege Antiocho ad Thermopylas depugnasset, locaveratque idem ex senatus consulto.
 
 <sic corr="Per">per</sic> eosdem dies,  </div><div type="textpart" subtype="section" n="7"> quibus aedes hae dedicatae sunt,
@@ -4029,7 +4025,7 @@ perpetuam orantes: ita in animum induxisse Ligurum
 gentem, nulla umquam arma nisi imperata a populo
 
 Romano sumere.  </div><div type="textpart" subtype="section" n="10"> responsum    a Q. Fabio praetore est
-Liguribus iussu senatus orationem <corr sic="earn">eam</corr> non novam
+Liguribus iussu senatus orationem <choice><sic>earn</sic><corr>eam</corr></choice> non novam
 Liguribus esse: mens vero ut nova et orationi conveniens esset, ipsorum id plurimum referre.  </div><div type="textpart" subtype="section" n="11"> ad consules irent, et, quae ab iis imperata essent, facerent.
 nulli alii quam  consulibus senatum  crediturum esse
 
@@ -4047,11 +4043,11 @@ non ab se tantum sed ab rege etiam Masinissa praestitit, qui cum praesidio armat
 
 <p/>
 </div></div><div type="textpart" subtype="chapter" n="35"><div type="textpart" subtype="section" n="1">Otiosam     provinciam  consules habuerunt.
-M. Baebius comitiorum  causa Romam revocatus consules creavit A. Postumium Albinum Luscum et <corr sic="C">C.</corr> Calpurnium Pisonem.  </div><div type="textpart" subtype="section" n="2"> praetores exinde facti Ti. Sempronius Gracchus L. Postumius Albinus P. Cornelius
+M. Baebius comitiorum  causa Romam revocatus consules creavit A. Postumium Albinum Luscum et <choice><sic>C</sic><corr>C.</corr></choice> Calpurnium Pisonem.  </div><div type="textpart" subtype="section" n="2"> praetores exinde facti Ti. Sempronius Gracchus L. Postumius Albinus P. Cornelius
 Mammula, Ti. Minucius Molliculus A. Hostilius Mancinus <sic corr="C">C.</sic>. Maenius. ii omnes magistratum idibus Martiis inierunt.
 
 <p/>principio eius anni,  </div><div type="textpart" subtype="section" n="3"> quo A. Postumius Albinus et
-<sic corr="C">C.</sic>. <corr sic="Calnurnius">Calpurnius</corr> Piso consules fuerunt, ab A. Postumio
+<sic corr="C">C.</sic>. <choice><sic>Calnurnius</sic><corr>Calpurnius</corr></choice> Piso consules fuerunt, ab A. Postumio
 consule in senatum introducti, qui ex Hispania citeriore
 venerant a Q. <hi rend="italics">Fulvio</hi> Flacco, L. Minucius legatus et
 duo tribuni militum, T. Maenius et L. Terentius Massaliota.  </div><div type="textpart" subtype="section" n="4"> hi cum duo secunda proelia, deditionem Celtiberiae, <pb id="p.91"/>  confectam provinciam nuntiassent, nec stipendio,
@@ -4074,7 +4070,7 @@ urbana, Ti. Minucio peregrina obvenit, P. Cornelio
 
 Sicilia, <sic corr="C">C.</sic>. Maenio Sardinia.  </div><div type="textpart" subtype="section" n="9">Hispanias sortiti L. Postumius ulteriorem, Ti. Sempronius citeriorem.  </div><div type="textpart" subtype="section" n="10"> is quia
 successurus Q. Fulvio erat, ne vetere exercitu provincia spoliaretur, "quaero" inquit "de te, L. Minuci,
-cum confectam <corr sic="provincial">provinciam</corr> nunties, existimesne Celtiberos perpetuo in fide mansuros, ita ut sine exercitu
+cum confectam <choice><sic>provincial</sic><corr>provinciam</corr></choice> nunties, existimesne Celtiberos perpetuo in fide mansuros, ita ut sine exercitu
 
 ea provincia obtineri possit.  </div><div type="textpart" subtype="section" n="11"> si neque de fide barbarorum quicquam recipere aut adfirmare nobis potes, et
 habendum illic utique exercitum censes, utrum tandem
@@ -4099,7 +4095,7 @@ administraturun: si deducat secum   Flaccus legiones,
 
 
 
-loca pacata me ad hibernacula lecturum neque <corr sic="novur">novum</corr>
+loca pacata me ad hibernacula lecturum neque <choice><sic>novur</sic><corr>novum</corr></choice>
 militem ferocissimo hosti obiecturum." 
 </div></div><div type="textpart" subtype="chapter" n="36"><div type="textpart" subtype="section" n="1">legatus ad ea, quae interrogatus erat, respondit neque
 se neque quemquam    alium divinare posse, quid in
@@ -4124,7 +4120,7 @@ quantus semper numerus, quindecim milia peditum,
 
 octingenti equites.  </div><div type="textpart" subtype="section" n="7"> cum hoc exercitu Apuanis Liguribus ut bellum inferrent, mandatum est. P. Cornelio
 et M. Baebio prorogatum imperium iussique provincias
-obtinere, donec consules venissent; <corr sic="tur">tum</corr> imperatum, ut
+obtinere, donec consules venissent; <choice><sic>tur</sic><corr>tum</corr></choice> imperatum, ut
 dimisso, quem haberent, exercitu reverterentur Romam.
 
 de Ti. Sempronii deinde exercitu actum est.  </div><div type="textpart" subtype="section" n="8"> novam
@@ -4158,7 +4154,7 @@ anno esse placuit.  </div><div type="textpart" subtype="section" n="14"> et is i
 propter pestilentiam, quae tertium iam annum urbem
 Romanam    atque Italiam  vastabat. 
 </div></div><div type="textpart" subtype="chapter" n="37"><div type="textpart" subtype="section" n="1">praetor
-Ti. Minucius et <corr sic="baud">haud</corr> ita multo post consul C. Calpurnius moritur, multique alii omnium ordinum illustres viri  postremo prodigii loco ea clades haberi
+Ti. Minucius et <choice><sic>baud</sic><corr>haud</corr></choice> ita multo post consul C. Calpurnius moritur, multique alii omnium ordinum illustres viri  postremo prodigii loco ea clades haberi
 
 coepta est.   </div><div type="textpart" subtype="section" n="2"> C. Servilius pontifex maximus piacula
 irae deum conquirere iussus, decemviri libros inspicere,
@@ -4293,7 +4289,7 @@ novem, cum his tria milia militum auxiliariorum perierunt. <pb id="p.97"/>  ita 
 
 Tarraconem  est perductus.  </div><div type="textpart" subtype="section" n="14"> venienti Fulvio Ti. Sempronius praetor, qui biduo ante venerat, obviam processit gratulatusque est, quod rem  publicam  egregie
 gessisset.  cum  summa concordia, quos dimitterent
-quosque retinerent milites, composuerunt.  </div><div type="textpart" subtype="section" n="15"> <corr sic="vinde">inde</corr> Fulvius exauctoratis militibus in naves impositis Romam
+quosque retinerent milites, composuerunt.  </div><div type="textpart" subtype="section" n="15"> <choice><sic>vinde</sic><corr>inde</corr></choice> Fulvius exauctoratis militibus in naves impositis Romam
 est profectus, Sempronius in Celtiberiam  legiones
 duxit.
 
@@ -4345,7 +4341,7 @@ consul iussus.
 
 </div></div><div type="textpart" subtype="chapter" n="42"><div type="textpart" subtype="section" n="1">eodem anno L. Duronius, qui praetor anno
 superiore <hi rend="italics">fuerat,</hi> ex Illyrico cum decem navibus Brundisium rediit. inde in portu relictis navibus cum venisset Romam, inter exponendas res, quas ibi gessisset,
-<corr sic="baud">haud</corr> dubie in regem    <corr sic="lllyriorum">Illyriorum</corr>  Gentium  latrocinii
+<choice><sic>baud</sic><corr>haud</corr></choice> dubie in regem    <choice><sic>lllyriorum</sic><corr>Illyriorum</corr></choice>  Gentium  latrocinii
 
 omnis maritimi causam avertit:  </div><div type="textpart" subtype="section" n="2"> ex regno eius omnes
 naves esse, quae superi maris oram depopulatae essent;
@@ -4367,19 +4363,19 @@ reddi.
 <p/>inter multos alios,  </div><div type="textpart" subtype="section" n="6"> quos pestilentia eius anni absumpsit, sacerdotes quoque aliquot mortui sunt. L. Valerius Flaccus pontifex mortuus est: in eius locum
 
 suffectus est Q. Fabius Labeo.  </div><div type="textpart" subtype="section" n="7"> P. Manlius, qui nuper
-ex ulteriore Hispania redierat, triumvir epulo: Q. Fulvius M. f. in locum   eius triumvir cooptatus, <corr sic="turn">tum</corr>
+ex ulteriore Hispania redierat, triumvir epulo: Q. Fulvius M. f. in locum   eius triumvir cooptatus, <choice><sic>turn</sic><corr>tum</corr></choice>
 
 praetextatus erat.  </div><div type="textpart" subtype="section" n="8"> de rege sacrificulo sufficiendo in
 locum Cn. Cornelii Dolabellae contentio inter C. Servilium pontificem maximum fuit et L. Cornelium Dolabellam  duumvirum  navalem, quem    ut inauguraret
 
-pontifex magistratu sese abdicare iubebat.  </div><div type="textpart" subtype="section" n="9"> recusantique id facere ob <corr sic="earn">eam</corr> rem multa duumviro dicta a
-pontifice, deque ea, cum provocasset, <corr sic="certatuml">certatum</corr> ad populum. <pb id="p.99"/>   </div><div type="textpart" subtype="section" n="10"> cum plures iam tribus intro vocatae dicto
+pontifex magistratu sese abdicare iubebat.  </div><div type="textpart" subtype="section" n="9"> recusantique id facere ob <choice><sic>earn</sic><corr>eam</corr></choice> rem multa duumviro dicta a
+pontifice, deque ea, cum provocasset, <choice><sic>certatuml</sic><corr>certatum</corr></choice> ad populum. <pb id="p.99"/>   </div><div type="textpart" subtype="section" n="10"> cum plures iam tribus intro vocatae dicto
 esse audientem pontifici duumvirum iuberent, multamque remitti, si magistratu se abdicasset, vitium de
 caelo, quod comitia turbaret, intervenit. religio inde
 
 fuit pontificibus inaugurandi Dolabellae.  </div><div type="textpart" subtype="section" n="11"> P. Cloelium
 Siculum inaugurarunt, qui secundo loco nominatus
-erat. <corr sic="exifu">exitu</corr> anni et C. Servilius Geminus pontifex
+erat. <choice><sic>exifu</sic><corr>exitu</corr></choice> anni et C. Servilius Geminus pontifex
 maximus decessit: idem decemvir sacrorum fuit. pontifex in locum eius a collegio cooptatus est Q. Fulvius
 
 Flaccus:  </div><div type="textpart" subtype="section" n="12"> <hi rend="italics">creatus</hi> inde pontifex maximus M. Aemilius
@@ -4394,16 +4390,16 @@ Latine loquerentur et praeconibus Latine vendendi ius
 esset. 
 </div></div><div type="textpart" subtype="chapter" n="43"><div type="textpart" subtype="section" n="1">Pisanis agrum pollicentibus, quo Latina
 colonia deduceretur, gratiae ab senatu actae; triumviri
-creati ad <corr sic="ear">eam</corr>  rem Q. Fabius Buteo M. et P. Popilii
+creati ad <choice><sic>ear</sic><corr>eam</corr></choice>  rem Q. Fabius Buteo M. et P. Popilii
 
 Laenates.  </div><div type="textpart" subtype="section" n="2"> a C. Maenio praetore, cui provincia Sardinia
 cum evenisset, additum erat, ut quaereret de veneficiis
 
 longius ab urbe decem milibus passuum,  </div><div type="textpart" subtype="section" n="3"> litterae adlatae, se iam tria milia hominum damnasse, et crescere
-sibi quaestionem indiciis: aut <corr sic="earn">eam</corr> sibi esse deserendam
+sibi quaestionem indiciis: aut <choice><sic>earn</sic><corr>eam</corr></choice> sibi esse deserendam
 aut provinciam dimittendam.
 
-</div><div type="textpart" subtype="section" n="4"> Q. Fulvius Flaccus ex Hispania rediit <corr sic="Rolnam">Romam</corr> cum
+</div><div type="textpart" subtype="section" n="4"> Q. Fulvius Flaccus ex Hispania rediit <choice><sic>Rolnam</sic><corr>Romam</corr></choice> cum
 magna fama gestarum rerum; qui cum extra urbem
 triumphi causa esset, consul est creatus cum L. Manlio
 
@@ -4435,13 +4431,13 @@ iubebat creari. hi facti Cn. Cornelius Scipio C. Valerius
 Laevinus Q. et P. Mucii Q. f. Scaevolae.  </div><div type="textpart" subtype="section" n="3"> Q. Fulvio
 et L. Manlio consulibus eadem provincia, quae superioribus, pari numero copiae peditum equitum, civium
 
-sociorum decretae.  </div><div type="textpart" subtype="section" n="4"> in <corr sic="Iispaniis">Hispaniis</corr> duabus Ti. Sempronio
+sociorum decretae.  </div><div type="textpart" subtype="section" n="4"> in <choice><sic>Iispaniis</sic><corr>Hispaniis</corr></choice> duabus Ti. Sempronio
 et L. Postumio cum iisdem exercitibus, quos haberent,
 
 prorogatum imperium est;  </div><div type="textpart" subtype="section" n="5"> et in supplementum consules
 scribere iussi ad tria milia peditum Romanorum, trecentos equites, quinque milia sociorum Latini nominis
 
-et <corr sic="quadrirngentos">quadringentos</corr> equites.  </div><div type="textpart" subtype="section" n="6"> P. Mucius Scaevola urbanam
+et <choice><sic>quadrirngentos</sic><corr>quadringentos</corr></choice> equites.  </div><div type="textpart" subtype="section" n="6"> P. Mucius Scaevola urbanam
 sortitus provinciam est, et ut idem quaereret de veneficiis in urbe et propius urbem decem milia passuum,
 
 Cn. Cornelius Scipio peregrinam,  </div><div type="textpart" subtype="section" n="7"> Q. Mucius Scaevola
@@ -4452,7 +4448,7 @@ ageret, liberare et se et rem publicam religione votis
 
 solvendis dixit velle.  </div><div type="textpart" subtype="section" n="9"> vovisse, quo die postremum cum
 Celtiberis pugnasset, ludos Iovi optimo maximo et
-aedem  equestri Fortunae sese facturum: in <corr sic="earn">eam</corr> rem
+aedem  equestri Fortunae sese facturum: in <choice><sic>earn</sic><corr>eam</corr></choice> rem
 
 sibi pecuniam collatam esse ab Hispanis.  </div><div type="textpart" subtype="section" n="10"> ludi decreti,
 et ut duumviri ad aedem    locandam  crearentur. de
@@ -4479,7 +4475,7 @@ sed etiam provinciis externis fuerant.
 
 sunt, deusserat cunctas; et eadem aliquanto quam alias
 
-longior fuit.  </div><div type="textpart" subtype="section" n="2"> itaque Latinas nox subito coorta et intolerabilis tempestas in monte turbavit, <corr sic="instanrataeque">instaurataeque</corr>
+longior fuit.  </div><div type="textpart" subtype="section" n="2"> itaque Latinas nox subito coorta et intolerabilis tempestas in monte turbavit, <choice><sic>instanrataeque</sic><corr>instaurataeque</corr></choice>
 
 sunt ex decreto pontificum.  </div><div type="textpart" subtype="section" n="3"> eadem   tempestas et in
 Capitolio aliquot signa prostravit fulminibusque complura loca deformavit, aedem Iovis Tarracinae, aedem
@@ -4528,7 +4524,7 @@ quae periculum est ne ex hac die nobis et rei publicae
 
 quam  vobis graviores fiant.   </div><div type="textpart" subtype="section" n="6"> de quibus causis hoc
 timeamus, multa succurrunt, quae dicerentur, <gap/> nisi
-forte implacabiles <corr sic="tfueritis">fueritis</corr> implicaverint animos vestros.
+forte implacabiles <choice><sic>tfueritis</sic><corr>fueritis</corr></choice> implicaverint animos vestros.
 
 has ut hodie,  </div><div type="textpart" subtype="section" n="7"> ut in isto templo finiatis simultates,
 quaesumus vos universi, et quos coniunxit suffragiis
@@ -4545,7 +4541,7 @@ plerumque socii fideles, interdum  etiam  cives fiunt.
 
 Albani diruta Alba Romam traducti sunt,  </div><div type="textpart" subtype="section" n="12">Latini, Sabini in civitatem accepti. vulgatum illud, quia verum
 erat, in proverbium venit, amicitias immortales, <hi rend="italics">mortales</hi> inimicitias debere esse."  </div><div type="textpart" subtype="section" n="13"> fremitus ortus cum adsensu, deinde universorum voces idem petentium confusae in unum orationem interpellarunt.  </div><div type="textpart" subtype="section" n="14"> inde Aemilius
-questus cum alia, <corr sic="tur">tum</corr> bis a M. Fulvio se certo consulatu deiectum: Fulvius contra queri se ab eo semper
+questus cum alia, <choice><sic>tur</sic><corr>tum</corr></choice> bis a M. Fulvio se certo consulatu deiectum: Fulvius contra queri se ab eo semper
 lacessitum  et in probrum  suum  sponsionem factam.
 tamen ambo significare, si alter vellet, se in potestate
 
@@ -4579,13 +4575,13 @@ veniunt legati ex oppido, quorum sermo antiquae simplicitatis fuit, non dissimul
 
 essent.  </div><div type="textpart" subtype="section" n="4"> petierunt enim, ut sibi in castra Celtiberorum
 ire liceret ad auxilia accienda: si non impetrassent,
-<corr sic="tur">tum</corr> separatim <corr sic="cos"><del>eos</del></corr> ab illis se consulturos. permittente Graccho ierunt et post paucis diebus alios
+<choice><sic>tur</sic><corr>tum</corr></choice> separatim <choice><sic>cos</sic><corr><del>eos</del></corr></choice> ab illis se consulturos. permittente Graccho ierunt et post paucis diebus alios
 
 decem legatos secum adduxerunt.  </div><div type="textpart" subtype="section" n="5"> meridianum tempus
 erat. nihil prius petierunt a praetore, quam ut bibere
 sibi iuberet dari. epotis primis poculis iterum  poposcerunt, magno risu circumstantium in tam rudibus
 
-et moris omnis ignaris ingeniis.  </div><div type="textpart" subtype="section" n="6"> <corr sic="tur">tum</corr> maximus natu
+et moris omnis ignaris ingeniis.  </div><div type="textpart" subtype="section" n="6"> <choice><sic>tur</sic><corr>tum</corr></choice> maximus natu
 ex iis ,,missi sumus" inquit "a gente nostra, qui sciscitaremur, qua tandem re fretus arma nobis inferres."
 
 </div><div type="textpart" subtype="section" n="7"> ad hane percunctationem Gracchus exercitu se egregio
@@ -4645,7 +4641,7 @@ dies in deditionem accepit, praeda potitus ingenti est.
 
 convertit inde agmen retro,  </div><div type="textpart" subtype="section" n="2"> unde venerat, ad Alcen,
 
-atque <corr sic="ear">eam</corr> urbem oppugnare institit.  </div><div type="textpart" subtype="section" n="3"> oppidani primum impetum hostium sustinuerunt; deinde cum iam
+atque <choice><sic>ear</sic><corr>eam</corr></choice> urbem oppugnare institit.  </div><div type="textpart" subtype="section" n="3"> oppidani primum impetum hostium sustinuerunt; deinde cum iam
 non armis modo sed etiam operibus oppugnarentur,
 diffisi praesidio urbis in arcem universi concesserunt:
 
@@ -4653,7 +4649,7 @@ postremo  </div><div type="textpart" subtype="section" n="4">et inde praemissis 
 se suaque omnia Romanis permiserunt. magna inde
 praeda facta est. multi captivi nobiles in potestatem
 
-venerunt, inter quos et Thurri filii duo et filia.  </div><div type="textpart" subtype="section" n="5"> regulus <corr sic="hie">hic</corr> earum gentium erat, longe potentissimus
+venerunt, inter quos et Thurri filii duo et filia.  </div><div type="textpart" subtype="section" n="5"> regulus <choice><sic>hie</sic><corr>hic</corr></choice> earum gentium erat, longe potentissimus
 omnium Hispanorum. audita suorum clade, missis qui
 fidem venienti in castra ad Gracchum peterent, venit.
 
@@ -4667,21 +4663,21 @@ cum  praetor victurum  respondisset, quaesivit iterum,
 
 si cum Romanis militare liceret.  </div><div type="textpart" subtype="section" n="7"> id quoque Graccho
 permittente, "sequar" inquit "vos adversus veteres
-socios meos, quoniam illos <corr sic="tad">ad</corr> me propiunt suspicere."
+socios meos, quoniam illos <choice><sic>tad</sic><corr>ad</corr></choice> me propiunt suspicere."
 secutus est inde Romanos, fortique ac fideli opera
 multis locis rem Romanam adiuvit.
 
 <p/>
 </div></div><div type="textpart" subtype="chapter" n="50"><div type="textpart" subtype="section" n="1">Ergavica inde, nobilis et potens civitas, aliorum 
 
-circa populorum cladibus territa portas aperuit Romanis.  </div><div type="textpart" subtype="section" n="2"> <corr sic="earn">eam</corr> deditionem   oppidorum   <corr sic="baud">haud</corr> cum   fide
+circa populorum cladibus territa portas aperuit Romanis.  </div><div type="textpart" subtype="section" n="2"> <choice><sic>earn</sic><corr>eam</corr></choice> deditionem   oppidorum   <choice><sic>baud</sic><corr>haud</corr></choice> cum   fide
 factam quidam auctores sunt: e qua regione abduxisset legiones, extemplo inde rebellatum, magnoque
 
 eum postea proelio ad montem Chaunum cum Celtiberis a prima luce ad sextam horam diei signis collatis pugnasse, multos utrimque cecidisse;  </div><div type="textpart" subtype="section" n="3"> nec aliud
 magnopere, cur vicisse crederes, fecisse Romanos, nisi
 quod postero die lacessierint proelio manentes intra
 
-vallum:  </div><div type="textpart" subtype="section" n="4"> spolia per totum diem legisse; tertio die proelio maiore iterum pugnatum, et <corr sic="tur">tum</corr> demum haud
+vallum:  </div><div type="textpart" subtype="section" n="4"> spolia per totum diem legisse; tertio die proelio maiore iterum pugnatum, et <choice><sic>tur</sic><corr>tum</corr></choice> demum haud
 
 dubie victos Celtiberos castraque eorum capta et direpta esse.  </div><div type="textpart" subtype="section" n="5"> viginti duo milia hostium eo die esse
 caesa, plus trecentos captos, parem fere equorum
@@ -4689,7 +4685,7 @@ numerum, et signa militaria septuaginta duo.   inde
 debellatum, veramque pacem, non fluxa, ut ante, fide
 
 Celtiberos fecisse.  </div><div type="textpart" subtype="section" n="6"> eadem aestate et L. Postumium in
-Hispania ulteriore bis cum <corr sic="vaccaeis">Vaccaeis</corr> egregie pugnasse
+Hispania ulteriore bis cum <choice><sic>vaccaeis</sic><corr>Vaccaeis</corr></choice> egregie pugnasse
 
 scribunt:  </div><div type="textpart" subtype="section" n="7"> ad triginta et quinque milia hostium occidisse et castra expugnasse. propius vero est serius
 in provinciam pervenisse, quam ut ea aestate potuerit
@@ -4711,7 +4707,7 @@ praedia habebat ibi privatamque publicae rei impensam inseruerat;  </div><div ty
 
 aedem Iovis in Capitolio, columnasque circa poliendas
 albo locavit; et ab his columnis, quae incommode
-opposita videbantur, signa amovit clipeaque de columnis et signa militaria adfixa omnis generis dempsit.  </div><div type="textpart" subtype="section" n="4"> M. Fulvius plura et maioris locavit usus: <corr sic="portur">portum</corr> et pilas pontis in Tiberi, quibus pilis fornices
+opposita videbantur, signa amovit clipeaque de columnis et signa militaria adfixa omnis generis dempsit.  </div><div type="textpart" subtype="section" n="4"> M. Fulvius plura et maioris locavit usus: <choice><sic>portur</sic><corr>portum</corr></choice> et pilas pontis in Tiberi, quibus pilis fornices
 post aliquot annos P. Scipio Africanus et L. Mummius
 
 censores locaverunt imponendos;  </div><div type="textpart" subtype="section" n="5"> basilicam post argentarias novas et forum piscatorium circumdatis tabernis
@@ -4740,11 +4736,11 @@ scaenicos triduum  post dedicationem  templi Iunonis,
 biduum post Dianae, et singulos dies fecit in circo.
 
 idem  dedicavit aedem <sic corr="Larium">Larum</sic> permarinum in Campo.
-</div><div type="textpart" subtype="section" n="4"> voverat <corr sic="earn">eam</corr> annis undecim ante L. Aemilius Regillus
+</div><div type="textpart" subtype="section" n="4"> voverat <choice><sic>earn</sic><corr>eam</corr></choice> annis undecim ante L. Aemilius Regillus
 navali proelio adversus praefectos regis Antiochi.
 
 supra valvas templi tabula cum  titulo hoc fixa est:
-</div><div type="textpart" subtype="section" n="5"> "duello magno dirimendo, regibus subigendis, <corr sic="tcaput">caput</corr>
+</div><div type="textpart" subtype="section" n="5"> "duello magno dirimendo, regibus subigendis, <choice><sic>tcaput</sic><corr>caput</corr></choice>
 patrandae pacis haec pugna exeunti L. Aemilio M.
 Aemilii filio <gap/> auspicio imperio felicitate ductuque
 
@@ -4770,7 +4766,7 @@ sed castra quoque eodem die cepit. tria milia ducenti
 hostium <hi rend="italics">caesi sunt,</hi> omnisque ea regio Ligurum in
 
 deditionem venit.  </div><div type="textpart" subtype="section" n="3"> consul deditos in campestres agros
-deduxit, praesidiaque montibus <corr sic="imposnit.ZZZ">inposuit.</corr> celeriter <hi rend="italics">et</hi>
+deduxit, praesidiaque montibus <choice><sic>imposnit.ZZZ</sic><corr>inposuit.</corr></choice> celeriter <hi rend="italics">et</hi>
 <hi rend="italics">Roma consul ad hostes</hi> et ex provincia litterae Romam venerunt: supplicationes ob eas res gestas in
 
 triduum  decretae sunt;  </div><div type="textpart" subtype="section" n="4"> praetores quadraginta hostiis
@@ -4791,7 +4787,7 @@ et maerore consumptus post mortem filii, decessit.
 Demetriade hibernabat,  </div><div type="textpart" subtype="section" n="2"> cum desiderio anxius filii, tum
 
 paenitentia crudelitatis suae.  </div><div type="textpart" subtype="section" n="3"> stimulabat animum  et
-alter filius <corr sic="hand">haud</corr> dubie et sua et aliorum opinione rex,
+alter filius <choice><sic>hand</sic><corr>haud</corr></choice> dubie et sua et aliorum opinione rex,
 
 conversique in eum omnium oculi, et destituta senectus aliis exspectantibus suam  mortem, aliis ne exspectantibus quidem.  </div><div type="textpart" subtype="section" n="4"> quo magis angebatur, et cum
 eo Antigonus Echecratis filius, nomen patrui Antigoni
@@ -4850,7 +4846,7 @@ amissa, quod reliquum erat, id studere, ne super impunitatem etiam praemio scele
 igitur appellat, cui et palam facti parricidii gratia
 obnoxius erat, et nequaquam pudendum aut paenitendum eum regem Macedonibus propter recentem patrui
 
-Antigoni gloriam fore censebat.  </div><div type="textpart" subtype="section" n="4"> "quando in <corr sic="ear">eam</corr> fortunam veni," inquit "Antigone, ut orbitas mihi, quam
+Antigoni gloriam fore censebat.  </div><div type="textpart" subtype="section" n="4"> "quando in <choice><sic>ear</sic><corr>eam</corr></choice> fortunam veni," inquit "Antigone, ut orbitas mihi, quam
 alii detestantur parentes, optabilis esse debeat, regnum,
 quod a patruo tuo forti, non solum fideli, tutela eius
 custoditum et auctum etiam accepi, id tibi tradere in
@@ -4860,11 +4856,11 @@ mallem quam Perseo scelestae fraudis praemium esse.
 
 </div><div type="textpart" subtype="section" n="6"> Demetrium excitatum ab inferis restitutumque credam
 mihi, si te, qui morti innocentis, qui meo infelici errori
-unus illacrimasti, in locum <corr sic="elus">eius</corr> substitutum relinquam."
+unus illacrimasti, in locum <choice><sic>elus</sic><corr>eius</corr></choice> substitutum relinquam."
 
 </div><div type="textpart" subtype="section" n="7"> ab hoc sermone omni genere honoris producere eum
 non destitit. cum in Thracia Perseus abesset, circumire  Macedoniae   urbes  principibusque  Antigonum
-commendare; et si vita longior suppetisset, <corr sic="baud">haud</corr> dubium fuit, quin eum in possessione regni relicturus
+commendare; et si vita longior suppetisset, <choice><sic>baud</sic><corr>haud</corr></choice> dubium fuit, quin eum in possessione regni relicturus
 
 fuerit.  </div><div type="textpart" subtype="section" n="8"> ab Demetriade profectus Thessalonicae plurimum temporis moratus fuerat. inde cum Amphipolim
 
@@ -4896,8 +4892,8 @@ vires bello subtrahendas. nam post paucis diebus gens
 Bastarnarum, diu sollicitata, ab suis sedibus magna peditum equitumque manu Histrum traiecit.  </div><div type="textpart" subtype="section" n="3"> inde praegressi, qui nuntiarent regi, Antigonus et Cotto: <hi rend="italics">Cotto</hi>
 nobilis erat Bastarna, Antigonus e regiis unus, saepe
 cum ipso Cottone legatus ad concitandos Bastarnas
-missus. <corr sic="baud">haud</corr> procul Amphipoli fama, <hi rend="italics">inde</hi> certi nuntii
-occurrerunt mortuum esse <corr sic="regeml.ZZZ">regem;</corr> quae res omnem ordinem consilii turbavit.  </div><div type="textpart" subtype="section" n="4"> compositum autem sic fuerat,
+missus. <choice><sic>baud</sic><corr>haud</corr></choice> procul Amphipoli fama, <hi rend="italics">inde</hi> certi nuntii
+occurrerunt mortuum esse <choice><sic>regeml.ZZZ</sic><corr>regem;</corr></choice> quae res omnem ordinem consilii turbavit.  </div><div type="textpart" subtype="section" n="4"> compositum autem sic fuerat,
 transitum per Thraciam tutum et commeatus Bastarnis
 ut Philippus praestaret. id ut facere posset, regionum
 principes donis coluerat, fide sua obligata pacato agmine transituros Bastarnas.  </div><div type="textpart" subtype="section" n="5">Dardanorum gentem delere
@@ -4919,7 +4915,7 @@ aversis in Bastarnarum  bellum  recuperaturum  se in
 Graecia, quae amisisset. haec Philippi consilia fuerant.
 
 </div></div><div type="textpart" subtype="chapter" n="58"><div type="textpart" subtype="section" n="1"><hi rend="italics">primum</hi> ingressi sunt pacato agmine. <hi rend="italics">digressu</hi>
-deinde Cottonis et Antigoni et <corr sic="baud">haud</corr> multo post fama
+deinde Cottonis et Antigoni et <choice><sic>baud</sic><corr>haud</corr></choice> multo post fama
 mortis Philippi neque Thraces commercio faciles erant,
 <hi rend="italics">neque</hi> Bastarnae empto contenti esse poterant aut in
 
@@ -4930,7 +4926,7 @@ sustinere hostium non possent, relictis campestribus
 
 vicis in montem ingentis altitudinis&mdash;Donucam vocant&mdash;concesserunt.  </div><div type="textpart" subtype="section" n="3"> quo <hi rend="italics">cum</hi> subire Bastarnae vellent,
 quali tempestate Gallos spoliantes Delphos fama est
-peremptos esse, talis <corr sic="turn">tum</corr> Bastarnas nequiquam   ad
+peremptos esse, talis <choice><sic>turn</sic><corr>tum</corr></choice> Bastarnas nequiquam   ad
 
 iuga montium appropinquantes oppressit.  </div><div type="textpart" subtype="section" n="4"> neque enim
 imbre tantum effuso, dein creberrima grandine obruti
@@ -4944,8 +4940,8 @@ procella cum tamquam ex naufragio plerique semermes
 in castra, unde profecti erant, redissent, consultari, quid
 agerent, coeptum. inde orta dissensio, aliis redeundum
 aliis penetrandum in Dardaniam  censentibus: </div><div type="textpart" subtype="section" n="8"> triginta
-ferme <corr sic="nmilia">milia</corr> hominum Clondico duce, <hi rend="italics">quo</hi> profecti erant,
-pervenerunt, cetera <corr sic="multitude">multitudo</corr> retro, qua venerat, Apolloniam Mesembriamque repetit. </div><div type="textpart" subtype="section" n="9">  Perseus potitus regno 
+ferme <choice><sic>nmilia</sic><corr>milia</corr></choice> hominum Clondico duce, <hi rend="italics">quo</hi> profecti erant,
+pervenerunt, cetera <choice><sic>multitude</sic><corr>multitudo</corr></choice> retro, qua venerat, Apolloniam Mesembriamque repetit. </div><div type="textpart" subtype="section" n="9">  Perseus potitus regno 
 interfici Antigonum iussit; et dum firmaret res, legatos
 Romam ad amicitiam paternam renovandam petendumque, ut rex ab senatu appellaretur, misit. haec eo
 anno in Macedonia gesta.
