@@ -3,7 +3,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www
 schematypens="http://purl.oclc.org/dsdl/schematron"?><!DOCTYPE TEI.2 PUBLIC "-//TEI P4//DTD Main DTD Driver File//EN" "http://www.tei-c.org/Guidelines/DTD/tei2.dtd" [
 <!ENTITY % TEI.XML "INCLUDE"><!ENTITY responsibility "<sponsor>Perseus Project, Tufts University</sponsor><principal>Gregory Crane</principal><respStmt><resp>Prepared under the supervision of</resp><name>Lisa Cerrato</name><name>William Merrill</name><name>Elli Mylonas</name><name>David Smith</name></respStmt>"><!ENTITY fund.NEH '<funder n="org:NEH" The National Endowment for the Humanities' ><!ENTITY	Perseus.publish "<publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>"><!ENTITY % PersProse PUBLIC "-//Perseus P4//DTD Perseus Prose//EN" "http://www.perseus.tufts.edu/DTD/1.0/PersProse.dtd">
 %PersProse;
-]><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader type="text" status="new"><fileDesc><titleStmt><title>Ab urbe condita, books 31-38</title><author n="Liv.">Titus Livius (Livy)</author>
+]><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader type="text"><fileDesc><titleStmt><title>Ab urbe condita, books 31-38</title><author n="Liv.">Titus Livius (Livy)</author>
 	&responsibility;
 	&fund.NEH;</titleStmt><extent></extent>
       
