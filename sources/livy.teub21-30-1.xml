@@ -1,4 +1,5 @@
-<?xml version="1.0"?><?xml-model href="http://www.stoa.org/epidoc/schema/8.19/tei-epidoc.rng"	schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.stoa.org/epidoc/schema/8.19/tei-epidoc.rng"	schematypens="http://purl.oclc.org/dsdl/schematron"?><!-- <!DOCTYPE TEI.2 PUBLIC "-//TEI P4//DTD Main DTD Driver File//EN" "http://www.tei-c.org/Guidelines/DTD/tei2.dtd" [
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/8.19/tei-epidoc.rng"	schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.stoa.org/epidoc/schema/8.19/tei-epidoc.rng"	schematypens="http://purl.oclc.org/dsdl/schematron"?><!-- <!DOCTYPE TEI.2 PUBLIC "-//TEI P4//DTD Main DTD Driver File//EN" "http://www.tei-c.org/Guidelines/DTD/tei2.dtd" [
 <!ENTITY % TEI.XML "INCLUDE"><!ENTITY % PersProse PUBLIC "-//Perseus P4//DTD Perseus Prose//EN" "http://www.perseus.tufts.edu/DTD/1.0/PersProse.dtd" >
 %PersProse;
 ]> -->
@@ -26,7 +27,7 @@
 								Pars II. Libri XXI-XXX. Editio Stereotypica</title>
 							<author>Titus Livius</author>
 							<editor>W. Weissenborn</editor>
-							<editor>H. J. M<!--&uuml;-->ller</editor>
+							<editor>H. J. Müller</editor>
 							<imprint>
 								<pubPlace>Leipzig</pubPlace>
 								<publisher>Teubner</publisher>
@@ -67,6 +68,10 @@
 			<change when="2018-02-12" who="Léa Frering">(1) Added p tags inside the div tags ; (2)
 				Removed empty hi tags; (3) Removed blank spaces ; (4) Changed the pb tags format pb
 				id="p.1" into pb n="1"</change>
+			<change when="2018-02-16" who="Léa Frering">(1) Added UTF-8 encoding in the XML
+				statement ;<lb/> (2) Replaced the HTML entities for special characters with the
+				corresponding UTF-8 characters ;<lb/> (3) Put the letter ς (sigma final) in the
+				Index Notarum.</change>
 		</revisionDesc>
 	</teiHeader>
 	<text>
@@ -92,12 +97,12 @@
 					saec. X (XI?)</p>
 				<p><hi rend="italics">Klock.</hi>= cod. Klockianus.</p>
 				<p><hi rend="italics">Lov.</hi>= codices Loveliani.</p>
-				<p><hi rend="italics">s<!-- sigma --></hi> = codices recentes (vel omnes vel
-					singuli) vel editiones veteres.</p>
+				<p><hi rend="italics">ς</hi> = codices recentes (vel omnes vel singuli) vel
+					editiones veteres.</p>
 				<p><hi rend="italics">Vulg.</hi> = lectio vulgata.</p>
 				<p><hi rend="italics">Ald.</hi>= Aldus.</p>
 				<p><hi rend="italics">Alsch.</hi>= Alschefski.</p>
-				<p><hi rend="italics">Cr<!--&eacute;-->v.</hi>= Cr<!--&eacute;-->vier.</p>
+				<p><hi rend="italics">Crév.</hi>= Crévier.</p>
 				<p><hi rend="italics">Drak.</hi>= Drakenborch.</p>
 				<p><hi rend="italics">Duk.</hi>= Duker.</p>
 				<p><hi rend="italics">Frob. 1</hi>= ed. Frobeniana 1531.</p>
@@ -107,7 +112,7 @@
 				<p><hi rend="italics">J. Gron.</hi>= Jacob Gronov.</p>
 				<p><hi rend="italics">Madv.</hi> = Madvig.</p>
 				<p><hi rend="italics">Mog.</hi>= ed. Moguntina.</p>
-				<p><hi rend="italics">HJM</hi>= H . J. M<!--&uuml;-->ller.</p>
+				<p><hi rend="italics">HJM</hi>= H . J. Müller.</p>
 				<p><hi rend="italics">Rhen.</hi>= Rhenanus</p>
 				<p><hi rend="italics">Sig.</hi> vel <hi rend="italics">Sigon.</hi>= Sigonius.</p>
 				<p><hi rend="italics">Weiss.</hi> vel <hi rend="italics">Weissenb.</hi>=
@@ -330,11 +335,10 @@
 						<p>quibus oppugnandis quia <choice>
 								<sic>baud</sic>
 								<corr>haud</corr>
-							</choice> dubie Romana arma movebantur, in Olcadum prius
-							fines<!--&mdash;-->ultra Hiberum ea gens in parte magis quam in dicione
-							Carthaginiensium erat<!--&mdash;-->induxit exercitum, ut non petisse
-							Saguntinos, sed rerum serie finitimis domitis gentibus iungendoque
-							tractus ad id <choice>
+							</choice> dubie Romana arma movebantur, in Olcadum prius fines — ultra
+							Hiberum ea gens in parte magis quam in dicione Carthaginiensium erat —
+							induxit exercitum, ut non petisse Saguntinos, sed rerum serie finitimis
+							domitis gentibus iungendoque tractus ad id <choice>
 								<sic>bellun</sic>
 								<corr>bellum</corr>
 							</choice> videri posset.</p>
@@ -369,8 +373,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>equitibus praecepit, ut, cum ingressos aquam viderent, adorirentur
-							inpeditum agmen; in ripa elephantos<!--&mdash;-->quadraginta autem
-							erant<!--&mdash;-->disponit.</p>
+							inpeditum agmen; in ripa elephantos — quadraginta autem erant —
+							disponit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>Carpetanorum cum adpendicibus Olcadum Vaccaeorumque centum milia fuere,
@@ -431,8 +435,8 @@
 							traicerent ac sociorum populi Romani querimonias deferrent,</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
-						<p><!--&mdash;--> hac legatione decreta necdum missa, omnium spe celerius
-							Saguntum oppugnari allatum est. <choice>
+						<p>- hac legatione decreta necdum missa, omnium spe celerius Saguntum
+							oppugnari allatum est. <choice>
 								<sic>tune</sic>
 								<corr>tunc</corr>
 							</choice> relata de integro res ad senatum;</p>
@@ -648,9 +652,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>Carthagini nunc Hannibal vineas turresque admovet, Carthaginis moenia
-							quatit ariete: Sagunti ruinae<!--&mdash;-->falsus utinam vates sim
-							<!--&mdash;--> nostris capitibus incident, susceptumque cum Saguntinis
-							bellum habendum cum Romanis est.</p>
+							quatit ariete: Sagunti ruinae — falsus utinam vates sim — nostris
+							capitibus incident, susceptumque cum Saguntinis bellum habendum cum
+							Romanis est.</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>dedemus ergo <pb n="10"/> Hannibalem? dicet aliquis. scio meam levem esse
@@ -750,9 +754,9 @@
 				</div>
 				<div type="textpart" subtype="chapter" n="12">
 					<div type="textpart" subtype="section" n="1">
-						<p>nec Sagunti oppugnatio segnior erat Maharbale Himilconis
-							filio<!--&mdash;-->eum praefecerat Hannibal<!--&mdash;-->ita inpigre rem
-							agente, ut ducem abesse nec cives nec hostes sentirent.</p>
+						<p>nec Sagunti oppugnatio segnior erat Maharbale Himilconis filio — eum
+							praefecerat Hannibal — ita inpigre rem agente, ut ducem abesse nec cives
+							nec hostes sentirent.</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>is et proelia aliquot secunda fecit et tribus arietibus aliquantum muri
@@ -785,8 +789,7 @@
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>tradito palam telo custodibus hostium transgressus munimenta ad praetorem
-							Saguntinum<!--&mdash;-->et ipse ita iubebat<!--&mdash;-->est
-							deductus.</p>
+							Saguntinum — et ipse ita iubebat — est deductus.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>quo cum extemplo concursus omnis generis hominum esset factus, summota
@@ -805,11 +808,10 @@
 							transfuga ad vos veni;</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
-						<p>sed cum ille aut vestra aut sua culpa manserit apud
-							hostem<!--&mdash;-->sua, si metum simulavit, vestra, si periculum est
-							apud vos vera referentibus<!--&mdash;-->, ego, ne ignoraretis esse
-							aliquas et salutis et pacis vobis condiciones, pro vetusto hospitio,
-							quod mihi vobiscum est, ad vos veni.</p>
+						<p>sed cum ille aut vestra aut sua culpa manserit apud hostem — sua, si
+							metum simulavit, vestra, si periculum est apud vos vera referentibus — ,
+							ego, ne ignoraretis esse aliquas et salutis et pacis vobis condiciones,
+							pro vetusto hospitio, quod mihi vobiscum est, ad vos veni.</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>vestra autem causa me nec ullius alterius loqui, quae loquor apud vos,
@@ -972,10 +974,9 @@
 							iussisset. inter consules ita copiae divisae:</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
-						<p>Sempronio datae legiones duae<!--&mdash;-->ea quaterna milia erant
-							peditum et treceni equites<!--&mdash;-->et sociorum sedecim milia
-							peditum, equites mille octingenti, naves longae centum sexaginta,
-							celoces duodecim.</p>
+						<p>Sempronio datae legiones duae — ea quaterna milia erant peditum et
+							treceni equites — et sociorum sedecim milia peditum, equites mille
+							octingenti, naves longae centum sexaginta, celoces duodecim.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>cum his terrestribus maritimisque copiis Ti. Sempronius missus in
@@ -987,11 +988,10 @@
 							invalido praesidio in Galliam mittebatur;</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
-						<p>navium maxime Cornelio numerus deminutus: sexaginta quinqueremes datae
-							<!--&mdash;--> neque enim mari venturum aut ea parte belli dimicaturum
-							hostem credebant<!--&mdash;-->et duae Romanae legiones cum suo iusto
-							equitatu et quattuordecim milibus sociorum peditum, equitibus mille
-							sescentis.</p>
+						<p>navium maxime Cornelio numerus deminutus: sexaginta quinqueremes datae —
+							neque enim mari venturum aut ea parte belli dimicaturum hostem credebant
+							— et duae Romanae legiones cum suo iusto equitatu et quattuordecim
+							milibus sociorum peditum, equitibus mille sescentis.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>duas legiones Romanas et decem milia sociorum peditum, mille equites
@@ -1037,9 +1037,8 @@
 					<div type="textpart" subtype="section" n="8">
 						<p>itaque quoniam discerni placet, quid publico consilio, quid sua sponte
 							imperatores faciant, nobis vobiscum foedus est a C. Lutatio consule
-							ictum, in quo cum caveretur utrorumque sociis, nihil de
-							Saguntinis<!--&mdash;-->necdum enim erant socii <!--&mdash;--> cautum
-							est.</p>
+							ictum, in quo cum caveretur utrorumque sociis, nihil de Saguntinis —
+							necdum enim erant socii — cautum est.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>at enim eo foedere, quod cum Hasdrubale ictum est, Saguntini excipiuntur.
@@ -1140,8 +1139,8 @@
 				</div>
 				<div type="textpart" subtype="chapter" n="20">
 					<div type="textpart" subtype="section" n="1">
-						<p>in iis nova terribilisque species visa est, quod armati<!--&mdash;-->ita
-							mos gentis erat <!--&mdash;--> in concilium venerunt.</p>
+						<p>in iis nova terribilisque species visa est, quod armati — ita mos gentis
+							erat — in concilium venerunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>cum verbis extollentes gloriam virtutemque populi Romani ac magnitudinem
@@ -1173,9 +1172,9 @@
 					<div type="textpart" subtype="section" n="8">
 						<p>ibi omnia ab sociis inquisita cum cura ac fide cognita: praeoccupatos iam
 							ante ab Hannibale Gallorum animos esse; sed ne illi quidem ipsi satis
-							mitem gentem fore<!--&mdash;-->adeo ferocia atque indomita ingenia
-							esse<!--&mdash;-->, ni subinde auro, cuius avidissima gens est,
-							principum animi concilientur.</p>
+							mitem gentem fore — adeo ferocia atque indomita ingenia esse — , ni
+							subinde auro, cuius avidissima gens est, principum animi
+							concilientur.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>ita peragratis Hispaniae Galliaeque populis legati Romam redeunt haud ita
@@ -1457,18 +1456,18 @@
 					<div type="textpart" subtype="section" n="2">
 						<p>C. Atilium praetorem cum una legione Romana et quinque milibus sociorum
 							dilectu novo a consule conscriptis auxilium ferre Manlio iubent; qui
-							sine ullo certamine<!--&mdash;-->abscesserant enim metu
-							hostes<!--&mdash;-->Tannetum pervenit.</p>
+							sine ullo certamine — abscesserant enim metu hostes — Tannetum
+							pervenit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>et P. Cornelius in locum eius quae missa cum praetore erat, scripta
 							legione nova profectus ab urbe sexaginta longis navibus praeter oram
 							Etruriae Ligurumque et inde Salluvium montis pervenit Massiliam et ad
-							proxumum ostium Rhodani<!--&mdash;--></p>
+							proxumum ostium Rhodani — </p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
-						<p>pluribus enim divisus amnis in mare decurrit<!--&mdash;-->castra locat,
-							vixdum satis credens Hannibalem superasse Pyrenaeos montis.</p>
+						<p>pluribus enim divisus amnis in mare decurrit — castra locat, vixdum satis
+							credens Hannibalem superasse Pyrenaeos montis.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>quem ut de Rhodani quoque transitu agitare animadvertit, incertus, quonam
@@ -1704,7 +1703,7 @@
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>quarum alterum latus Italiae sit, in ipsis portis hostium fatigatos
-							subsistere <!--&mdash;--> quid Alpis aliud esse credentes quam montium
+							subsistere — quid Alpis aliud esse credentes quam montium
 							altitudines?</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
@@ -2132,9 +2131,8 @@
 							moveret, nisi confunderet numerum Gallis Liguribusque additis:</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
-						<p>cum his octoginta milia peditum, decem equitum adducta<!--&mdash;-->in
-							Italia magis adfluxisse veri simile est, et ita quidam auctores
-							sunt<!--&mdash;-->;</p>
+						<p>cum his octoginta milia peditum, decem equitum adducta — in Italia magis
+							adfluxisse veri simile est, et ita quidam auctores sunt — ;</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>ex ipso autem audisse Hannibale, postquam Rhodanum transierit, triginta
@@ -2146,9 +2144,8 @@
 								<sic>onmes</sic>
 								<corr>omnes</corr>
 							</choice> constet, eo magis miror ambigi, quanam Alpis transierit, et
-							vulgo credere Poenino<!--&mdash;-->atque inde nomen ei iugo Alpium
-							inditum<!--&mdash;-->transgressum, Coelium per Cremonis iugum dicere
-							transisse;</p>
+							vulgo credere Poenino — atque inde nomen ei iugo Alpium inditum —
+							transgressum, Coelium per Cremonis iugum dicere transisse;</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>qui ambo saltus eum non in Taurinos sed per Salassos Montanos ad Libuos
@@ -2754,10 +2751,9 @@
 							occiderunt citra flumen interceptos.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
-						<p>Scipio, nec vexationem vulneris in via iactati ultra patiens et
-							collegam<!--&mdash;-->iam enim et revocatum ex Sicilia
-							audierat<!--&mdash;-->ratus exspectandum, locum, qui prope flumen
-							tutissimus stativis est visus, delectum communiit.</p>
+						<p>Scipio, nec vexationem vulneris in via iactati ultra patiens et collegam
+							— iam enim et revocatum ex Sicilia audierat — ratus exspectandum, locum,
+							qui prope flumen tutissimus stativis est visus, delectum communiit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>nec procul inde Hannibal cum consedisset, quantum victoria equestri
@@ -2973,8 +2969,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>simul ut praeda militem aleret, duo milia peditum et mille equites,
-							Numidas plerosque, mixtos quosdam et Gallos, populari omnem deinceps
-							<!--&mdash;--> agrum usque ad Padi ripas iussit.</p>
+							Numidas plerosque, mixtos quosdam et Gallos, populari omnem deinceps —
+							agrum usque ad Padi ripas iussit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>egentes ope Galli, cum ad id dubios servassent animos, coacti ab
@@ -3126,11 +3122,10 @@
 							aurae fluminis adpropinquabant, adflabat acrior frigoris vis.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
-						<p>ut vero refugientes Numidas insequentes aquam ingressi
-							sunt<!--&mdash;-->et erat pectoribus tenus aucta nocturno
-							imbri<!--&mdash;-->, tum utique egressis rigere omnibus corpora, ut vix
-							armorum tenendorum potentia esset, et simul lassitudine et procedente
-							iam die fame etiam deficere.</p>
+						<p>ut vero refugientes Numidas insequentes aquam ingressi sunt — et erat
+							pectoribus tenus aucta nocturno imbri — , tum utique egressis rigere
+							omnibus corpora, ut vix armorum tenendorum potentia esset, et simul
+							lassitudine et procedente iam die fame etiam deficere.</p>
 					</div>
 				</div>
 				<div type="textpart" subtype="chapter" n="55">
@@ -3382,11 +3377,11 @@
 							adversus hostem ducit;</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
-						<p>nec Sempronius consul<!--&mdash;-->iam <pb n="55"/><choice>
+						<p>nec Sempronius consul — iam <pb n="55"/><choice>
 								<sic>enin</sic>
 								<corr>enim</corr>
-							</choice> redierat ab Roma<!--&mdash;-->detrectavit certamen. atque eo
-							die tria milia passuum inter bina castra fuere;</p>
+							</choice> redierat ab Roma — detrectavit certamen. atque eo die tria
+							milia passuum inter bina castra fuere;</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>postero die ingentibus animis vario eventu pugnatum est. primo concursu
@@ -3670,9 +3665,9 @@
 							provinciam iret.</p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
-						<p>in eam legationem<!--&mdash;-->legatos enim mitti placuit<!--&mdash;-->Q.
-							Terentius et M. Antistius profecti nihilo magis eum moverunt, quam
-							priore consulatu litterae moverant ab senatu missae.</p>
+						<p>in eam legationem — legatos enim mitti placuit — Q. Terentius et M.
+							Antistius profecti nihilo magis eum moverunt, quam priore consulatu
+							litterae moverant ab senatu missae.</p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
 						<p>paucos post dies magistratum iniit, immolantique ei vitulus iam ictus e
@@ -3835,8 +3830,8 @@
 					<div type="textpart" subtype="section" n="19">
 						<p>haec ubi facta decemviri Ardeae in foro maioribus hostiis sacrificarunt.
 							postremo Decembri iam mense ad aedem Saturni Romae immolatum est
-							lectisterniumque imperatum<!--&mdash;-->et eum lectum senatores
-							straverunt _ et convivium publicum,</p>
+							lectisterniumque imperatum — et eum lectum senatores straverunt _ et
+							convivium publicum,</p>
 					</div>
 					<div type="textpart" subtype="section" n="20">
 						<p>ac per urbem Saturnalia diem ac noctem clamata, populusque eum diem
@@ -4029,14 +4024,14 @@
 						<p>insignemque armis et hostes summa vi petebant et tuebantur cives, <choice>
 								<sic>done</sic>
 								<corr>donec</corr>
-							</choice> Insuber eques<!--&mdash;-->Ducario nomen
-							erat<!--&mdash;-->facie quoque noscitans consulem <hi rend="italics"
-								>'En'</hi> inquit 'hic est,' popularibus suis 'qui legiones nostras
-							cecidit agrosque et urbem est depopulatus! iam ego hanc victimam manibus
-							peremptorum foede civium dabo.' subditisque calcaribus equo per
-							confertissimam hostium turbam impetum facit, obtruncatoque prius
-							armigero, qui se infesto venienti obviam obiecerat, consulem lancea
-							transfixit; spoliare cupientem triarii obiectis scutis arcuere.</p>
+							</choice> Insuber eques — Ducario nomen erat — facie quoque noscitans
+							consulem <hi rend="italics">'En'</hi> inquit 'hic est,' popularibus suis
+							'qui legiones nostras cecidit agrosque et urbem est depopulatus! iam ego
+							hanc victimam manibus peremptorum foede civium dabo.' subditisque
+							calcaribus equo per confertissimam hostium turbam impetum facit,
+							obtruncatoque prius armigero, qui se infesto venienti obviam obiecerat,
+							consulem lancea transfixit; spoliare cupientem triarii obiectis scutis
+							arcuere.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>magnae partis fuga inde primum coepit; et iam nec lacus nec montes pavori
@@ -4817,9 +4812,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>luce prima sub iugo montis proelium fuit, quo interclusam ab suis levem
-							armaturam facile<!--&mdash;-->etenim numero aliquantum
-							praestabant<!--&mdash;-->Romani superassent, nisi Hispanorum cohors ad
-							id ipsum remissa ab Hannibale supervenisset. ea adsuetior montibus</p>
+							armaturam facile — etenim numero aliquantum praestabant — Romani
+							superassent, nisi Hispanorum cohors ad id ipsum remissa ab Hannibale
+							supervenisset. ea adsuetior montibus</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>et ad concursandum inter saxa rupesque aptior ac levior cum velocitate
@@ -4876,8 +4871,7 @@
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>haud parvam rem esse ab totiens victore hoste vinci desisse ac respirasse
-							ab continuis cladibus <!--&mdash;--> haec nequiquam praemonito magistro
-							equitum <choice>
+							ab continuis cladibus — haec nequiquam praemonito magistro equitum <choice>
 								<sic>Romame</sic>
 								<corr>Romam</corr>
 							</choice> est profectus.</p>
@@ -5537,9 +5531,9 @@
 				</div>
 				<div type="textpart" subtype="chapter" n="28">
 					<div type="textpart" subtype="section" n="1">
-						<p>duplex inde Hannibali gaudium fuit<!--&mdash;--> neque enim quicquam
-							eorum, quae apud hostes agerentur, eum fallebat et perfugis multa
-							indicantibus et per suos explorantem<!--&mdash;--></p>
+						<p>duplex inde Hannibali gaudium fuit — neque enim quicquam eorum, quae apud
+							hostes agerentur, eum fallebat et perfugis multa indicantibus et per
+							suos explorantem — </p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>: nam et liberam Minuci temeritatem se suo modo captaturum et sollertiae
@@ -6249,9 +6243,9 @@
 							belli gerendi adversus Hannibalem est, qua ego gessi.</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
-						<p>nec eventus modo hoc docet<!--&mdash;-->stultorum iste magister
-							est<!--&mdash;-->; sed eadem ratio, quae fuit, futura, donec res eaedem
-							manebunt, inmutabilis est.</p>
+						<p>nec eventus modo hoc docet — stultorum iste magister est — ; sed eadem
+							ratio, quae fuit, futura, donec res eaedem manebunt, inmutabilis
+							est.</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>in Italia bellum gerimus, in sede ac solo nostro; omnia circa plena
@@ -6381,11 +6375,11 @@
 					<div type="textpart" subtype="section" n="2">
 						<p>ad mille et septingenti caesi non plus centum Romanorum sociorumque
 							occisis. ceterum victoribus effuse sequentibus metu insidiarum obstitit
-							Paulus consul, cuius eo die<!--&mdash;--></p>
+							Paulus consul, cuius eo die — </p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
-						<p>nam alternis imperitabant<!--&mdash;-->imperium erat, Varrone indignante
-							ac vociferante emissum hostem e manibus debellarique, ni cessatum foret,
+						<p>nam alternis imperitabant — imperium erat, Varrone indignante ac
+							vociferante emissum hostem e manibus debellarique, ni cessatum foret,
 							potuisse. Hannibal id damnum haud aegerrime pati;</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
@@ -6627,8 +6621,8 @@
 					<div type="textpart" subtype="section" n="6">
 						<p>transgressi flumen eas quoque, quas in castris minoribus habuerant,
 							copias suis adiungunt <pb n="107"/> atque ita instruunt aciem: in dextro
-							cornu<!--&mdash;-->id erat gumini propius<!--&mdash;-->Romanos equites
-							locant, deinde pedites;</p>
+							cornu — id erat gumini propius — Romanos equites locant, deinde
+							pedites;</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>laevum cornu extremi equites sociorum, intra pedites, ad medium iuncti
@@ -6682,9 +6676,8 @@
 							</choice> versis;</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
-						<p>ventus<!--&mdash;-->Volturnum regionis incolae
-							vocant<!--&mdash;-->adversus Romanis coortus multo pulvere in ipsa ora
-							volvendo prospectum ademit.</p>
+						<p>ventus — Volturnum regionis incolae vocant — adversus Romanis coortus
+							multo pulvere in ipsa ora volvendo prospectum ademit.</p>
 					</div>
 				</div>
 				<div type="textpart" subtype="chapter" n="47">
@@ -6853,8 +6846,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="13">
 						<p>septem milia hominum in minora castra decem in maiora, duo ferme in vicum
-							ipsum Cannas;<!--&mdash;--> perfugerunt, qui extemplo a Carthalone atque
-							equitibus nullo munimento tegente vicum circumventi sunt.</p>
+							ipsum Cannas; — perfugerunt, qui extemplo a Carthalone atque equitibus
+							nullo munimento tegente vicum circumventi sunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
 						<p>consul alter, seu forte seu consilio nulli fugientium insertus agmini,
@@ -6870,10 +6863,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="16">
 						<p>L. Atilius et L. Furius Bibaculus, et undetriginta tribuni militum,
-							consulares quidam praetoriique et aedilicii<!--&mdash;-->inter eos Cn.
-							Servilium Geminum et M. Minucium numerant, qui magister equitum priore
-							anno, aliquot annis ante <hi rend="italics">consul</hi>
-							fuerat<!--&mdash;--></p>
+							consulares quidam praetoriique et aedilicii — inter eos Cn. Servilium
+							Geminum et M. Minucium numerant, qui magister equitum priore anno,
+							aliquot annis ante <hi rend="italics">consul</hi> fuerat — </p>
 					</div>
 					<div type="textpart" subtype="section" n="17">
 						<p>, octoginta praeterea aut senatores aut qui eos magistratus gessissent,
@@ -7056,13 +7048,13 @@
 							sauciis timidisque eadem condicione qua altera tradita hosti.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
-						<p>praeda ingens parta est, et praeter equos virosque et si quid
-							argenti<!--&mdash;-->quod <choice>
+						<p>praeda ingens parta est, et praeter equos virosque et si quid argenti —
+							quod <choice>
 								<sic>plurinum</sic>
 								<corr>plurimum</corr>
 							</choice> in phaleris equorum erat, nam ad vescendum facto perexiguo,
-							utique militantes, utebantur<!--&mdash;-->omnis cetera praeda diripienda
-							data est.</p>
+							utique militantes, utebantur — omnis cetera praeda diripienda data
+							est.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>tum sepeliendi causa conferri unum corpora suorum iussit. ad octo milia
@@ -7266,12 +7258,11 @@
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>tum Q. Fabius Maximus censuit equites expeditos et Appia et Latina via
-							mittendos, qui obvios percunctando<!--&mdash;-->aliquos profecto ex fuga
-							passim <choice>
+							mittendos, qui obvios percunctando — aliquos profecto ex fuga passim <choice>
 								<sic>dissipates</sic>
 								<corr>dissipatos</corr>
-							</choice> fore<!--&mdash;-->referant, quae fortuna consulum atque
-							exercituum sit et,</p>
+							</choice> fore — referant, quae fortuna consulum atque exercituum sit
+							et,</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>si quid dii immortales, miseriti imperil, reliquum Romani nominis
@@ -7289,8 +7280,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>conploratus familiarum coerceant, silentium per urbem faciant, nuntios
-							rerum omnium ad praetores deducendos curent<!--&mdash;-->suae quisque
-							fortunae domi auctorem expectent<!--&mdash;--></p>
+							rerum omnium ad praetores deducendos curent — suae quisque fortunae domi
+							auctorem expectent — </p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>custodesque praeterea ad portas ponant, qui prohibeant quemquam egredi
@@ -7315,7 +7306,7 @@
 							</choice> consulem exercitumque caesum; sese Canusii esse, reliquias
 							tantae cladis velut ex naufragio colligentem; ad decem milia militum
 							ferme esse inconpositorum inordinatorumque; Poenum sedere ad Cannas, in
-							captivorum<!--&mdash;-->;</p>
+							captivorum — ;</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>pretiis praedaque alia nec victoris animo nec <hi rend="italics"
@@ -7399,8 +7390,7 @@
 							praesidio essent, mittit;</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
-						<p>ipse, legione classica<!--&mdash;-->ea legio tertia erat <!--&mdash;-->
-							cum tribunis <choice>
+						<p>ipse, legione classica — ea legio tertia erat — cum tribunis <choice>
 								<sic>militumr</sic>
 								<corr>militum</corr>
 							</choice> Teanum Sidicinum praemissa, classe tradita P. Furio Philo
@@ -7722,8 +7712,8 @@
 					<div type="textpart" subtype="section" n="20">
 						<p>quam tutum iter duarum prope legionum agmini futurum censetis fuisse?
 							haberetis hodie viginti milia armatorum Canusii fortia fidelia, patres
-							conscripti. nunc autem quem ad modum hi boni fidelesque<!--&mdash;-->nam
-							fortes ne ipsi quidem dixerint<!--&mdash;-->cives esse possunt?</p>
+							conscripti. nunc autem quem ad modum hi boni fidelesque — nam fortes ne
+							ipsi quidem dixerint — cives esse possunt?</p>
 					</div>
 					<div type="textpart" subtype="section" n="21">
 						<p>nisi quis credere potest adfuisse erumpentibus, qui, ne erumperent,
@@ -7902,10 +7892,10 @@
 							urbem maritimam haberet.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
-						<p>ubi fines Neapolitanorum intravit, Numidas partim in
-							insidiis<!--&mdash;-->et pleraeque cavae sunt viae sinusque
-							occulti<!--&mdash;-->, quacumque apte poterat, disposuit, alios prae se
-							actam praedam ex agris ostentantis obequitare portis iussit.</p>
+						<p>ubi fines Neapolitanorum intravit, Numidas partim in insidiis — et
+							pleraeque cavae sunt viae sinusque occulti — , quacumque apte poterat,
+							disposuit, alios prae se actam praedam ex agris ostentantis obequitare
+							portis iussit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>in quos, quia nec multi et incompositi videbantur, cum turma equitum
@@ -7970,9 +7960,9 @@
 							publica obliti credant,</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
-						<p><!--&mdash;--> cum omnes victi metu permitterent, 'Claudam' inquit 'in
-							curia vos et tamquam et ipse cogitati facinoris particeps adprobando
-							consilia, quibus nequiquam adversarer, viam saluti vestrae inveniam.</p>
+						<p> — cum omnes victi metu permitterent, 'Claudam' inquit 'in curia vos et
+							tamquam et ipse cogitati facinoris particeps adprobando consilia, quibus
+							nequiquam adversarer, viam saluti vestrae inveniam.</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>in hoc fidem, quam voltis ipsi, accipite.' fide data egressus claudi
@@ -8264,11 +8254,11 @@
 							restituerent Romanis se.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
-						<p>haec <!--&mdash;--> nec enim occulta agebantur<!--&mdash;-->cum relata
-							Hannibali essent, primo misit, qui vocarent Magium ad sese in castra;
-							deinde, cum is ferociter negasset se iturum, nec enim Hannibali ius esse
-							in civem Campanum, concitatus ira Poenus conprehendi hominem vinctumque
-							adtrahi ad sese iussit.</p>
+						<p>haec — nec enim occulta agebantur — cum relata Hannibali essent, primo
+							misit, qui vocarent Magium ad sese in castra; deinde, cum is ferociter
+							negasset se iturum, nec enim Hannibali ius esse in civem Campanum,
+							concitatus ira Poenus conprehendi hominem vinctumque adtrahi ad sese
+							iussit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>veritus deinde, ne quid inter vim tumultus atque ex concitatione animorum
@@ -8336,14 +8326,14 @@
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>solis ferme occasu patrem Calavium ex convivio egressum secutus filius,
-							ubi in secretum<!--&mdash;--></p>
+							ubi in secretum — </p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
-						<p>hortus erat posticis aedium partibus<!--&mdash;-->pervenerunt,
-							'Consilium' inquit 'adfero, pater, quo non veniam solum peccati, quod
-							defecimus ad Hannibalem, impetraturi ab Romanis, sed in multo maiore
-							dignitate et gratia fi<hi rend="italics">turi</hi> simus Campani, quam
-							umquam fuimus.'</p>
+						<p>hortus erat posticis aedium partibus — pervenerunt, 'Consilium' inquit
+							'adfero, pater, quo non veniam solum peccati, quod defecimus ad
+							Hannibalem, impetraturi ab Romanis, sed in multo maiore dignitate et
+							gratia fi<hi rend="italics">turi</hi> simus Campani, quam umquam
+							fuimus.'</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>cum mirabundus pater, quidnam id esset consilii, quaereret, toga reiecta
@@ -8374,8 +8364,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>paucae horae sunt, intra quas iurantes per quidquid deorum est, dextrae
-							dextras iungentes, fidem obstrinximus, <!--&mdash;--> ut sacratas fide
-							manus digressi a conloquio extemplo in eum <pb n="134"/> armaremus?</p>
+							dextras iungentes, fidem obstrinximus, — ut sacratas fide manus digressi
+							a conloquio extemplo in eum <pb n="134"/> armaremus?</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>ab hospitali mensa surgis, ad quam tertius Campanorum adhibitus es ab
@@ -8638,16 +8628,15 @@
 							milites mihi. quid aliud rogares, si esses victus?</p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
-						<p>hostium cepi bina castra, praedae videlicet plena et commeatuum,
-							<!--&mdash;--> frumentum et pecuniam date.</p>
+						<p>hostium cepi bina castra, praedae videlicet plena et commeatuum, —
+							frumentum et pecuniam date.</p>
 					</div>
 					<div type="textpart" subtype="section" n="15">
 						<p>quid aliud, si spoliatus, si exutus castris esses, peteres? et ne omnia
-							ipse mirer, <!--&mdash;--> mihi quoque enim, quoniam respondi Himilconi,
-							interrogare ius fasque est<!--&mdash;-->velim seu Himilco seu <hi
-								rend="italics">Mago</hi> respondeat, cum ad internecionem Romani
-							imperii pugnatum ad Cannas sit constetque in defectione totam Italiam
-							esse, primum,</p>
+							ipse mirer, — mihi quoque enim, quoniam respondi Himilconi, interrogare
+							ius fasque est — velim seu Himilco seu <hi rend="italics">Mago</hi>
+							respondeat, cum ad internecionem Romani imperii pugnatum ad Cannas sit
+							constetque in defectione totam Italiam esse, primum,</p>
 					</div>
 					<div type="textpart" subtype="section" n="16">
 						<p>ecquis Latini nominis populus defecerit ad nos, deinde, ecquis homo ex
@@ -8790,10 +8779,9 @@
 							navibus tutus ex Africa esset.</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
-						<p>ceterum postquam Neapolim a praefecto Romano teneri
-							accepit<!--&mdash;-->M. Iunius Silanus erat, ab ipsis Neapolitanis
-							accitus<!--&mdash;-->, Neapoli quoque sicut Nola omissa petit
-							Nuceriam.</p>
+						<p>ceterum postquam Neapolim a praefecto Romano teneri accepit — M. Iunius
+							Silanus erat, ab ipsis Neapolitanis accitus — , Neapoli quoque sicut
+							Nola omissa petit Nuceriam.</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>eam cum aliquamdiu circumsedisset, saepe vi saepe sollicitandis nequiquam
@@ -8867,11 +8855,11 @@
 					<div type="textpart" subtype="section" n="1">
 						<p>hac comitate Marcelli ferocis iuvenis animus adeo est mollitus, ut nemo
 							inde sociorum rem Romanam fortius ac fidelius iuverit. cum Hannibal ad
-							portas esset<!--&mdash;--></p>
+							portas esset — </p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
-						<p>Nolam enim rursus a Nuceria movit castra<!--&mdash;-->plebesque Nolana de
-							integro ad defectionem spectaret,</p>
+						<p>Nolam enim rursus a Nuceria movit castra — plebesque Nolana de integro ad
+							defectionem spectaret,</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>Marcellus sub adventum hostium intra muros se recepit, non castris
@@ -9006,8 +8994,8 @@
 						<p>ibi cum dies aliquot suspecti Campanis timentesque cavendis ac struendis
 							in vicem insidiis traduxissent, ut de Capuae defectione agi accipique
 							Hannibalem satis pro certo habuere, interfectis nocte oppidanis partem
-							urbis, quae cis Volturnum est<!--&mdash;-->eo enim dividitur
-							amni<!--&mdash;-->, occupavere;</p>
+							urbis, quae cis Volturnum est — eo enim dividitur amni — ,
+							occupavere;</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>idque praesidii Casilini habebant Romani. additur et Perusina cohors,
@@ -9147,8 +9135,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>ea aegre patiens Gracchus, cum neque pugnam conserere dictatoris iniussu
-							auderet<!--&mdash;-->pugnandum autem esse, si palam frumentum
-							inportaret, videbat<!--&mdash;-->neque clam inportandi spes esset,</p>
+							auderet — pugnandum autem esse, si palam frumentum inportaret, videbat —
+							neque clam inportandi spes esset,</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>farre ex agris circa undique convecto cum conplura dolia conplesset,
@@ -9204,8 +9192,7 @@
 						<p>id verius est quam ab equite in abeuntis inmisso interfectos. Praenestini
 							maxima pars fuere. ex quingentis septuaginta, qui in praesidio fuerunt,
 							minus dimidium ferrum famesque absumpsit; ceteri incolumes Praeneste cum
-							praetore suo M. Anicio <!--&mdash;-->scriba is antea
-							fuerat<!--&mdash;-->redierunt.</p>
+							praetore suo M. Anicio — scriba is antea fuerat — redierunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="18">
 						<p>statua eius indicio fuit Praeneste in foro statuta, loricata, amicta
@@ -9242,8 +9229,8 @@
 						<p>quibus cum obsistere malis nequirent Petelini, legatos Romam ad
 							praesidium petendum miserunt. quorum preces lacrimaeque in questus enim
 							flebiles, cum sibimet ipsi consulere iussi sunt, sese in vestibulo
-							curiae profuderunt<!--&mdash;-->ingentem misericordiam patribus ac
-							populo moverunt.</p>
+							curiae profuderunt — ingentem misericordiam patribus ac populo
+							moverunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>consultique iterum a M. Aemilio praetore patres circumspectis omnibus
@@ -9465,10 +9452,9 @@
 							Gallia ipsum atque exercitum deletos.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
-						<p>silva erat vasta <!--&mdash;--> Litanam Galli vocabant<!--&mdash;-->, qua
-							exercitum traducturus erat. eius silvae dextra laevaque circa viam Galli
-							arbores ita inciderunt, ut inmotae starent, momento levi inpulsae
-							occiderent.</p>
+						<p>silva erat vasta — Litanam Galli vocabant — , qua exercitum traducturus
+							erat. eius silvae dextra laevaque circa viam Galli arbores ita
+							inciderunt, ut inmotae starent, momento levi inpulsae occiderent.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>legiones duas Romanas habebat Postumius sociumque ab supero mari tantum
@@ -9959,9 +9945,9 @@
 							eae legiones in castra Claudiana supra Suessulam deducerentur.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
-						<p>quae ibi legiones essent<!--&mdash;-->erant autem Cannensis maxime
-							exercitus<!--&mdash;-->, eas Appius Claudius Pulcher praetor in Siciliam
-							traiceret, quaeque in Sicilia essent, Romam deportarentur.</p>
+						<p>quae ibi legiones essent — erant autem Cannensis maxime exercitus — , eas
+							Appius Claudius Pulcher praetor in Siciliam traiceret, quaeque in
+							Sicilia essent, Romam deportarentur.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>ad exercitum, cui ad conveniendum Cales edicta dies erat, M. Claudius
@@ -10179,9 +10165,9 @@
 							legibus his,</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
-						<p>ut Philippus rex quam maxima classe <!--&mdash;--> ducentas autem naves
-							videbatur effecturus<!--&mdash;-->in Italiam traiceret et vastaret
-							maritimam oram, bellum pro parte sua terra marique gereret;</p>
+						<p>ut Philippus rex quam maxima classe — ducentas autem naves videbatur
+							effecturus — in Italiam traiceret et vastaret maritimam oram, bellum pro
+							parte sua terra marique gereret;</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>ubi debellatum esset, Italia omnis cum ipsa urbe Roma Carthaginiensium
@@ -10254,9 +10240,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="13">
 						<p>ita parum <hi rend="italics">aptum</hi> bello, quod motum iri videretur,
-							<!--&mdash;--> decreverunt patres, ut Q. Fulvius Flaccus quinque milia
-							peditum, quadringentos equites scriberet eamque legionem primo quoque
-							tempore in Sardiniam traiciendam curaret</p>
+							— decreverunt patres, ut Q. Fulvius Flaccus quinque milia peditum,
+							quadringentos equites scriberet eamque legionem primo quoque tempore in
+							Sardiniam traiciendam curaret</p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
 						<p>mitteretque cum imperio quem ipsi videretur, qui rem gereret, quoad
@@ -10270,7 +10256,7 @@
 					<div type="textpart" subtype="section" n="16">
 						<p>sub idem fere tempus et a Carthagine in Sardiniam classis missa duce
 							Hasdrubale, cui Calvo cognomen erat, foeda tempestate vexata ad Balearis
-							insulas deicitur, ibique<!--&mdash;--></p>
+							insulas deicitur, ibique — </p>
 					</div>
 					<div type="textpart" subtype="section" n="17">
 						<p>adeo non armamenta modo sed etiam alvei navium quassati erant subductae
@@ -10305,9 +10291,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>ibi quia otiosa stativa erant, crebro decurrere milites cogebat, ut
-							tirones <!--&mdash;--> ea maxima pars volonum
-							erant<!--&mdash;-->adsuescerent signa sequi et in acie agnoscere ordines
-							suos.</p>
+							tirones — ea maxima pars volonum erant — adsuescerent signa sequi et in
+							acie agnoscere ordines suos.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>inter quae maxima erat cura duci, itaque legatis tribunisque praeceperat,
@@ -10340,10 +10325,8 @@
 					<div type="textpart" subtype="section" n="13">
 						<p>Hamae inde tria milia passuum absunt. iam Campani eo frequentes ex
 							composito convenerant, nec procul inde in occulto Marius Alfius medix
-							tuticus <!--&mdash;-->
-							<hi rend="italics">is</hi> summus magistratus erat
-							Campanis<!--&mdash;-->cum quattuordecim milibus armatorum habebat
-							castra,</p>
+							tuticus — <hi rend="italics">is</hi> summus magistratus erat Campanis —
+							cum quattuordecim milibus armatorum habebat castra,</p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
 						<p>sacrificio adparando et inter id instruendae fraudi aliquanto intentior
@@ -10927,8 +10910,7 @@
 						<p>tertio die Hannibal partem copiarum praedatum in agrum Nolanum misit.
 							quod ubi animadvertit Marcellus, extemplo in aciem copias eduxit; neque
 							Hannibal detractavit. mille fere passuum inter urbem erant castraque; eo
-							spatio<!--&mdash;-->et sunt omnia campi circa
-							Nolam<!--&mdash;-->concurrerunt.</p>
+							spatio — et sunt omnia campi circa Nolam — concurrerunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>clamor ex parte utraque sublatus proximos ex cohortibus iis, quae in
@@ -11021,10 +11003,10 @@
 							Marcellus, Vulcano votum, cremavit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
-						<p>tertio post die<!--&mdash;-->ob iram credo aliquam aut spem liberalioris
-							militiae<!--&mdash;-->ducenti septuaginta duo equites, mixti Numidae <hi
-								rend="italics">et</hi> Hispani, ad Marcellum transfugerunt. eorum
-							forti fidelique opera in eo bello usi sunt saepe Romani.</p>
+						<p>tertio post die — ob iram credo aliquam aut spem liberalioris militiae —
+							ducenti septuaginta duo equites, mixti Numidae <hi rend="italics"
+								>et</hi> Hispani, ad Marcellum transfugerunt. eorum forti fidelique
+							opera in eo bello usi sunt saepe Romani.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>ager Hispanis in Hispania et Numidis in Africa post bellum virtutis causa
@@ -11104,9 +11086,8 @@
 							gratulatione victor in castra redit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
-						<p>huic pugnae equestri rem <!--&mdash;-->
-							<hi rend="italics">quae</hi> quam vera sit, communis existimatio
-							est<!--&mdash;-->mirabilem certe adiciunt quidam annales: cum
+						<p>huic pugnae equestri rem — <hi rend="italics">quae</hi> quam vera sit,
+							communis existimatio est — mirabilem certe adiciunt quidam annales: cum
 							refugientem ad urbem Tauream Claudius sequeretur, patenti hostium porta
 							invectum per alteram stupentibus miraculo hostibus intactum
 							evasisse.</p>
@@ -11484,7 +11465,7 @@
 							conscendunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="16">
-						<p>Locros omnis multitudo abeunt.<!--&mdash;--><choice>
+						<p>Locros omnis multitudo abeunt. — <choice>
 								<sic>In</sic>
 								<corr>in</corr>
 							</choice> Apulia ne hiems quidem quieta inter Romanos atque Hannibalem
@@ -11546,8 +11527,7 @@
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>haec mandata. cum expirasset, tutores testamento prolato pueroque in
-							contionem producto <!--&mdash;--> erat autem quindecim tum ferme
-							annorum<!--&mdash;--></p>
+							contionem producto — erat autem quindecim tum ferme annorum — </p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>paucis, <pb n="186"/> qui per contionem ad excitandos clamores dispositi
@@ -11626,10 +11606,10 @@
 					</div>
 					<div type="textpart" subtype="section" n="12">
 						<p>victum malis se simulans avertit ab consciis in insontes indicium,
-							Thrasonem esse auctorem consilii mentitus, <!--&mdash;--> nec nisi tam
-							potenti duce confisos rem tantam ausuros <hi rend="italics"
-								>fuisse<!--&mdash;-->,</hi><hi rend="italics">socios ignobiles
-								quosdam viros</hi> ab latere tyranni,</p>
+							Thrasonem esse auctorem consilii mentitus, — nec nisi tam potenti duce
+							confisos rem tantam ausuros <hi rend="italics">fuisse — ,</hi><hi
+								rend="italics">socios ignobiles quosdam viros</hi> ab latere
+							tyranni,</p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
 						<p>quorum capita vilissima fingenti inter dolores gemitusque occurrere.
@@ -11679,11 +11659,10 @@
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>Hieronymus legatos Carthaginem misit ad foedus ex societate cum Hannibale
-							pacta faciendum. convenit, ut, cum Romanos Sicilia
-							expulissent<!--&mdash;-->id <pb n="188"/> autem brevi fore, si naves
-							atque exercitum misissent<!--&mdash;-->, Himera amnis, qui ferme dividit
-								<hi rend="italics">insulam,</hi> finis regni Syracusani ac Punici
-							imperii esset.</p>
+							pacta faciendum. convenit, ut, cum Romanos Sicilia expulissent — id <pb
+								n="188"/> autem brevi fore, si naves atque exercitum misissent — ,
+							Himera amnis, qui ferme dividit <hi rend="italics">insulam,</hi> finis
+							regni Syracusani ac Punici imperii esset.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>aliam deinde inflatus adsentationibus eorum, qui eum non Hieronis tantum
@@ -11703,20 +11682,19 @@
 							urbes, quae praesidiis tenebantur Romanis,</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
-						<p>et ipse in Leontinos cum cetero omni exercitu<!--&mdash;-->erant autem ad
-							quindecim milia peditum equitumque<!--&mdash;--></p>
+						<p>et ipse in Leontinos cum cetero omni exercitu — erant autem ad quindecim
+							milia peditum equitumque — </p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
-						<p>profectus erat, liberas aedis coniurati<!--&mdash;-->et omnes forte
-							militabant<!--&mdash;-->imminentes viae angustae, qua descendere ad
-							forum rex solebat, sumpserunt.</p>
+						<p>profectus erat, liberas aedis coniurati — et omnes forte militabant —
+							imminentes viae angustae, qua descendere ad forum rex solebat,
+							sumpserunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>ibi cum instructi armatique ceteri transitum expectantes starent, uni ex
-							eis<!--&mdash;-->Dinomeni fuit nomen<!--&mdash;-->, quia custos corporis
-							erat, partes datae sunt, ut, cum adpropinquaret ianuae rex, per causam
-							aliquam in angustiis sustineret ab tergo agmen. ita ut convenerat factum
-							est.</p>
+							eis — Dinomeni fuit nomen — , quia custos corporis erat, partes datae
+							sunt, ut, cum adpropinquaret ianuae rex, per causam aliquam in angustiis
+							sustineret ab tergo agmen. ita ut convenerat factum est.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>tamquam laxaret elatum pedem ab stricto nodo, moratus turbam Dinomenes
@@ -11895,7 +11873,7 @@
 					<div type="textpart" subtype="section" n="5">
 						<p>comitiis praetorum perfectis senatus consultum factum, ut Q. Fulvio extra
 							ordinem urbana provincia esset, isque potissimum consulibus ad bellum
-							profectis urbi praeesset.<!--&mdash;--></p>
+							profectis urbi praeesset. — </p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>aquae magnae bis eo anno fuerunt, Tiberisque agros inundavit cum magna
@@ -12083,8 +12061,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>et Ti. Gracchum ab Luceria Beneventum copias admovere, Q. Fabium
-							praetorem<!--&mdash;-->is filius consulis erat <!--&mdash;-->
-							<hi rend="italics">ad</hi> Luceriam Graccho succedere iubet.</p>
+							praetorem — is filius consulis erat — <hi rend="italics">ad</hi>
+							Luceriam Graccho succedere iubet.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>in Siciliam eodem tempore duo praetores profecti, P. Cornelius ad
@@ -12470,9 +12448,8 @@
 								<sic>generisi</sic>
 								<corr>generis</corr>
 							</choice> adsueverant, hortatique censores <hi rend="italics">sunt,</hi>
-							ut omnia per<!--&mdash;-->: inde agerent locarent, ac si pecunia in
-							aerario esset: neminem nisi bello confecto pecuniam ab aerario petiturum
-							esse.</p>
+							ut omnia per — : inde agerent locarent, ac si pecunia in aerario esset:
+							neminem nisi bello confecto pecuniam ab aerario petiturum esse.</p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
 						<p>convenere deinde domini eorum, quos <choice>
@@ -12633,8 +12610,8 @@
 							temere secutum cernens castra inde movit, tum quoque intacto agro
 							Tarentino, quamquam simulata lenitas nihildum profuerat, tamen spe
 							labefactandae fidei haud absistens. Salapiam ut venit, frumentum ex
-							agris Metapontino atque Heracleensi<!--&mdash;-->iam enim aestas exacta
-							erat et hibernis placebat locus<!--&mdash;-->conportat.</p>
+							agris Metapontino atque Heracleensi — iam enim aestas exacta erat et
+							hibernis placebat locus — conportat.</p>
 					</div>
 					<div type="textpart" subtype="section" n="16">
 						<p>praedatum inde Numidae Maurique per Sallentinum agrum proximosque Apuliae
@@ -13032,8 +13009,8 @@
 						<p>quantum spes hominum <choice>
 								<sic>falli!</sic>
 								<corr>falli.</corr>
-							</choice> in liberata patria coniugem eius ac liberos de vita dimicare
-							<!--&mdash;--> quid obstantes libertati aut legibus?</p>
+							</choice> in liberata patria coniugem eius ac liberos de vita dimicare —
+							quid obstantes libertati aut legibus?</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>quod ab se cuiquam periculum, a sola ac prope vidua et puellis in
@@ -13085,9 +13062,9 @@
 						<p>itaque fremere <choice>
 								<sic>multitude</sic>
 								<corr>multitudo</corr>
-							</choice> et in locum Adranodori ac Themisti<!--&mdash;-->nam ambo
-							praetores fuerant<!--&mdash;-->comitia poscere, quae nequaquam ex
-							sententia praetorum futura essent.</p>
+							</choice> et in locum Adranodori ac Themisti — nam ambo praetores
+							fuerant — comitia poscere, quae nequaquam ex sententia praetorum futura
+							essent.</p>
 					</div>
 				</div>
 				<div type="textpart" subtype="chapter" n="27">
@@ -13302,9 +13279,8 @@
 							arbitrari superesse; direptam urbem, bona locupletium donata.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
-						<p>ad nuntium tam atrocem constitit agmen, concitatisque omnibus
-							duces<!--&mdash;-->erant autem Sosis ac Dinomenes<!--&mdash;-->, quid
-							agerent, consultabant.</p>
+						<p>ad nuntium tam atrocem constitit agmen, concitatisque omnibus duces —
+							erant autem Sosis ac Dinomenes — , quid agerent, consultabant.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>terroris speciem haud vanam mendacio praebuerant verberati ac securi
@@ -13503,10 +13479,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>legati aegre effugerunt. et iam non modo pacis sed ne belli quidem iura
-							relicta erant, cum Romanus exercitus ad Olympium<!--&mdash;-->Iovis id
-							templum <hi rend="italics">est</hi>
-							<!--&mdash;--> mille et quingentos passus ab urbe castra posuit. inde
-							quoque legatos praemitti placuit;</p>
+							relicta erant, cum Romanus exercitus ad Olympium — Iovis id templum <hi
+								rend="italics">est</hi> — mille et quingentos passus ab urbe castra
+							posuit. inde quoque legatos praemitti placuit;</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>quibus, ne intrarent urbem, extra portam Hippocrates atque Epicydes
@@ -13721,8 +13696,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>et Romana item classis, triginta quinqueremes, legionem primam Panormi
-							exposuere; versumque ab Italia bellum, <!--&mdash;--> adeo uterque
-							populus in Siciliam intentus fuit, <!--&mdash;--> videri poterat.</p>
+							exposuere; versumque ab Italia bellum, — adeo uterque populus in
+							Siciliam intentus fuit, — videri poterat.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>legionem Romanam quae exposita Panormi erat, venientem Syracusas praedae
@@ -13946,8 +13921,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="13">
 						<p>ipse hibernacula quinque milia passuum <hi rend="italics">ab</hi>
-							Hexapylo<!--&mdash;-->Leonta vocant locum<!--&mdash;-->communiit
-							aedificavitque. haec in Sicilia usque ad principium hiemis gesta.</p>
+							Hexapylo — Leonta vocant locum — communiit aedificavitque. haec in
+							Sicilia usque ad principium hiemis gesta.</p>
 					</div>
 				</div>
 				<div type="textpart" subtype="chapter" n="40">
@@ -14065,8 +14040,8 @@
 							advenisset.</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
-						<p>primo ad Castrum Album<!--&mdash;-->locus est insignis caede magni
-							Hamilcaris<!--&mdash;-->castra Romani habuere.</p>
+						<p>primo ad Castrum Album — locus est insignis caede magni Hamilcaris —
+							castra Romani habuere.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>arx erat munita et convexerant ante frumentum; tamen, quia omnia <pb
@@ -14105,8 +14080,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>Cn. Scipio, ut sociis praesidioque ferret opem, cum legione expedita
-							profectus inter bina castra <!--&mdash;--> cum magna caede hostium urbem
-							est ingressus et postero die eruptione aeque felici pugnavit.</p>
+							profectus inter bina castra — cum magna caede hostium urbem est
+							ingressus et postero die eruptione aeque felici pugnavit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>supra duodecim milia hominum caesa duobus proeliis, plus mille hominum
@@ -14114,9 +14089,9 @@
 							est.</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
-						<p>Bigerra inde urbs<!--&mdash;-->socii et hi Romanorum erant<!--&mdash;-->a
-							Carthaginiensibus oppugnari coepta est. eam obsidionem sine certamine
-							adveniens Cn. Scipio solvit.</p>
+						<p>Bigerra inde urbs — socii et hi Romanorum erant — a Carthaginiensibus
+							oppugnari coepta est. eam obsidionem sine certamine adveniens Cn. Scipio
+							solvit.</p>
 					</div>
 				</div>
 				<div type="textpart" subtype="chapter" n="42">
@@ -14162,11 +14137,11 @@
 								<corr>haud</corr>
 							</choice> multo minus quam mille captum et signa militaria quinquaginta
 							octo; et spolia plurima Gallica fuere, aurei torques armillaeque, magnus
-							numerus. duo etiam insignes reguli Gallorum<!--&mdash;--><choice>
+							numerus. duo etiam insignes reguli Gallorum — <choice>
 								<sic>Moeniacoepto</sic>
 								<corr>Moeniacapto</corr>
-							</choice> et Vismaro nomina erant<!--&mdash;-->eo proelio ceciderunt.
-							octo elephanti capti, tres occisi.<!--&mdash;--></p>
+							</choice> et Vismaro nomina erant — eo proelio ceciderunt. octo
+							elephanti capti, tres occisi. — </p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>cum tam prosperae <hi rend="italics">res</hi> in Hispania essent,
@@ -14201,8 +14176,8 @@
 							fuerant.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
-						<p>ne lustrum perficerent, mors prohibuit P. Furi. M. Atilius magistratu se abdicavit.<!--&mdash;-->
-							<pb n="228"/></p>
+						<p>ne lustrum perficerent, mors prohibuit P. Furi. M. Atilius magistratu se
+							abdicavit. — <pb n="228"/></p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p><choice>
@@ -14255,14 +14230,13 @@
 					<div type="textpart" subtype="section" n="4">
 						<p>prorogata imperia provinciaeque, M. Claudio Sicilia finibus eis, quibus
 							regnum Hieronis fuisset, Lentulo propraetori provincia vetus, T.
-							Otacilio classis<!--&mdash;-->exercitus nulli additi
-							novi<!--&mdash;--></p>
+							Otacilio classis — exercitus nulli additi novi — </p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>, M. Valerio Graecia Macedoniaque cum legione et classe, quam haberet; Q.
-							Mucio cum: vetere exercitu<!--&mdash;-->duae autem legiones
-							erant<!--&mdash;-->Sardinia; C. Terentio legio una, cui iam praeerat,
-								<hi rend="italics">ac</hi> Picenum.</p>
+							Mucio cum: vetere exercitu — duae autem legiones erant — Sardinia; C.
+							Terentio legio una, cui iam praeerat, <hi rend="italics">ac</hi>
+							Picenum.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>scribi praeterea duae urbanae legiones iussae eta viginti milia sociorum.
@@ -14471,9 +14445,8 @@
 							Hannibalem Salapiam venerunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
-						<p><hi rend="italics">ita</hi> Arpi sine clade<!--&mdash;-->ullius
-							praeterquam unius veteris proditoris, novi perfugae, restituti ad
-							Romanos.</p>
+						<p><hi rend="italics">ita</hi> Arpi sine clade — ullius praeterquam unius
+							veteris proditoris, novi perfugae, restituti ad Romanos.</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>Hispanis duplicia cibaria dari iussa; operaque eorum forti ac fideli
@@ -14488,14 +14461,13 @@
 					<div type="textpart" subtype="section" n="13">
 						<p>conloqui sese cum praetore velle. Cn. Fulvius castris praeerat; cui ubi
 							nuntiatum est, decem ex eo numero iussis inermibus deduci ad se, ubi,
-							quae postularent, audivit<!--&mdash;-->nihil autem aliud petebant, quam
-							ut Capua recepta bona sibi restituerentur<!--&mdash;-->, in fidem omnes
-							accepti.</p>
+							quae postularent, audivit — nihil autem aliud petebant, quam ut Capua
+							recepta bona sibi restituerentur — , in fidem omnes accepti.</p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
 						<p>et ab altero praetore Sempronio Tuditano oppidum Atrinum expugnatum.
 							amplius septem milia hominum capta et aeris argentique signati
-							aliquantur.<!--&mdash;--></p>
+							aliquantur. — </p>
 					</div>
 					<div type="textpart" subtype="section" n="15">
 						<p>Romae foedum incendium per duas noctes ac diem unum tenuit; solo aequata
@@ -14584,8 +14556,8 @@
 							fuit; namque ad famam eorum transitiones crebrae ab Numidis coeptae
 							fieri. ita cum Syphace Romanis coepta amicitia est. quod ubi
 							Carthaginienses acceperunt, extemplo <pb n="234"/> ad Galam in parte
-							altera Numidiae<!--&mdash;-->Maesulii ea gene
-							vocatur<!--&mdash;-->regnantem legatos mittunt.</p>
+							altera Numidiae — Maesulii ea gene vocatur — regnantem legatos
+							mittunt.</p>
 					</div>
 				</div>
 				<div type="textpart" subtype="chapter" n="49">
@@ -14612,10 +14584,9 @@
 							Syphacem devicit. triginta milia eo proelio hominum caesa dicuntur.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
-						<p>Syphax cum paucis equitibus in Maurusios ex acie
-							Numidas<!--&mdash;-->extremi prope Oceanum adversus Gadis
-							colunt<!--&mdash;-->refugit adfluentibusque ad famam eius undique
-							barbaris ingentis brevi copias armavit,</p>
+						<p>Syphax cum paucis equitibus in Maurusios ex acie Numidas — extremi prope
+							Oceanum adversus Gadis colunt — refugit adfluentibusque ad famam eius
+							undique barbaris ingentis brevi copias armavit,</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>cum quibus in Hispaniam angusto diremptam freto traiceret. <hi
@@ -15127,7 +15098,7 @@
 							</choice> quo dimicantes aut vitam semel <choice>
 								<sic>ant</sic>
 								<corr>aut</corr>
-							</choice> ignominiam finirent;<!--&mdash;--></p>
+							</choice> ignominiam finirent; — </p>
 					</div>
 					<div type="textpart" subtype="section" n="17">
 						<p>nos, quibus, nisi quod commisimus, ut quisquam ex <choice>
@@ -15161,7 +15132,7 @@
 							</choice> exaudimus resides ipsi ac segnes, tamquam nec manus nec arma
 							habeamus. servorum legionibus Ti. Sempronius consul totiens iam cum
 							hoste signis conlatis pugnavit; operae pretium habent libertatem
-							civitatemque:<!--&mdash;--></p>
+							civitatemque: — </p>
 					</div>
 					<div type="textpart" subtype="section" n="22">
 						<p>pro servis saltem ad hoc bellum emptis vobis simus, congredi cum hoste
@@ -15213,8 +15184,7 @@
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>et matris <hi rend="italics">Matutae</hi> intra portam Carmentalem et
-							Spei extra portam, quae priore anno incendio consumptae
-							fuerant.<!--&mdash;--></p>
+							Spei extra portam, quae priore anno incendio consumptae fuerant. — </p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>tempestates foedae fuere: in Albano monte biduum continenter lapidibus
@@ -15472,8 +15442,8 @@
 							diripi iussurum. si quis in hospitio civis <choice>
 								<sic>Rormani</sic>
 								<corr>Romani</corr>
-							</choice> _ vacuas autem tenebant domos<!--&mdash;-->nomen inscripsisset
-							eum se pro hoste habiturum.</p>
+							</choice> _ vacuas autem tenebant domos — nomen inscripsisset eum se pro
+							hoste habiturum.</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>contione dimissa <choice>
@@ -15532,8 +15502,7 @@
 					<div type="textpart" subtype="section" n="8">
 						<p>reliquit tamen modicum praesidium, simul <hi rend="italics">ut</hi> in
 							perficiendo muro adiuvaret. ipse profectus cum ceteris copiis ad
-							Galaesum flumen<!--&mdash;-->quinque milia ab urbe
-							abest<!--&mdash;-->posuit castra.</p>
+							Galaesum flumen — quinque milia ab urbe abest — posuit castra.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>ex his stativis regressus <pb n="249"/> ad inspiciendum, quod opus
@@ -15606,8 +15575,7 @@
 							post dies <choice>
 								<sic>classic</sic>
 								<corr>classis</corr>
-							</choice> instructa ac parata circumvehitur arcem et ante os
-							<!--&mdash;--> ipsum <choice>
+							</choice> instructa ac parata circumvehitur arcem et ante os — ipsum <choice>
 								<sic>ports</sic>
 								<corr>portus</corr>
 							</choice> ancoras iacit.</p>
@@ -15746,8 +15714,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>ea omnia, sicut acta erant, cum enuntiata Beneventanis essent, legatos
-							decem extemplo ad consules <!--&mdash;--> circa Bovianum castra
-							Romanorum erant<!--&mdash;-->miserunt.</p>
+							decem extemplo ad consules — circa Bovianum castra Romanorum erant —
+							miserunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>qui cum auditis quae ad Capuam agerentur, inter se comparassent, ut alter
@@ -15858,8 +15826,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="12">
 						<p>inde deletis hostium castris Beneventum reditum, praedamque ibi ambo
-							consules<!--&mdash;-->nam et Ap. Claudius eo post paucos dies
-							venit<!--&mdash;-->vendiderunt diviseruntque.</p>
+							consules — nam et Ap. Claudius eo post paucos dies venit — vendiderunt
+							diviseruntque.</p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
 						<p>et donati quorum opera castra hostium capta erant, ante alios Accaus
@@ -16020,10 +15988,10 @@
 							imminens moveri potuit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
-						<p>Flavusi Lucanus fuit caput partis eius Lucanorum<!--&mdash;-->cum pars ad
-							Hannibalem defecisset<!--&mdash;-->, quae cum Romanis stabat, et iam <hi
-								rend="italics">altero</hi> anno in magistratu erat, ab iisdem illis
-							creatus praetor.</p>
+						<p>Flavusi Lucanus fuit caput partis eius Lucanorum — cum pars ad Hannibalem
+							defecisset — , quae cum Romanis stabat, et iam <hi rend="italics"
+								>altero</hi> anno in magistratu erat, ab iisdem illis creatus
+							praetor.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>is mutata repente voluntate locum gratiae apud Poenum quaerens neque
@@ -16042,8 +16010,8 @@
 							adducturum ait:</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
-						<p>Mago ibi pedites equitesque armatos<!--&mdash;-->et capere eas latebras
-							ingentem numerum<!--&mdash;-->occuleret.</p>
+						<p>Mago ibi pedites equitesque armatos — et capere eas latebras ingentem
+							numerum — occuleret.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>loco satis inspecto atque undique explorato dies composita gerendae rei
@@ -16114,9 +16082,8 @@
 							egregium solacium suae morti inventurum.</p>
 					</div>
 					<div type="textpart" subtype="section" n="21">
-						<p>inter haec dicta paludamento circa laevum brachium
-							intorto<!--&mdash;-->nam ne scuta quidem secum
-							extulerant<!--&mdash;-->in hostis impetum fecit. maior quam pro numero
+						<p>inter haec dicta paludamento circa laevum brachium intorto — nam ne scuta
+							quidem secum extulerant — in hostis impetum fecit. maior quam pro numero
 							hominum editur pugna:</p>
 					</div>
 					<div type="textpart" subtype="section" n="22">
@@ -16154,9 +16121,9 @@
 							quoque Gracchi varia est fama.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
-						<p>alii in castris Romanis sepultum ab suis, alii ab
-							Hannibale<!--&mdash;-->et ea vulgatior fama est<!--&mdash;-->tradunt in
-							vestibulo Punicorum castrorum rogum extructum esse,</p>
+						<p>alii in castris Romanis sepultum ab suis, alii ab Hannibale — et ea
+							vulgatior fama est — tradunt in vestibulo Punicorum castrorum rogum
+							extructum esse,</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>armatum exercitum decucurrisse cum tripudiis Hispanorum motibusque
@@ -16348,9 +16315,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>Casilinum frumentum convectum; ad Volturni ostium, ubi nunc urbs est,
-							castellum communitum <hi rend="italics">in eoque et
-								Puteolis<!--&mdash;-->triennio</hi> ante Fabius Maximus
-							munierat<!--&mdash;-->praesidium impositum, ut mare proximum</p>
+							castellum communitum <hi rend="italics">in eoque et Puteolis —
+								triennio</hi> ante Fabius Maximus munierat — praesidium impositum,
+							ut mare proximum</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>et flumen in potestate <hi rend="italics">essent.</hi> in ea duo maritima
@@ -16545,12 +16512,11 @@
 							liberi a Carthagine commeatus alerent,</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
-						<p>tamen, ne quid inexpertum relinqueret, transfugas
-							Syracusanos<!--&mdash;-->erant autem apud Romanos aliqui nobilissimi
-							viri inter defectionem ab Romanis, quia ab novis consiliis abhorrebant,
-							pulsi<!--&mdash;-->conloquiis suae partis temptare hominum animos iussit
-							et fidem dare, si traditae forent Syracusae, liberos eos ac suis legibus
-							victuros esse.</p>
+						<p>tamen, ne quid inexpertum relinqueret, transfugas Syracusanos — erant
+							autem apud Romanos aliqui nobilissimi viri inter defectionem ab Romanis,
+							quia ab novis consiliis abhorrebant, pulsi — conloquiis suae partis
+							temptare hominum animos iussit et fidem dare, si traditae forent
+							Syracusae, liberos eos ac suis legibus victuros esse.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>non erat conloquii copia, quia multorum animi suspecti omnium curam
@@ -16741,10 +16707,10 @@
 							Romanum exercitum inclusum muris posse Marcellus,</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
-						<p>ut Euryalum neque tradi neque capi vidit posse, inter Neapolim et
-							Tycham<!--&mdash;-->nomina ea partium urbis et instar urbium
-							sunt<!--&mdash;-->posuit castra timens, ne, si frequentia intrasset
-							loca, contineri ab discursu miles avidus praedae non posset.</p>
+						<p>ut Euryalum neque tradi neque capi vidit posse, inter Neapolim et Tycham
+							— nomina ea partium urbis et instar urbium sunt — posuit castra timens,
+							ne, si frequentia intrasset loca, contineri ab discursu miles avidus
+							praedae non posset.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>legati eo ab Tycha et Neapoli cum infulis et velamentis venerunt
@@ -16936,10 +16902,10 @@
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>classem in statione versa in Africam habentem atque timentem navale
-							proelium, non tam quod impar viribus aut numero navium
-							esset<!--&mdash;-->quippe etiam plures habebat<!--&mdash;-->, quam quod
-							venti aptiores Romanae quam suae classi flarent, perpulit tamen, ut
-							fortunam navalis certaminis experiri vellet.</p>
+							proelium, non tam quod impar viribus aut numero navium esset — quippe
+							etiam plures habebat — , quam quod venti aptiores Romanae quam suae
+							classi flarent, perpulit tamen, ut fortunam navalis certaminis experiri
+							vellet.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>et Marcellus, cum et Siculum exercitum ex tota insula conciri videret et
@@ -16965,7 +16931,7 @@
 					<div type="textpart" subtype="section" n="13">
 						<p>Epicydes a tanta repente destitutus spe, ne <hi rend="italics">in</hi>
 							obsidionem magna ex parte captae urbis rediret, Agrigentum navigat, <pb
-								n="272"/> expectaturus<!--&mdash;-->magis eventum quam inde <choice>
+								n="272"/> expectaturus — magis eventum quam inde <choice>
 								<sic>quicquat</sic>
 								<corr>quicquam</corr>
 							</choice> moturus.</p>
@@ -17032,9 +16998,9 @@
 							eius occisis, Carthaginiensibus omni possessione <choice>
 								<sic>Siclliae</sic>
 								<corr>Siciliae</corr>
-							</choice> terra marique pulsis <!--&mdash;--> quam superesse causam
-							Romanis, cur non perinde ac si Hiero ipse viveret, unicus Romanae
-							amicitiae cultor, incolumis Syracusas esse velint?</p>
+							</choice> terra marique pulsis — quam superesse causam Romanis, cur non
+							perinde ac si Hiero ipse viveret, unicus Romanae amicitiae cultor,
+							incolumis Syracusas esse velint?</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>itaque nec urbi <pb n="273"/><hi rend="italics">Qec</hi> hominibus <choice>
@@ -17137,8 +17103,8 @@
 							</choice> Moericum nanctus primum, quo in statu <choice>
 								<sic>reliquisset!</sic>
 								<corr>reliquisset</corr>
-							</choice> Hispaniam<!--&mdash;-->et nuper inde venerat<!--&mdash;-->,
-							exponit: omnia Romanis ibi obtineri armis.</p>
+							</choice> Hispaniam — et nuper inde venerat — , exponit: omnia Romanis
+							ibi obtineri armis.</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>posse eum, si operae pretium faciat, principem popularium esse, seu
@@ -17611,7 +17577,7 @@
 						<p>Cn. Scipionem alii in tumulo primo impetu hostium caesum tradunt, alii
 							cum paucis in propinquam castris turrim perfugisse; hanc igni
 							circumdatam atque ita exustis foribus, quas nulla moliri potuerant vi,
-							captam omnisque intus cum ipso imperatore occisos.<!--&mdash;--></p>
+							captam omnisque intus cum ipso imperatore occisos. — </p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
 						<p>anno octavo, postquam in Hispaniam venerat, Cn. Scipio <choice>
@@ -17662,11 +17628,10 @@
 								<sic>custodian</sic>
 								<corr>custodiam</corr>
 							</choice> valli stationesque, donec per omnis suffragium iret, ad L.
-							Marcium cuncti summam imperii detulerint. omne inde
-							tempus<!--&mdash;--></p>
+							Marcium cuncti summam imperii detulerint. omne inde tempus — </p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
-						<p>exiguum id fuit<!--&mdash;-->muniendis castris convehendisque commeatibus
+						<p>exiguum id fuit — muniendis castris convehendisque commeatibus
 							consumpsit; et omnia imperia milites cum inpigre, tum haudquaquam
 							abiecto animo exequebantur.</p>
 					</div>
@@ -17691,17 +17656,15 @@
 								<corr>et</corr>
 							</choice> inutiles se proiecissent fletus potius, quam ad tutandos semet
 							ipsos et rem publicam secum acuerent' animos, et ne inultos imperatores
-							suos iacere sinerent:, cum subito clamor tubarumque
-							sonus<!--&mdash;--></p>
+							suos iacere sinerent:, cum subito clamor tubarumque sonus — </p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>iam enim <pb n="283"/><choice>
 								<sic>rope</sic>
 								<corr>prope</corr>
-							</choice> vallum hostes erant<!--&mdash;-->exauditur. inde verso repente
-							in iram luctu discurrunt ad arma, ac velut accensi rabie concurrunt ad
-							portas et in hostem neglegenter atque incomposite venientem
-							incurrunt.</p>
+							</choice> vallum hostes erant — exauditur. inde verso repente in iram
+							luctu discurrunt ad arma, ac velut accensi rabie concurrunt ad portas et
+							in hostem neglegenter atque incomposite venientem incurrunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
 						<p>extemplo inprovisa res pavorem incutit Poenis mirabundique, unde tot
@@ -17710,8 +17673,7 @@
 								<sic>victims</sic>
 								<corr>uictis</corr>
 							</choice> ac fugatis, quis imperator duobus Scipionibus caesis
-							exstitisset, quis castris praeesset, quis signum dedisset
-							pugnae<!--&mdash;--></p>
+							exstitisset, quis castris praeesset, quis signum dedisset pugnae — </p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
 						<p>ad haec tot tam necopinata primo omnium incerti stupentesque referunt
@@ -17789,10 +17751,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>vos quoque velim, milites, non lamentis lacrimisque tamquam extinctos
-							prosequi <!--&mdash;--> vivunt vigentque fama rerum
-							gestarum<!--&mdash;-->, sed, quotienscumque occurret memoria illorum,
-							velut si adhortantis signumque dantis videatis eos, ita proelia
-							inire.</p>
+							prosequi — vivunt vigentque fama rerum gestarum — , sed, quotienscumque
+							occurret memoria illorum, velut si adhortantis signumque dantis videatis
+							eos, ita proelia inire.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>nec alia profecto species hesterno die oblata oculis animisque vestris
@@ -17971,8 +17932,7 @@
 								<sic>monimentumque</sic>
 								<corr>monumentumque</corr>
 							</choice> victoriae eius de Poenis usque ad incensum Capitolium fuisse
-							in templo clipeum Marcium appellatum cum imagine
-							Hasdrubalis.<!--&mdash;--></p>
+							in templo clipeum Marcium appellatum cum imagine Hasdrubalis. — </p>
 					</div>
 					<div type="textpart" subtype="section" n="18">
 						<p>quietae deinde aliquamdiu in Hispania res fuere utrisque post tantas in
@@ -18017,8 +17977,8 @@
 								<corr>Epicydes</corr>
 							</choice> et Hanno duces reliqui prioris belli et tertius novus ab
 							Hannibale in locum Hippocratis missus, Libyphoenicum generis
-							Hippacritanus<!--&mdash;-->Muttinen populares vocabant<!--&mdash;-->,
-							vir inpiger et sub Hannibale magistro omnis belli artes edoctus.</p>
+							Hippacritanus — Muttinen populares vocabant — , vir inpiger et sub
+							Hannibale magistro omnis belli artes edoctus.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>huic ab Epicyde et Hannone Numidae dati auxiliares, cum quibus ita
@@ -18645,10 +18605,9 @@
 							elephantos igni e castris exactos.</p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
-						<p>hoc ultimum<!--&mdash;-->utcumque initum finitumque est<!--&mdash;-->ante
-							deditionem Capuae proelium fuit. medix tuticus, qui summus magistratus
-							apud Campanos est, eo anno Seppius Loesius erat, loco obscuro tenuique
-							fortuna ortus.</p>
+						<p>hoc ultimum — utcumque initum finitumque est — ante deditionem Capuae
+							proelium fuit. medix tuticus, qui summus magistratus apud Campanos est,
+							eo anno Seppius Loesius erat, loco obscuro tenuique fortuna ortus.</p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
 						<p>matrem eius quondam pro pupillo eo procurantem familiare ostentum, cum
@@ -18999,8 +18958,8 @@
 					<div type="textpart" subtype="section" n="12">
 						<p>neque ibi error est, quod tanti <hi rend="italics">ducis</hi><hi
 								rend="italics">tantique</hi> exercitus vestigia intra tam brevis
-							aevi memoriam potuerint confundi<!--&mdash;-->isse enim ea
-							constat<!--&mdash;-->, tantum id interest,</p>
+							aevi memoriam potuerint confundi — isse enim ea constat — , tantum id
+							interest,</p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
 						<p>veneritne eo itinere ad urbem, an ab urbe in Campaniam redierit.</p>
@@ -19674,17 +19633,16 @@
 							Silanus propraetor adiutor ad res gerendas datus est.</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
-						<p>ita cum triginta navium classe <!--&mdash;--> omnes autem quinqueremes
-							erant <!--&mdash;-->
-							<hi rend="italics">ab</hi> ostiis Tiberinis profectus praeter oram Tusci
+						<p>ita cum triginta navium classe — omnes autem quinqueremes erant — <hi
+								rend="italics">ab</hi> ostiis Tiberinis profectus praeter oram Tusci
 							maris, Alpes atque Gallicam sinum et deinde Pyrenaei circumvectus
-							promunturium, Emporiis, urbe Graeca<!--&mdash;-->oriundi et ipsi a
-							Phocaea sunt<!--&mdash;-->, copias exposuit.</p>
+							promunturium, Emporiis, urbe Graeca — oriundi et ipsi a Phocaea sunt — ,
+							copias exposuit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
 						<p>inde sequi navibus iussis Tarraconem pedibus profectus conventum omnium
-							sociorum<!--&mdash;-->etenim legationes ad famam eius ex omni se
-							provincia effuderant<!--&mdash;-->habuit.</p>
+							sociorum — etenim legationes ad famam eius ex omni se provincia
+							effuderant — habuit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
 						<p>naves ibi subduci iussit remissis quattuor triremibus Massiliensium, quae
@@ -19976,13 +19934,11 @@
 					<div type="textpart" subtype="section" n="2">
 						<p>forte ita incidit, ut comitiis perfectis nuntiaretur T. Otacilium, quem
 							T. Manlio, nisi interpellatus ordo comitiorum esset, conlegam absentem
-							daturus fuisse videbatur populus, mortuum in Sicilia
-							esse.<!--&mdash;--></p>
+							daturus fuisse videbatur populus, mortuum in Sicilia esse. — </p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>ludi Apollinares et priore anno fuerant et, eo anno ut fierent, referente
-							Calpurnio praetore, senatus decrevit, ut in perpetuum
-							voverentur.<!--&mdash;--></p>
+							Calpurnio praetore, senatus decrevit, ut in perpetuum voverentur. — </p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>eodem anno prodigia aliquot visa nuntiataque sunt. in aede <pb n="320"/>
@@ -20002,8 +19958,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>ea prodigia hostiis maioribus sunt procurata et obsecratio in unum diem
-							populo indicta et novemdiale sacrum.<!--&mdash;-->Sacerdotes publici
-							aliquot eo anno demortui sunt, novique suffecti:</p>
+							populo indicta et novemdiale sacrum. — Sacerdotes publici aliquot eo
+							anno demortui sunt, novique suffecti:</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>in locum M'. Aemili Numidae decemviri sacrorum M. Aemilius Lepidus, in
@@ -20043,8 +19999,7 @@
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>et Acarnanas, quos aegre ferrent Aetoli a corpore suo diremptos,
-							restituturum se in antiquam formulam iurisque ac dicionis
-							eorum<!--&mdash;--></p>
+							restituturum se in antiquam formulam iurisque ac dicionis eorum — </p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>: haec dicta promissaque a Romano imperatore Scopas, qui tum praetor
@@ -20088,10 +20043,10 @@
 					<div type="textpart" subtype="section" n="15">
 						<p>morae causa fuerant retenti Romae diutius legati Aetolorum. nec tamen
 							impedimento id rebus gerendis fuit: et Aetoli extemplo moverunt adversus
-							Philippum bellum, et Laevinus Zacynthum<!--&mdash;-->parva insula est
-							propinqua Aetoliae, urbem unam eodem, quo ipsa est, nomine
-							habet<!--&mdash;-->, eam praeter arcem vi cepit et Oeniadas Nasumque
-							Acarnanum captas Aetolis contribuit;</p>
+							Philippum bellum, et Laevinus Zacynthum — parva insula est propinqua
+							Aetoliae, urbem unam eodem, quo ipsa est, nomine habet — , eam praeter
+							arcem vi cepit et Oeniadas Nasumque Acarnanum captas Aetolis
+							contribuit;</p>
 					</div>
 					<div type="textpart" subtype="section" n="16">
 						<p>Philippumque satis implicatum bello finitimo ratus, ne <choice>
@@ -20124,13 +20079,12 @@
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>his raptim actis memor Aetolici iunctique cum eo Romani belli per
-							Pelagoniam et Lyncum et Bottiaeam in Thessaliam
-							descendit<!--&mdash;--></p>
+							Pelagoniam et Lyncum et Bottiaeam in Thessaliam descendit — </p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>ad bellum secum adversus Aetolos capessendum incitari posse homines
-							credebat<!--&mdash;-->et relicto ad fauces Thessaliae Perseo cum
-							quattuor milibus armatorum ad arcendos aditu Aetolos,</p>
+							credebat — et relicto ad fauces Thessaliae Perseo cum quattuor milibus
+							armatorum ad arcendos aditu Aetolos,</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>ipse, priusquam maioribus occuparetur rebus, in Macedoniam atque inde in
@@ -20266,9 +20220,8 @@
 							nunc novae appellantur, arsere;</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
-						<p>conprehensa postea privata aedificia <!--&mdash;--> neque enim tum
-							basilicae erant<!--&mdash;-->, conprehensae lautumiae forumque
-							piscatorium et atrium regium.</p>
+						<p>conprehensa postea privata aedificia — neque enim tum basilicae erant — ,
+							conprehensae lautumiae forumque piscatorium et atrium regium.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>aedis Vestae vix defensa est tredecim maxime servorum opera, qui in
@@ -20285,10 +20238,10 @@
 							libero pecuniam, servo libertatem.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
-						<p>eo praemio inductus Campanorum Calaviorum servus <!--&mdash;--> Manus ei
-							nomen erat<!--&mdash;-->indicavit dominos et quinque praeterea iuvenes
-							nobiles Campanos, quorum parentes a Q. Fulvio securi percussi erant, id
-							incendium fecisse vulgoque facturos alia, ni conprendantur.</p>
+						<p>eo praemio inductus Campanorum Calaviorum servus — Manus ei nomen erat —
+							indicavit dominos et quinque praeterea iuvenes nobiles Campanos, quorum
+							parentes a Q. Fulvio securi percussi erant, id incendium fecisse
+							vulgoque facturos alia, ni conprendantur.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>conprehensi ipsi familiaeque eorum. et primo elevabatur index
@@ -20575,10 +20528,10 @@
 							fuerim.</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
-						<p>sed non quid ego fecerim in disquisitionem venit, <!--&mdash;--> nam
-							quidquid in hostibus feci ius belli defendit<!--&mdash;-->, sed quid
-							isti pati debuerint. qui si non fuerunt hostes, nihil interest, nunc an
-							vivo Hierone Syracusas violaverim.</p>
+						<p>sed non quid ego fecerim in disquisitionem venit, — nam quidquid in
+							hostibus feci ius belli defendit — , sed quid isti pati debuerint. qui
+							si non fuerunt hostes, nihil interest, nunc an vivo Hierone Syracusas
+							violaverim.</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>sin autem desciverunt a populo Romano, legatos nostros ferro atque armis
@@ -20661,9 +20614,8 @@
 							in porta, spolia patriae suae visurus sit?</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
-						<p><!--&mdash;--> haec taliaque cum ad invidiam consulis miserationemque
-							Siculorum dicerentur, mitius tamen decreverunt patres: acta M.
-							Marcelli,</p>
+						<p> — haec taliaque cum ad invidiam consulis miserationemque Siculorum
+							dicerentur, mitius tamen decreverunt patres: acta M. Marcelli,</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>quae is gerens bellum victorque egisset, rata habenda esse; in relicum
@@ -20714,10 +20666,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>summotis deinde e templo paulisper dubitatur, an arcessendus a Capua Q.
-							Fulvius esset <!--&mdash;--> mortuus enim post captam Claudius consul
-							erat<!--&mdash;-->, <hi rend="italics">ut</hi> coram imperatore, qui res
-							gessisset, sicut inter Marcellum Siculosque disceptatum fuerat,
-							disceptaretur.</p>
+							Fulvius esset — mortuus enim post captam Claudius consul erat — , <hi
+								rend="italics">ut</hi> coram imperatore, qui res gessisset, sicut
+							inter Marcellum Siculosque disceptatum fuerat, disceptaretur.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>dein cum M. Atilium C. Fulvium fratrem Flacci, legatos eius, et Q.
@@ -21069,9 +21020,9 @@
 					<div type="textpart" subtype="section" n="11">
 						<p>ita inde dimissi sunt nec Blattius ante abstitit tam audaci incepto, quam
 							idem obtundendo docendoque, quam ea res ipsis patriaeque salutaris
-							esset, pervicit, ut praesidium Punicum <!--&mdash;-->
-							<hi rend="italics">quingenti</hi> autem Numidae
-							erant<!--&mdash;-->Salapiaque traderetur Marcello.</p>
+							esset, pervicit, ut praesidium Punicum — <hi rend="italics"
+								>quingenti</hi> autem Numidae erant — Salapiaque traderetur
+							Marcello.</p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
 						<p>nec sine caede multa tradi potuit. longe fortissimi equitum toto Punico
@@ -21415,8 +21366,8 @@
 					<div type="textpart" subtype="section" n="17">
 						<p>quid igitur minus conveniat, milites, quam, cum aliae super alias clades
 							cumularentur, ac di prope ipsi cum Hannibale starent, <pb n="343"/> vos
-							hic cum parentibus meis<!--&mdash;-->aequentur enim etiam honore
-							nominis<!--&mdash;-->sustinuisse <choice>
+							hic cum parentibus meis — aequentur enim etiam honore nominis —
+							sustinuisse <choice>
 								<sic>lahantem</sic>
 								<corr>labantem</corr>
 							</choice> fortunam populi oomlani, nunc eosdem, cum illic omnia secunda
@@ -21471,8 +21422,8 @@
 					<div type="textpart" subtype="section" n="1">
 						<p>hac oratione accensis militum animis, relicto ad praesidium regionis eius
 							M. Silano cum tribus milibus peditum et trecentis equitibus, ceteras
-							omnes copias<!--&mdash;-->erant autem viginti quinque milia peditum, duo
-							milia quingenti equites<!--&mdash;-->Hiberum traiecit.</p>
+							omnes copias — erant autem viginti quinque milia peditum, duo milia
+							quingenti equites — Hiberum traiecit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>ibi <pb n="344"/> quibusdam suadentibus, ut, quoniam in tris <choice>
@@ -21488,11 +21439,10 @@
 								<sic>cur</sic>
 								<corr>cum</corr>
 							</choice> ipsam opulentam suis opibus, tum hostium omni bellico apparatu
-							plenam<!--&mdash;-->ibi <choice>
+							plenam — ibi <choice>
 								<sic>armna</sic>
 								<corr>arma</corr>
-							</choice> ibi pecunia, ibi totius Hispaniae obsides erant
-							<!--&mdash;-->,</p>
+							</choice> ibi pecunia, ibi totius Hispaniae obsides erant — ,</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>sitam praeterea cum opportune ad traiciendum in Africam, tum super portum
@@ -21509,8 +21459,8 @@
 								<sic>siaul</sic>
 								<corr>simul</corr>
 							</choice> terra marique. castra ab regione urbis, qua in septentrionem
-							versa est, posita; his ab tergo<!--&mdash;-->nam frons natura tuta
-							erat<!--&mdash;-->duplex vallum obiectum.</p>
+							versa est, posita; his ab tergo — nam frons natura tuta erat — duplex
+							vallum obiectum.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>etenim sita Carthago sic est: sinus est maris media fere Hispaniae ora,
@@ -21638,10 +21588,9 @@
 							urbem et ferre scalas iubet.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
-						<p>ipse trium prae se iuvenum validorum scutis oppositis <!--&mdash;-->
-							ingens enim iam vis omnis generis telorum e muris
-							volabat<!--&mdash;-->ad urbem succedit, hortatur, imperat quae in rem
-							sunt,</p>
+						<p>ipse trium prae se iuvenum validorum scutis oppositis — ingens enim iam
+							vis omnis generis telorum e muris volabat — ad urbem succedit, hortatur,
+							imperat quae in rem sunt,</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>quodque <choice>
@@ -21999,8 +21948,8 @@
 					<div type="textpart" subtype="section" n="12">
 						<p>cum Scipio nihil defuturum iis profecto diceret, tum rursus mulier: "haud
 							magni ista facimus" inquit; "quid enim huic fortunae non satis est? alia
-							me cura aetatem harum intuentem <!--&mdash;--> nam ipsa iam extra
-							periculum iniuriae muliebris sum <!--&mdash;--> stimulat."</p>
+							me cura aetatem harum intuentem — nam ipsa iam extra periculum iniuriae
+							muliebris sum — stimulat."</p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
 						<p>et aetate et forma florentes circa eam Indibilis filiae erant aliaeque
@@ -22205,9 +22154,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>ad tria milia militum ibi Hannibalis, quae praesidii causa relicta <pb
-								n="356"/> erant, oppressa. praeda<!--&mdash;-->et aliquantum eius
-							fuit militi concessa. tritici quoque ducenta quadraginta milia modium et
-							centum decem milia hordei inventa.</p>
+								n="356"/> erant, oppressa. praeda — et aliquantum eius fuit militi
+							concessa. tritici quoque ducenta quadraginta milia modium et centum
+							decem milia hordei inventa.</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>ceterum nequaquam inde tantum gaudium fuit quanta clades intra paucos
@@ -22308,11 +22257,10 @@
 					<div type="textpart" subtype="section" n="6">
 						<p>ita tamen aciem instruxerunt, ut Poenus dextrum cornu in collem erigeret,
 							Romani sinistrum ad oppidum adplicarent. ab hora tertia cum ad noctem
-							pugnam extendissent, fessaeque pugnando primae acies
-							essent<!--&mdash;-->ab Romanis prima legio et dextra ala, ab Hannibale
-							Hispani milites et funditores Baliaris, elephanti quoque commisso iam
-							certamine in proelium acti<!--&mdash;-->, diu pugna neutro inclinata
-							stetit.</p>
+							pugnam extendissent, fessaeque pugnando primae acies essent — ab Romanis
+							prima legio et dextra ala, ab Hannibale Hispani milites et funditores
+							Baliaris, elephanti quoque commisso iam certamine in proelium acti — ,
+							diu pugna neutro inclinata stetit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p><hi rend="italics">ut</hi> primae legioni tertia, dextrae alae sinistra
@@ -22348,10 +22296,9 @@
 				<div type="textpart" subtype="chapter" n="3">
 					<div type="textpart" subtype="section" n="1">
 						<p>Capuae interim Flaccus dum bonis principum vendendis, agro, qui
-							publicatus erat, locando<!--&mdash;-->locavit autem omnem
-							frumento<!--&mdash;-->tempus terit, ne deesset materia in Campanos
-							saeviendi, novum in occulto gliscens per indicium protractum est
-							facinus.</p>
+							publicatus erat, locando — locavit autem omnem frumento — tempus terit,
+							ne deesset materia in Campanos saeviendi, novum in occulto gliscens per
+							indicium protractum est facinus.</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>milites aedificiis emotos, simul ut cum agro tecta urbis fruenda
@@ -22596,12 +22543,10 @@
 								<sic>in</sic>
 								<corr>ad</corr>
 							</choice> Sicilia se M. Valerium Messallam, qui tum classi praeesset,
-							dictatorem dicturum esse aiebat, patres extra Romanum
-							agrum<!--&mdash;-->eum autem <choice>
+							dictatorem dicturum esse aiebat, patres extra Romanum agrum — eum autem <choice>
 								<sic>in</sic>
 								<corr>ad</corr>
-							</choice> Italia terminari<!--&mdash;-->negabant dictatorem dici
-							posse.</p>
+							</choice> Italia terminari — negabant dictatorem dici posse.</p>
 					</div>
 					<div type="textpart" subtype="section" n="16">
 						<p>M. Lucretius tribunus plebis cum de ea re consuleret, ita decrevit
@@ -22790,12 +22735,12 @@
 					<div type="textpart" subtype="section" n="11">
 						<p>C. Hostilius ab C. Laetorio propraetore provinciam exercitumque, qui tum
 							Arimini erat, acciperet. M. Marcello, quibus consul rem gesserat,
-							legiones decretae. M. Valerio cum L. Cincio<!--&mdash;--></p>
+							legiones decretae. M. Valerio cum L. Cincio — </p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
-						<p>iis quoque enim prorogatum in Sicilia imperium<!--&mdash;-->Cannensis
-							exercitus datus, <pb n="365"/> euinque supplere ex militibus, qui ex
-							legionibus Cn. Fulvi superessent, iussi.</p>
+						<p>iis quoque enim prorogatum in Sicilia imperium — Cannensis exercitus
+							datus, <pb n="365"/> euinque supplere ex militibus, qui ex legionibus
+							Cn. Fulvi superessent, iussi.</p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
 						<p>conquisitos eos consules in Siciliam miserunt; additaque eadem militiae
@@ -22892,16 +22837,15 @@
 							scripserunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
-						<p>urbanum veterem exercitum Fulvius consul C. Fulvio Flacco legato
-							<!--&mdash;--> frater hic consulis erat<!--&mdash;-->in Etruriam dedit
-							ducendum et legiones, quae in Etruria erant, Romam deducendas.</p>
+						<p>urbanum veterem exercitum Fulvius consul C. Fulvio Flacco legato — frater
+							hic consulis erat — in Etruriam dedit ducendum et legiones, quae in
+							Etruria erant, Romam deducendas.</p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
-						<p>et Fabius consul reliquias exercitus Fulviani
-							conquisitas<!--&mdash;-->fuere autem ad quattuor milia trecenti
-							quadraginta quattuor<!--&mdash;-->Q. Maximum filium ducere in Siciliam
-							ad M. Valerium proconsulem iussit atque ab eo duas legiones et triginta
-							quinqueremes accipere.</p>
+						<p>et Fabius consul reliquias exercitus Fulviani conquisitas — fuere autem
+							ad quattuor milia trecenti quadraginta quattuor — Q. Maximum filium
+							ducere in Siciliam ad M. Valerium proconsulem iussit atque ab eo duas
+							legiones et triginta quinqueremes accipere.</p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
 						<p>nihil eae deductae ex insula legiones minuerunt nec viribus nec specie
@@ -22939,9 +22883,9 @@
 				</div>
 				<div type="textpart" subtype="chapter" n="9">
 					<div type="textpart" subtype="section" n="1">
-						<p>ceterum transportati milites in Siciliam <!--&mdash;--> et erant maior
-							pars Latini nominis sociorumque prope magni motus causa fuere: adeo ex
-							parvis saepe magnarum momenta rerum pendent.</p>
+						<p>ceterum transportati milites in Siciliam — et erant maior pars Latini
+							nominis sociorumque prope magni motus causa fuere: adeo ex parvis saepe
+							magnarum momenta rerum pendent.</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>fremitus enim inter Latinos sociosque in conciliis ortus, decimum annum
@@ -23155,10 +23099,10 @@
 							perpauci, quos ea infamia attingeret.</p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
-						<p>illis omnibus<!--&mdash;-->et multi erant<!--&mdash;-->adempti equi, qui
-							Cannensium legionum equites in Sicilia erant. addiderunt acerbitati
-							etiam tempus, ne praeterita stipendia procederent iis, quae equo publico
-							meruerant, sed dena stipendia equis privatis facerent.</p>
+						<p>illis omnibus — et multi erant — adempti equi, qui Cannensium legionum
+							equites in Sicilia erant. addiderunt acerbitati etiam tempus, ne
+							praeterita stipendia procederent iis, quae equo publico meruerant, sed
+							dena stipendia equis privatis facerent.</p>
 					</div>
 					<div type="textpart" subtype="section" n="15">
 						<p>magnum praeterea numerum eorum conquisiverunt, qui equo merere deberent;
@@ -23568,14 +23512,13 @@
 						<p>tum a caede ad diripiendam urbem discursum. milia triginta servilium
 							capitum dicuntur capta, argenti vis ingens facti signatique, auri
 							octoginta tria milia pondo, signa et tabulae, prope ut Syracusarum
-							ornamenta<!--&mdash;-->aequaverint.</p>
+							ornamenta — aequaverint.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>sed maiore animo generis eius praeda abstinuit Fabius quam Marcellus; qui
-							interroganti scriba, quid fieri signis vellet ingentis
-							magnitudinis<!--&mdash;-->di sunt, suo quisque habitu in modum
-							pugnantium formati<!--&mdash;-->, deos iratos Tarentinis relinqui
-							iussit.</p>
+							interroganti scriba, quid fieri signis vellet ingentis magnitudinis — di
+							sunt, suo quisque habitu in modum pugnantium formati — , deos iratos
+							Tarentinis relinqui iussit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>murus inde, qui urbem ab arce dirimebat, dirutus est ac disiectus. dum
@@ -23679,10 +23622,9 @@
 								>officinis.</hi></p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
-						<p>cum iis copiis Scipio veris principio ab Tarracone
-							egressus<!--&mdash;-->iam enim et Laelius redierat ab Roma, sine quo
-							nihil maioris rei motum volebat<!--&mdash;-->ducere ad hostem
-							pergit.</p>
+						<p>cum iis copiis Scipio veris principio ab Tarracone egressus — iam enim et
+							Laelius redierat ab Roma, sine quo nihil maioris rei motum volebat —
+							ducere ad hostem pergit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>per omnia pacata eunti, ut cuiusque populi fines transiret,
@@ -24075,18 +24017,18 @@
 				</div>
 				<div type="textpart" subtype="chapter" n="22">
 					<div type="textpart" subtype="section" n="1">
-						<p>Undecimo anno Punici belli consulatum inierunt M. Marcellus
-							quintum<!--&mdash;-->ut numeretur consulatus, quem vitio creatus non
-							gessit<!--&mdash;-->et T. Quinctius Crispinus.</p>
+						<p>Undecimo anno Punici belli consulatum inierunt M. Marcellus quintum — ut
+							numeretur consulatus, quem vitio creatus non gessit — et T. Quinctius
+							Crispinus.</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>utrisque consulibus Italia decreta provincia est et duo <choice>
 								<sic>consulur</sic>
 								<corr>consulum</corr>
-							</choice> prioris anni exercitus <!--&mdash;--> tertius Venusiae tum
-							erat, cui Marcellus praefuerat<!--&mdash;-->, ita, ut ex tribus
-							eligerent duo, quos vellent, tertius <pb n="386"/> ei traderetur, cui
-							Tarentum et Sallentini provincia evenisset.</p>
+							</choice> prioris anni exercitus — tertius Venusiae tum erat, cui
+							Marcellus praefuerat — , ita, ut ex tribus eligerent duo, quos vellent,
+							tertius <pb n="386"/> ei traderetur, cui Tarentum et Sallentini
+							provincia evenisset.</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>ceterae provinciae ita divisae: praetoribus P. Licinio Varo urbana, P.
@@ -24121,11 +24063,10 @@
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>et in Sicilia ita divisa res est: Sex. Caesari exercitus Cannensis datus
-							est; M. Valerius Laevinus<!--&mdash;-->ei quoque enim prorogatum
-							imperium est<!--&mdash;-->classem, quae ad Siciliam erat, navium
-							septuaginta obtineret, adderet eo triginta naves, quae ad Tarentum
-							priore anno fuerant; cum ea centum navium classe, si videretur ei,
-							praedatum in Africam traiceret.</p>
+							est; M. Valerius Laevinus — ei quoque enim prorogatum imperium est —
+							classem, quae ad Siciliam erat, navium septuaginta obtineret, adderet eo
+							triginta naves, quae ad Tarentum priore anno fuerant; cum ea centum
+							navium classe, si videretur ei, praedatum in Africam traiceret.</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>et P. Sulpicio, ut eadem classe Macedoniam Graeciamque provinciam
@@ -24156,10 +24097,10 @@
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>et ex Campania nuntiata erant, Capuae duas aedes, Fortunae et Martis, et
-							sepulcra aliquot de caelo tacta, Cumis<!--&mdash;-->adeo minimis etiam
-							rebus prava religio inserit deos<!--&mdash;-->mures in aede Iovis aurum
-							rosisse, Casini examen apium ingens in foro consedisse, et Ostiae murum
-							portamque de caelo tactam,</p>
+							sepulcra aliquot de caelo tacta, Cumis — adeo minimis etiam rebus prava
+							religio inserit deos — mures in aede Iovis aurum rosisse, Casini examen
+							apium ingens in foro consedisse, et Ostiae murum portamque de caelo
+							tactam,</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>Caere vulturium volasse in aedem Iovis, Vulsiniis sanguine lacum
@@ -24426,10 +24367,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>sed postquam vulneratos ambo consules, Marcellum etiam transfixum lancea
-							prolabentem ex equo moribundum <pb n="392"/> videre, tum et
-							ipsl<!--&mdash;-->perpauci autem supererant <!--&mdash;--> cum Crispino
-							consule duobus iaculis icto et Marcello adolescente saucio et ipso
-							effugerunt.</p>
+							prolabentem ex equo moribundum <pb n="392"/> videre, tum et ipsl —
+							perpauci autem supererant — cum Crispino consule duobus iaculis icto et
+							Marcello adolescente saucio et ipso effugerunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>interfectus A. Manlius tribunus militum, et ex duobus praefectis socium
@@ -24447,10 +24387,10 @@
 							reliquias ad castra venientes cernunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
-						<p>mors Marcelli cum alioqui miserabilis fuit, tum quod nec pro
-							aetate<!--&mdash;-->iam enim maior sexaginta annis
-							erat<!--&mdash;-->neque pro veteris prudentia ducis tam inprovide se
-							conlegamque et prope totam rem publicam in praeceps dederat.</p>
+						<p>mors Marcelli cum alioqui miserabilis fuit, tum quod nec pro aetate — iam
+							enim maior sexaginta annis erat — neque pro veteris prudentia ducis tam
+							inprovide se conlegamque et prope totam rem publicam in praeceps
+							dederat.</p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
 						<p>multos circa unam rem ambitus fecerim si, quae de Marcelli morte variant
@@ -24505,12 +24445,12 @@
 					<div type="textpart" subtype="section" n="6">
 						<p>sensere Salapitani fraudem et ab ira non defectionis modo sed etiam
 							equitum interfectorum rati occasionem supplicii peti, remisso retro
-							nuntio<!--&mdash;--></p>
+							nuntio — </p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
-						<p>perfuga autem Romanus erat<!--&mdash;-->, ut sine arbitro milites quae
-							vellent agerent, oppidanos per muros urbisque opportuna loca in
-							stationibus disponunt,</p>
+						<p>perfuga autem Romanus erat — , ut sine arbitro milites quae vellent
+							agerent, oppidanos per muros urbisque opportuna loca in stationibus
+							disponunt,</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>custodias <choice>
@@ -24534,7 +24474,7 @@
 					<div type="textpart" subtype="section" n="11">
 						<p>vixdum satis patebat iter cum perfugae certatim ruunt per portam; et cum
 							sescenti ferme intrassent, remisso fune, quo suspensa erat, cataracta
-							magr<!--&mdash;-->sonitu cecidit.</p>
+							magr — sonitu cecidit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
 						<p>Salapitani alii perfugas neglegenter ex itinere suspensa umeris, ut inter
@@ -24614,8 +24554,8 @@
 					<div type="textpart" subtype="section" n="9">
 						<p>et Philippus implorantibus Achaeis auxilium tulit, quos et Machanidas
 							tyrannus Lacedaemoniorum finitimo bello urebat, et Aetoli navibus per
-							fretum, quod Naupactum et Patras interfluit<!--&mdash;-->Rhion incolae
-							vocant<!--&mdash;-->, exercitu traiecto depopulati erant.</p>
+							fretum, quod Naupactum et Patras interfluit — Rhion incolae vocant — ,
+							exercitu traiecto depopulati erant.</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>Attalum quoque regem Asiae quia Aetoli summum gentis suae magistratum ad
@@ -24763,10 +24703,10 @@
 							acceptumque in urbem erat, eiciendum.</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
-						<p>Cycliadas<!--&mdash;-->penes eum summa imperii
-							erat<!--&mdash;-->Achaeique ad Dymas regi occurrere, et Eliorum accensi
-							odio, quod a ceteris Achaeis dissentirent, et infensi Aetolis, quos
-							Romanum quoque adversus se movisse bellum credebant.</p>
+						<p>Cycliadas — penes eum summa imperii erat — Achaeique ad Dymas regi
+							occurrere, et Eliorum accensi odio, quod a ceteris Achaeis dissentirent,
+							et infensi Aetolis, quos Romanum quoque adversus se movisse bellum
+							credebant.</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>profecti ab Dymis coniuncto exercitu transeunt Larisum amnem, qui Elium
@@ -24793,9 +24733,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>et primo recipere suos voluerat rex; dein contracto iam inter Aetolos et
-							Tralles<!--&mdash;-->Illyriorum id est genus<!--&mdash;-->certamine cum
-							urgeri videret suos, et ipse rex cum equitatu in cohortem Romanam
-							incurrit.</p>
+							Tralles — Illyriorum id est genus — certamine cum urgeri videret suos,
+							et ipse rex cum equitatu in cohortem Romanam incurrit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>ibi equus pilo traiectus cum prolapsum super caput regem effudisset,
@@ -24810,9 +24749,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>eo die castra quinque milia passuum ab urbe Eliorum posuit. postero die
-							omnes copias ad propinquum Eliorum castellum<!--&mdash;-->Pyrgum
-							vocant<!--&mdash;-->eduxit, quo agrestium multitudinem cum pecoribus
-							metu populationum compulsam audierat.</p>
+							omnes copias ad propinquum Eliorum castellum — Pyrgum vocant — eduxit,
+							quo agrestium multitudinem cum pecoribus metu populationum compulsam
+							audierat.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p><choice>
@@ -24823,9 +24762,8 @@
 							acceptum fuerat.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
-						<p>dividenti praedam captivosque<!--&mdash;-->fuere autem quattuor milia
-							hominum, pecorumque omnis generis ad viginti milia<!--&mdash;-->nuntius
-							ex Macedonia venit <choice>
+						<p>dividenti praedam captivosque — fuere autem quattuor milia hominum,
+							pecorumque omnis generis ad viginti milia — nuntius ex Macedonia venit <choice>
 								<sic>Eropum</sic>
 								<corr>Aeropum</corr>
 							</choice> quendam corrupto arcis praesidiique praefecto Lychnidum
@@ -24873,8 +24811,7 @@
 					<div type="textpart" subtype="section" n="7">
 						<p>ita, quod nullo ante bello acciderat, duo consules sine memorando proelio
 							interfecti velut orbam rem publicam reliquerant. dictator Manlius
-							magistrum equitum C. Servilium<!--&mdash;-->tum aedilis curulis
-							erat<!--&mdash;-->dixit.</p>
+							magistrum equitum C. Servilium — tum aedilis curulis erat — dixit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>senatus quo die primum est habitus, ludos magnos facere dictatorem
@@ -25239,15 +25176,14 @@
 							esset.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
-						<p>cum omnes censerent primo quoque tempore consulibus eundum ad bellum
-							<!--&mdash;--> nam et Hasdrubali occurrendum esse descendenti ab
-							Alpibus,</p>
+						<p>cum omnes censerent primo quoque tempore consulibus eundum ad bellum —
+							nam et Hasdrubali occurrendum esse descendenti ab Alpibus,</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>ne Gallos Cisalpinos neve Etruriam erectam in spem rerum novarum
 							sollicitaret, et Hannibalem suo proprio occupandum bello, ne emergere ex
-							Bruttiis atque obviam ire fratri posset<!--&mdash;-->, Livius
-							cunctabatur, parum fidens suarum provinciarum exercitibus;</p>
+							Bruttiis atque obviam ire fratri posset — , Livius cunctabatur, parum
+							fidens suarum provinciarum exercitibus;</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>conlegam ex duobus consularibus egregiis exercitibus et tertio, cui Q.
@@ -25567,11 +25503,11 @@
 							Metapontum petiit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="16">
-						<p>Hanno inde<!--&mdash;-->is enim praesidio eius loci
-							praefuerat<!--&mdash;-->in Bruttios cum paucis ad exercitum novum
-							comparandum missus; Hannibal copiis eius ad suas additis Venusiam retro
-							quibus venerat itineribus repetit, atque inde Canusium procedit. numquam
-							Nero vestigiis hostis abstiterat et Q. Fulvium,</p>
+						<p>Hanno inde — is enim praesidio eius loci praefuerat — in Bruttios cum
+							paucis ad exercitum novum comparandum missus; Hannibal copiis eius ad
+							suas additis Venusiam retro quibus venerat itineribus repetit, atque
+							inde Canusium procedit. numquam Nero vestigiis hostis abstiterat et Q.
+							Fulvium,</p>
 					</div>
 					<div type="textpart" subtype="section" n="17">
 						<p>cum Metapontum ipse proficisceretur, in Lucanos, ne regio ea sine
@@ -25733,8 +25669,8 @@
 							addiderint, rem omnem inclinaturos.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
-						<p>auditum modo in acie<!--&mdash;-->nam ne ante audiatur, daturum
-							operam<!--&mdash;-->alterum consulem et alterum exercitum advenisse <choice>
+						<p>auditum modo in acie — nam ne ante audiatur, daturum operam — alterum
+							consulem et alterum exercitum advenisse <choice>
 								<sic>baud</sic>
 								<corr>haud</corr>
 							</choice> dubiam victoriam facturum.</p>
@@ -25942,8 +25878,8 @@
 							</choice> tantum iis fidens, quantum ab hoste timeri eos credebat;</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
-						<p>ipse dextrum cornu adversus M. Livium sibi atque Hispanis<!--&mdash;-->et
-							ibi maxime in vetere milite spem habebat <!--&mdash;--> sumpsit;</p>
+						<p>ipse dextrum cornu adversus M. Livium sibi atque Hispanis — et ibi maxime
+							in vetere milite spem habebat — sumpsit;</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>Ligures in medio post elephantos positi. sed longior quam latior acies
@@ -26118,9 +26054,8 @@
 						<p>ad Mulvium usque pontem continens agmen pervenit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
-						<p>legati <!--&mdash;-->
-							<hi rend="italics">ii</hi> erant L. Veturius Philo P. Licinius Varus Q.
-							Caecilius Metellus<!--&mdash;-->circumfusi omnis generis hominum
+						<p>legati — <hi rend="italics">ii</hi> erant L. Veturius Philo P. Licinius
+							Varus Q. Caecilius Metellus — circumfusi omnis generis hominum
 							frequentia in forum pervenerunt, cum alii ipsos, alii comites eorum,
 							quae acta essent, percunctarentur.</p>
 					</div>
@@ -26244,11 +26179,11 @@
 							</choice> plus milibus militum, equitibus quingentis misit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
-						<p>Silanus quantis maximis potuit itineribus<!--&mdash;-->inpediebant autem
-							et asperitates viarum et angustiae saltibus crebris, ut pleraque
-							Hispaniae sunt, inclusae<!--&mdash;-->, tamen non solum nuntios sed
-							etiam famam adventus sui praegressus, ducibus indidem ex Celtiberia
-							transfugis ad hostem pervenit.</p>
+						<p>Silanus quantis maximis potuit itineribus — inpediebant autem et
+							asperitates viarum et angustiae saltibus crebris, ut pleraque Hispaniae
+							sunt, inclusae — , tamen non solum nuntios sed etiam famam adventus sui
+							praegressus, ducibus indidem ex Celtiberia transfugis ad hostem
+							pervenit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>eisdem auctoribus conpertum est, cum decem circiter milia ab hoste
@@ -26287,9 +26222,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>erant in Celtiberorum exercitu quattuor milia scutata et ducenti equites;
-							hanc iustam legonem<!--&mdash;-->et id ferme roboris
-							erat<!--&mdash;-->in prima acie locat, ceteros, levem armaturam, in
-							subsidiis posuit.</p>
+							hanc iustam legonem — et id ferme roboris erat — in prima acie locat,
+							ceteros, levem armaturam, in subsidiis posuit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>cum ita instructos educeret e castris, vixdum in egressos vallo eos
@@ -26369,8 +26303,8 @@
 								<sic>ear</sic>
 								<corr>eam</corr>
 							</choice> relinqueret regionem, L. Scipionem fratrem cum decem milibus
-							peditum mille equitum ad oppugnandam opulentissimam in iis locis
-							urbem<!--&mdash;-->Orongin barbari appellabant<!--&mdash;-->mittit.</p>
+							peditum mille equitum ad oppugnandam opulentissimam in iis locis urbem —
+							Orongin barbari appellabant — mittit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>sita in Maesessum finibus est, Bastetanae gentis, ager frugifer, <choice>
@@ -26430,9 +26364,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="13">
 						<p>et aliis partibus securibus dolabrisque caedebantur et refringebantur
-							portae, et ut quisque intraverat eques, ad forum occupandum
-							<!--&mdash;--> ita enim praeceptum erat<!--&mdash;-->citato equo
-							pergebat; additum erat et triariorum equiti praesidium;</p>
+							portae, et ut quisque intraverat eques, ad forum occupandum — ita enim
+							praeceptum erat — citato equo pergebat; additum erat et triariorum
+							equiti praesidium;</p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
 						<p>legionarii ceteras partis urbis pervadunt, direptione et caede obviorum,
@@ -26483,9 +26417,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>extremis finibus Carthaginiensium circa ipsa moenia Uticae praedae actae
-							sunt. repetentibus Siciliam classis Punica<!--&mdash;-->septuaginta
-							erant longae naves <!--&mdash;--> occurrit. decem et septem naves ex iis
-							captae sunt quattuor in alto mersae, cetera fusa ac fugata classis.</p>
+							sunt. repetentibus Siciliam classis Punica — septuaginta erant longae
+							naves — occurrit. decem et septem naves ex iis captae sunt quattuor in
+							alto mersae, cetera fusa ac fugata classis.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>terra marique victor Romanus cum magna omnis generis praeda Lilybaeum
@@ -26499,9 +26433,8 @@
 					<div type="textpart" subtype="section" n="1">
 						<p>principio aestatis eius, qua haec sunt gesta, P. Sulpicius proconsul et
 							Attalus rex cum Aeginae, sicut ante dictum est, hibernassent, Lemnum
-							inde classe iuncta<!--&mdash;-->Romanae quinque et viginti quinqueremes,
-							regiae quinque et triginta <hi rend="italics">erant</hi>
-							<!--&mdash;--> transmiserunt.</p>
+							inde classe iuncta — Romanae quinque et viginti quinqueremes, regiae
+							quinque et triginta <hi rend="italics">erant</hi> — transmiserunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>et Philippus, ut, seu terra seu maria obviam eundum hosti foret, paratus
@@ -26548,10 +26481,10 @@
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>Polyphantam cum modica manu in Boeotiam, Menippum item quendam ex regiis
-							ducibus cum mille peltastis<!--&mdash;-->pelta caetrae <choice>
+							ducibus cum mille peltastis — pelta caetrae <choice>
 								<sic>baud</sic>
 								<corr>haud</corr>
-							</choice> dissimilis est<!--&mdash;-->Chalcidem mittit;</p>
+							</choice> dissimilis est — Chalcidem mittit;</p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
 						<p>additi quingenti Agrianum, ut omnes insulae partes tueri posset. ipse
@@ -26578,10 +26511,9 @@
 							apparerent;</p>
 					</div>
 					<div type="textpart" subtype="section" n="17">
-						<p>ipse in Tisaeo<!--&mdash;-->mons est in altitudinem ingentem cacuminis
-							editi<!--&mdash;-->speculam posuit, ut ignibus procul sublatis signum,
-							ubi quid molirentur hostes, momento temporis acciperet. Romanus
-							imperator</p>
+						<p>ipse in Tisaeo — mons est in altitudinem ingentem cacuminis editi —
+							speculam posuit, ut ignibus procul sublatis signum, ubi quid molirentur
+							hostes, momento temporis acciperet. Romanus imperator</p>
 					</div>
 					<div type="textpart" subtype="section" n="18">
 						<p>et Attalus rex a Peparetho Nicaeam traiecerunt; inde classem in Euboeam
@@ -26659,8 +26591,8 @@
 					<div type="textpart" subtype="section" n="12">
 						<p>id prudenter ut in temere suscepta re, Romanus fecit, quod circumspectis
 							difficultatibus, ne frustra tempus tereret, celeriter abstitit incepto
-							classemque inde ad Cynum Locridis<!--&mdash;-->emporium id est
-							Opuntiorum urbis mille passuum a mari sitae<!--&mdash;-->traiecit.</p>
+							classemque inde ad Cynum Locridis — emporium id est Opuntiorum urbis
+							mille passuum a mari sitae — traiecit.</p>
 					</div>
 				</div>
 				<div type="textpart" subtype="chapter" n="7">
@@ -26751,10 +26683,10 @@
 							iussis ibi se opperiri Ptolemaei Rhodiorumque legatis, venit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
-						<p>ubi cum de finiendo Aetolico bello ageretur <!--&mdash;--> adfuerant enim
-							legati nuper Heracleae concilio Romanorum Aetolorumque<!--&mdash;-->,
-							nuntius adfertur Machanidam Olympiorum sollemne ludicrum parantes Elios
-							adgredi statuisse.</p>
+						<p>ubi cum de finiendo Aetolico bello ageretur — adfuerant enim legati nuper
+							Heracleae concilio Romanorum Aetolorumque — , nuntius adfertur
+							Machanidam Olympiorum sollemne ludicrum parantes Elios adgredi
+							statuisse.</p>
 					</div>
 					<div type="textpart" subtype="section" n="15">
 						<p>praevertendum id ratus legatis cum benigno responso dimissis, se neque
@@ -26775,8 +26707,8 @@
 					<div type="textpart" subtype="section" n="18">
 						<p>paucis ante diebus Is inde Oxeas traiecerant Poeni; inde portus Acarnanum
 							petierant, cum ab Oreo profectum Attalum Romanosque audissent, veriti,
-							ne ad se iretur et intra Rhium <!--&mdash;--> fauces eae sunt Corinthii
-							sinus<!--&mdash;-->opprimerentur.</p>
+							ne ad se iretur et intra Rhium — fauces eae sunt Corinthii sinus —
+							opprimerentur.</p>
 					</div>
 				</div>
 				<div type="textpart" subtype="chapter" n="8">
@@ -26814,8 +26746,8 @@
 							probabant, restituit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
-						<p>inde navibus acceptis ab Achaeis <!--&mdash;--> erant autem tres
-							quadriremes et biremes totidem <!--&mdash;--> Anticyram traiecit.</p>
+						<p>inde navibus acceptis ab Achaeis — erant autem tres quadriremes et
+							biremes totidem — Anticyram traiecit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>inde quinqueremibus septem et lembis viginti amplius, quos ut adiungeret
@@ -27008,8 +26940,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>exercitus ita divisi: consulum alteri, quem C. Claudius prioris anni
-							consul, alteri, quem Q. Claudius propraetor<!--&mdash;-->eae binae
-							legiones erant<!--&mdash;-->habuissent exercitum;</p>
+							consul, alteri, quem Q. Claudius propraetor — eae binae legiones erant —
+							habuissent exercitum;</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>in Etruria duas volonum legiones a C. Terentio propraetore M. Livius
@@ -27282,8 +27214,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>mediam aciem hinc Romani illinc Carthaginienses mixti Afris, cornua socii
-							tenebant<!--&mdash;-->erant autem utrimque Hispani pro cornibus ante
-							Punicam aciem elephanti castellorum procul speciem praebebant.</p>
+							tenebant — erant autem utrimque Hispani pro cornibus ante Punicam aciem
+							elephanti castellorum procul speciem praebebant.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>iam hoc in utrisque castris sermonis erat ita, ut instructi stetissent,
@@ -27333,13 +27265,11 @@
 							post cornua locat.</p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
-						<p>inde, ubi incipiendae iam pugnae tempus erat, Hispanos<!--&mdash;-->ea
-							media <pb n="440"/> acies fuit<!--&mdash;-->presso gradu incedere
-							iubet;</p>
+						<p>inde, ubi incipiendae iam pugnae tempus erat, Hispanos — ea media <pb
+								n="440"/> acies fuit — presso gradu incedere iubet;</p>
 					</div>
 					<div type="textpart" subtype="section" n="15">
-						<p>ipse e dextro cornu<!--&mdash;-->ibi namque praeerat<!--&mdash;-->nuntium
-							ad <choice>
+						<p>ipse e dextro cornu — ibi namque praeerat — nuntium ad <choice>
 								<sic>Silanun</sic>
 								<corr>Silanum</corr>
 							</choice> et Marcium mittit, ut cornu extenderent in sinistram partem,
@@ -27486,8 +27416,8 @@
 					<div type="textpart" subtype="section" n="8">
 						<p>sed obsidio in loco nudo atque inopi vix in paucos dies tolerabilis erat;
 							itaque transitiones ad hostem fiebant. postremo dux ipse navibus accitis
-							<!--&mdash;--> nec procul inde aberat mare<!--&mdash;-->nocte relicto
-							exercitu Gades perfugit.</p>
+							— nec procul inde aberat mare — nocte relicto exercitu Gades
+							perfugit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>Scipio fuga ducis hostium audita decem milia peditum mille equites
@@ -27628,9 +27558,9 @@
 				</div>
 				<div type="textpart" subtype="chapter" n="18">
 					<div type="textpart" subtype="section" n="1">
-						<p>magnificumque id Syphaci<!--&mdash;-->nec erat aliter <!--&mdash;-->
-							visum, duorum opulentissimorum ea tempestate duces populorum uno die
-							suam pacem amicitiamque petentes venisse.</p>
+						<p>magnificumque id Syphaci — nec erat aliter — visum, duorum
+							opulentissimorum ea tempestate duces populorum uno die suam pacem
+							amicitiamque petentes venisse.</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>utrumque in hospitium invitat; et quoniam fors eos sub uno tecto esse
@@ -28048,10 +27978,10 @@
 							Carthaginiensibus destinarant animis,</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
-						<p>nihil pro spe contigerat, concitatis popularibus<!--&mdash;-->Lacetani
-							autem erant<!--&mdash;-->et iuventute Celtiberorum excita agrum
-							Suessetanum Sedetanumque sociorum populi Romani hostiliter depopulati
-							sunt. civilis alius furor in castris ad Sucronem ortus.</p>
+						<p>nihil pro spe contigerat, concitatis popularibus — Lacetani autem erant —
+							et iuventute Celtiberorum excita agrum Suessetanum Sedetanumque sociorum
+							populi Romani hostiliter depopulati sunt. civilis alius furor in castris
+							ad Sucronem ortus.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>octo ibi milia militum erant, praesidium gentibus, quae cis Hiberum
@@ -28193,8 +28123,8 @@
 						<p>suam seditionem sine vulnere, sine sanguine fuisse, nec ipsam <choice>
 								<sic>atrocen</sic>
 								<corr>atrocem</corr>
-							</choice> nec atroci poena dignam, <!--&mdash;--> ut ingenia humana sunt
-							ad suam cuique levandam culpam nimio plus facunda.</p>
+							</choice> nec atroci poena dignam, — ut ingenia humana sunt ad suam
+							cuique levandam culpam nimio plus facunda.</p>
 					</div>
 					<div type="textpart" subtype="section" n="15">
 						<p>illa dubitatio erat singulaene cohortes an universi ad stipendium
@@ -28208,10 +28138,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>consilium de iis Carthagini erat, certabaturque sententiis, utrum in
-							auctores tantum seditionis <!--&mdash;--> erant autem ii numero haud
-							plus quam quinque et triginta<!--&mdash;-->animadverteretur, an plurium
-							supplicio vindicanda tam foedi exempli defectio magis quam seditio
-							esset.</p>
+							auctores tantum seditionis — erant autem ii numero haud plus quam
+							quinque et triginta — animadverteretur, an plurium supplicio vindicanda
+							tam foedi exempli defectio magis quam seditio esset.</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>vicit sententia lenior, ut, unde culpa orta esset, ibi poena consisteret;
@@ -28290,10 +28219,10 @@
 							ne quo nomine quidem appellare debeam scio.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
-						<p>cives? qui a patria vestra descistis, <!--&mdash;--> an milites? qui
-							imperium auspiciumque abnuistis, sacramenti religionem rupistis,
-							<!--&mdash;--> hostes? corpora, ora, vestitum, habitum civium adgnosco;
-							facta, dicta, consilia, animos hostium video.</p>
+						<p>cives? qui a patria vestra descistis, — an milites? qui imperium
+							auspiciumque abnuistis, sacramenti religionem rupistis, — hostes?
+							corpora, ora, vestitum, habitum civium adgnosco; facta, dicta, consilia,
+							animos hostium video.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>quid enim vos nisi quod Ilergetes et Lacetani, aut optastis aliud aut
@@ -28317,18 +28246,17 @@
 							solum adversus socios gesseram, sed etiam adversus hostes.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
-						<p>in castris en meis <!--&mdash;--> quantum opinio <choice>
+						<p>in castris en meis — quantum opinio <choice>
 								<sic>fefellit!</sic>
 								<corr>fefellit.</corr>
-							</choice>
-							<!--&mdash;--> fama mortis meae non accepta solum, sed etiam expectata
+							</choice> — fama mortis meae non accepta solum, sed etiam expectata
 							est.</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
-						<p>non quod ego vulgari facinus per omnes velim<!--&mdash;-->equidem, si
-							totum exercitum meum mortem mihi optasse crederem, hic statim ante
-							oculos vestros morerer, nec me vita iuvaret invisa civibus et militibus
-							meis<!--&mdash;-->;</p>
+						<p>non quod ego vulgari facinus per omnes velim — equidem, si totum
+							exercitum meum mortem mihi optasse crederem, hic statim ante oculos
+							vestros morerer, nec me vita iuvaret invisa civibus et militibus meis —
+							;</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>sed multitudo omnis sicut natura maris per se inmobilis est; ut venti et
@@ -28345,9 +28273,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="13">
 						<p>de me ipso taceo; temere potius quam avide credideritis; is denique ego
-							sim, cuius imperii taedere exercitum minime mirandum
-							sit:<!--&mdash;-->patria quid de vobis meruerat, quam cum Mandonio et
-							Indibili consociando consilia <choice>
+							sim, cuius imperii taedere exercitum minime mirandum sit: — patria quid
+							de vobis meruerat, quam cum Mandonio et Indibili consociando consilia <choice>
 								<sic>prddebatis?</sic>
 								<corr>prodebatis?</corr>
 							</choice>?</p>
@@ -28399,7 +28326,7 @@
 						<p>illi, sicut Campani Capuam Tuscis veteribus cultoribus ademptam,
 							Mamertini in Sicilia Messanam, sic Regium habituri perpetuam sedem
 							erant, nec populum Romanum nec socios populi Romani ultro lacessituri
-							bello:<!--&mdash;--></p>
+							bello: — </p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>Sucronemne vos domicilium habituri eratis? ubi si vos decedens confecta
@@ -28422,9 +28349,9 @@
 						<p>amolior et amoveo nomen meum;</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
-						<p>nihil ultra facile creditam mortem meam a vobis violatus
-							sim<!--&mdash;-->: quid? si ego morerer, mecum expiratura res publica,
-							mecum casurum <pb n="458"/> imperium populi Romani erat? ne istuc <choice>
+						<p>nihil ultra facile creditam mortem meam a vobis violatus sim — : quid? si
+							ego morerer, mecum expiratura res publica, mecum casurum <pb n="458"/>
+							imperium populi Romani erat? ne istuc <choice>
 								<sic>luppiter</sic>
 								<corr>Iuppiter</corr>
 							</choice> optimus maximus sirit, urbem auspicato deis auctoribus in
@@ -28439,9 +28366,8 @@
 								<sic>tar</sic>
 								<corr>tam</corr>
 							</choice> praeclaris imperatoribus uno bello absumptis superstes est
-							populus Romanus eritque mille aliis nunc ferro nunc morbo
-							morientibus<!--&mdash;-->: meo unius funere elata populi Romani esset
-							res publica?</p>
+							populus Romanus eritque mille aliis nunc ferro nunc morbo morientibus —
+							: meo unius funere elata populi Romani esset res publica?</p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
 						<p>vos ipsi hic in Hispania patre et patruo meo, duobus imperatoribus,
@@ -28449,7 +28375,7 @@
 								<sic>exultantes</sic>
 								<corr>exsultantes</corr>
 							</choice> recenti victoria Poenos delegistis. et sic loquor, tamquam
-							sine duce Hispaniae futurae fuerint<!--&mdash;--></p>
+							sine duce Hispaniae futurae fuerint — </p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
 						<p>: M. Silanus eodem iure, eodem imperio mecum in provinciam missus, L.
@@ -28715,9 +28641,9 @@
 							dici posset.</p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
-						<p>proinde deis bene iuvantibus sequerentur non tam ad bellum
-							gerendum<!--&mdash;-->neque enim cum pari hoste certamen
-							esse<!--&mdash;-->quam ad expetendas ab hominibus scelestis poenas.</p>
+						<p>proinde deis bene iuvantibus sequerentur non tam ad bellum gerendum —
+							neque enim cum pari hoste certamen esse — quam ad expetendas ab
+							hominibus scelestis poenas.</p>
 					</div>
 				</div>
 				<div type="textpart" subtype="chapter" n="33">
@@ -28802,11 +28728,11 @@
 							fiducia equitis temere commissus <choice>
 								<sic>eampo</sic>
 								<corr>campo</corr>
-							</choice> caederetur, eques circumventus nec peditem a
-							fronte<!--&mdash;-->iam enim stratae pedestres copiae
-							erant<!--&mdash;-->nec ab tergo equitem sustineret, et ipsi, cum diu in
-							orbem sese stantibus equis defendissent, ad unum omnes caesi sunt, nec
-							quisquam peditum equitumve superfuit, qui in valle pugnaverunt.</p>
+							</choice> caederetur, eques circumventus nec peditem a fronte — iam enim
+							stratae pedestres copiae erant — nec ab tergo equitem sustineret, et
+							ipsi, cum diu in orbem sese stantibus equis defendissent, ad unum omnes
+							caesi sunt, nec quisquam peditum equitumve superfuit, qui in valle
+							pugnaverunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="16">
 						<p>tertia pars quae in colle ad spectaculum magis tutum quam ad partem
@@ -28870,9 +28796,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>ceterum se neque arma iis adempturum <hi rend="italics">neque obsides
-								imperaturum</hi>
-							<!--&mdash;--> quippe ea pignera timentium rebellionem
-							esse<!--&mdash;-->; se libera arma relinquere, solutos animos;</p>
+								imperaturum</hi> — quippe ea pignera timentium rebellionem esse — ;
+							se libera arma relinquere, solutos animos;</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>neque se in obsides innoxios, sed in ipsos, si defecerint, saeviturum,
@@ -29035,12 +28960,12 @@
 				</div>
 				<div type="textpart" subtype="chapter" n="37">
 					<div type="textpart" subtype="section" n="1">
-						<p>Mago cum Gades repetisset, exclusus inde, ad Cimbios<!--&mdash;--><choice>
+						<p>Mago cum Gades repetisset, exclusus inde, ad Cimbios — <choice>
 								<sic>hand</sic>
 								<corr>haud</corr>
-							</choice> procul a Gadibus is locus abest<!--&mdash;-->classe adpulsa,
-							mittendis legatis querendoque, quod portae sibi socio atque amico
-							clausae forent, purgantibus iis multitudinis concursu factum,</p>
+							</choice> procul a Gadibus is locus abest — classe adpulsa, mittendis
+							legatis querendoque, quod portae sibi socio atque amico clausae forent,
+							purgantibus iis multitudinis concursu factum,</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>infestae ob direpta quaedam ab conscendentibus naves militibus, ad
@@ -29050,18 +28975,17 @@
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>inde navibus ad Pityusam insulam centum milia ferme a continenti Poeni
-							tum eam incolebant<!--&mdash;-->traiecit.</p>
+							tum eam incolebant — traiecit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>itaque classis bona cum pace accepta est, nec commeatus modo benigne
 							praebiti, sed in supplementum classis iuventus armaque data. quorum
-							fiducia Poenus in Baliares insulas<!--&mdash;-->quinquaginta inde milia
-							absunt<!--&mdash;-->tramisit. duae sunt Baliares insulae;</p>
+							fiducia Poenus in Baliares insulas — quinquaginta inde milia absunt —
+							tramisit. duae sunt Baliares insulae;</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>maior altera atque opulentior armis virisque; et portum habet, ubi
-							commode hibernaturum se<!--&mdash;-->et iam extremum autumni erat
-							<!--&mdash;--> credebat.</p>
+							commode hibernaturum se — et iam extremum autumni erat — credebat.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>ceterum <choice>
@@ -29161,9 +29085,9 @@
 							provinciae in sortem coniectae.</p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
-						<p>urbana Cn. Servilio obtigit, Ariminum<!--&mdash;-->ita Galliam
-							appellabant<!--&mdash;-->Sp. Lucretio, Sicilia L. Aemilio, Cn. Octavio
-							Sardinia. senatus in Capitolio habitus.</p>
+						<p>urbana Cn. Servilio obtigit, Ariminum — ita Galliam appellabant — Sp.
+							Lucretio, Sicilia L. Aemilio, Cn. Octavio Sardinia. senatus in Capitolio
+							habitus.</p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
 						<p>ibi referente P. Scipione senatus consultum factum est, ut, quos ludos
@@ -29233,8 +29157,7 @@
 					<div type="textpart" subtype="section" n="11">
 						<p>postremo Turdetaniam, adeo infestam nobis, ut illa gente incolumi stare
 							Saguntum non posset, ita bello adflixit, ut non modo nobis, <hi
-								rend="italics">sed</hi>
-							<!--&mdash;--> absit verbo invidia <!--&mdash;--> ne posteris quidem
+								rend="italics">sed</hi> — absit verbo invidia — ne posteris quidem
 							timenda nostris esset.</p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
@@ -29303,8 +29226,8 @@
 					<div type="textpart" subtype="section" n="2">
 						<p>neque aliter id <pb n="472"/> fieri posse, quam si ipse in Africam
 							exercitum transportasset, et acturum se id per populum aperte ferret, si
-							senatus adversaretur, <!--&mdash;--> id consilium haudquaquam primoribus
-							patrum cum placeret, ceteri per metum aut ambitionem mussarent,</p>
+							senatus adversaretur, — id consilium haudquaquam primoribus patrum cum
+							placeret, ceteri per metum aut ambitionem mussarent,</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>Q. Fabius Maximus rogatus sententiam: ,,scio multis vestrum videri,
@@ -29391,8 +29314,8 @@
 								<sic>iannibali</sic>
 								<corr>Hannibali</corr>
 							</choice> dux est praeferundus aut illud bellum huic, aut victoria illa
-							maior clariorque quam haec<!--&mdash;-->modo contingat, ut te consule
-							vincamus<!--&mdash;-->futura est.</p>
+							maior clariorque quam haec — modo contingat, ut te consule vincamus —
+							futura est.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>ab Drepanis aut Eryce detraxisse Hamilcarem quam Italia expulisse Poenos
@@ -29440,12 +29363,11 @@
 							quem fallit?</p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
-						<p>P. Licinius in Italia, P. Scipio bellum in Africa geret: quid?
-							si<!--&mdash;-->quod omnes dei omen avertant et dicere etiam reformidat
-							animus, sed quae acciderunt accidere possunt<!--&mdash;-->victor
-							Hannibal ire ad urbem perget, tum demum te consulem ex Africa, sicut Q.
-							Fulvium a Capua, arcessemus? quid? quod in Africa quoque Mars communis
-							belli erit?</p>
+						<p>P. Licinius in Italia, P. Scipio bellum in Africa geret: quid? si — quod
+							omnes dei omen avertant et dicere etiam reformidat animus, sed quae
+							acciderunt accidere possunt — victor Hannibal ire ad urbem perget, tum
+							demum te consulem ex Africa, sicut Q. Fulvium a Capua, arcessemus? quid?
+							quod in Africa quoque Mars communis belli erit?</p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
 						<p>domus tibi tua, pater patruusque intra triginta dies cum exercitibus
@@ -29632,8 +29554,7 @@
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>equidem haud dissimulo me tuas, Q. Fabi, laudes non adsequi solum velle,
-							sed<!--&mdash;-->bona venia tua dixerim<!--&mdash;-->, si possim, etiam
-							exsuperare.</p>
+							sed — bona venia tua dixerim — , si possim, etiam exsuperare.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>illud nec tibi in me nec mihi in minoribus natu animi sit, ut nolimus
@@ -29979,8 +29900,8 @@
 							quos ibi motus facere posset, classem appulit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
-						<p>Ingauni<!--&mdash;-->Ligurum ea gens est<!--&mdash;-->bellum ea
-							tempestate gerebant cum Epanteriis Montanis.</p>
+						<p>Ingauni — Ligurum ea gens est — bellum ea tempestate gerebant cum
+							Epanteriis Montanis.</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>igitur Poenus Savone, oppido Alpino, praeda deposita et decem longis
@@ -30328,8 +30249,8 @@
 					<div type="textpart" subtype="section" n="8">
 						<p>omnibus pacis modo incuriose agentibus magna clades inlata; nuntiique
 							trepidi Carthaginem terrore ingenti conplevere, classem Romanam
-							Scipionemque imperatorem<!--&mdash;-->et fama fuerat iam in Siciliam
-							transgressum advenisse.</p>
+							Scipionemque imperatorem — et fama fuerat iam in Siciliam transgressum
+							advenisse.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>nec quot naves vidissent, nec quanta manus agros popularetur, satis gnari
@@ -30431,11 +30352,11 @@
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>in iis locis tum forte Mago tenebat classem; qui legatorum auditis verbis
-							iubentium exercitus quam maximos comparare, extemplo Gallorum et
-							Ligurum<!--&mdash;-->namque utriusque gentis ingens ibi <choice>
+							iubentium exercitus quam maximos comparare, extemplo Gallorum et Ligurum
+							— namque utriusque gentis ingens ibi <choice>
 								<sic>multitude</sic>
 								<corr>multitudo</corr>
-							</choice> erat<!--&mdash;--></p>
+							</choice> erat — </p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>concilium habuit, et missum se ad eos vindicandos in libertatem ait, et,
@@ -30571,10 +30492,10 @@
 					</div>
 					<div type="textpart" subtype="section" n="14">
 						<p>itaque velut plena iam hostium arce territi Poeni omisso certamine in
-							alteram arcem <!--&mdash;--> duae sunt, <choice>
+							alteram arcem — duae sunt, <choice>
 								<sic>baud</sic>
 								<corr>haud</corr>
-							</choice> multum inter se distantes<!--&mdash;-->confugiunt.</p>
+							</choice> multum inter se distantes — confugiunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="15">
 						<p>oppidani urbem habebant victoribus praemium in medio positam; ex arcibus
@@ -30604,8 +30525,8 @@
 							mari secundo misit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
-						<p>et Hannibal a Buloto <pb n="495"/> amni<!--&mdash;-->haud procul is ab
-							urbe Locris abest<!--&mdash;--><choice>
+						<p>et Hannibal a Buloto <pb n="495"/> amni — haud procul is ab urbe Locris
+							abest — <choice>
 								<sic>nlntio</sic>
 								<corr>nuntio</corr>
 							</choice> praemisso, ut sui luce prima summa vi proelium cum Romanis ac
@@ -30738,10 +30659,10 @@
 							</choice> ac virgas expediri iubet.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
-						<p>dum spoliandis iis<!--&mdash;-->repugnabant enim militumque fidem
-							implorabant<!--&mdash;-->tempus teritur, repente milites feroces recenti
-							victoria ex omnibus locis, velut adversus hostes ad arma conclamatum
-							esset, concurrerunt;</p>
+						<p>dum spoliandis iis — repugnabant enim militumque fidem implorabant —
+							tempus teritur, repente milites feroces recenti victoria ex omnibus
+							locis, velut adversus hostes ad arma conclamatum esset,
+							concurrerunt;</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>et cum violata iam virgis corpora tribunorum vidissent, tum vero in multo
@@ -30959,8 +30880,8 @@
 							Sempronio imperatore Romano venisset.</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
-						<p>facile impetratum<!--&mdash;-->neque enim ne ipsius quidem regis
-							abhorrebat animus<!--&mdash;-->, ut in Epirum transiret.</p>
+						<p>facile impetratum — neque enim ne ipsius quidem regis abhorrebat animus —
+							, ut in Epirum transiret.</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>Phoenice urbs est Epiri; ibi prius conlocutus rex cum Aeropo et Derda et
@@ -31002,10 +30923,9 @@
 				</div>
 				<div type="textpart" subtype="chapter" n="13">
 					<div type="textpart" subtype="section" n="1">
-						<p>M. Cornelio P. Sempronio consulibus <!--&mdash;--> quintus decimus is
-							annus belli Punici erat<!--&mdash;-->provinciae Cornelio Etruria cum
-							vetere exercitu, Sempronio Bruttii, ut novas scriberet legiones,
-							decretae.</p>
+						<p>M. Cornelio P. Sempronio consulibus — quintus decimus is annus belli
+							Punici erat — provinciae Cornelio Etruria cum vetere exercitu, Sempronio
+							Bruttii, ut novas scriberet legiones, decretae.</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>praetoribus M. Marcio urbana L. Scribonio Liboni peregrina et eidem
@@ -31044,8 +30964,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>consules dilectum habere instituerunt et ad novas scribendas in Bruttios
-							legiones et in ceterorum<!--&mdash;-->ita enim iussi ab senatu
-							erant<!--&mdash;-->exercituum supplementum.</p>
+							legiones et in ceterorum — ita enim iussi ab senatu erant — exercituum
+							supplementum.</p>
 					</div>
 				</div>
 				<div type="textpart" subtype="chapter" n="14">
@@ -31151,9 +31071,8 @@
 					<div type="textpart" subtype="section" n="5">
 						<p>itaque nihil prius referre consules passi decreverunt, ut consules
 							magistratus denosque principes Nepete, Sutrio, Ardea, Calibus, Alba,
-							Carseolis, Sora, Suessa, Setia, Circeis, Narnia,
-							Interamna<!--&mdash;-->hae namque coloniae in ea causa erant
-							<!--&mdash;--> Romam excirent;</p>
+							Carseolis, Sora, Suessa, Setia, Circeis, Narnia, Interamna — hae namque
+							coloniae in ea causa erant — Romam excirent;</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>iis imperarent, quantum quaeque earum coloniarum militum <choice>
@@ -31176,12 +31095,11 @@
 					<div type="textpart" subtype="section" n="9">
 						<p>stipendium praeterea iis coloniis in milia aeris asses singulos imperari
 							exigique quotannis, censumque in iis coloniis agi ex formula ab Romanis
-							censoribus data<!--&mdash;--></p>
+							censoribus data — </p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
-						<p>dari autem placere eandem quam populo Romano<!--&mdash;-->deferrique
-							Romam ab iuratis censoribus coloniarum, priusquam magistratu
-							abirent.</p>
+						<p>dari autem placere eandem quam populo Romano — deferrique Romam ab
+							iuratis censoribus coloniarum, priusquam magistratu abirent.</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>ex hoc senatus consulto accitis Romam magistratibus primoribusque earum
@@ -31313,10 +31231,10 @@
 							Carthaginiensibus Locros et cum eodem ibi relictus est praesidio.</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
-						<p>in hoc legato vestro<!--&mdash;-->dant enim animum ad loquendum libere
-							ultimae miseriae<!--&mdash;-->nec hominis quicquam est, patres
-							conscripti, praeter figuram et speciem neque Romani civis praeter
-							habitum vestitumque et sonum Latinae linguae:</p>
+						<p>in hoc legato vestro — dant enim animum ad loquendum libere ultimae
+							miseriae — nec hominis quicquam est, patres conscripti, praeter figuram
+							et speciem neque Romani civis praeter habitum vestitumque et sonum
+							Latinae linguae:</p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
 						<p>pestis ac belua inmanis, quales fretum quondam, quo ab Sicilia dividimur,
@@ -31326,11 +31244,11 @@
 					<div type="textpart" subtype="section" n="13">
 						<p>et avaritiam solus ipse exercere in socios vestros satis haberet, unam
 							profundam quidem voraginem tamen patientia nostra expleremus; nunc omnes
-							centuriones militesque vestros<!--&mdash;--></p>
+							centuriones militesque vestros — </p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
-						<p>adeo in promiscuo licentiam atque improbitatem esse voluit <!--&mdash;-->
-							Pleminios fecit;</p>
+						<p>adeo in promiscuo licentiam atque improbitatem esse voluit — Pleminios
+							fecit;</p>
 					</div>
 					<div type="textpart" subtype="section" n="15">
 						<p>omnes rapiunt, spoliant, verberant, vulnerant, occidunt, constuprant
@@ -31767,11 +31685,10 @@
 							filiam Hasdrubalis.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
-						<p>ad eam rem consummandam tempusque nuptiis statuendum<!--&mdash;-->iam
-							enim nubilis erat virgo <!--&mdash;--> profectus Hasdrubal ut accensum
-							cupiditate<!--&mdash;-->et sunt ante omnes barbaros Numidae effusi in
-							Venerem <!--&mdash;--> sensit, virginem a Carthagine arcessit maturatque
-							nuptias;</p>
+						<p>ad eam rem consummandam tempusque nuptiis statuendum — iam enim nubilis
+							erat virgo — profectus Hasdrubal ut accensum cupiditate — et sunt ante
+							omnes barbaros Numidae effusi in Venerem — sensit, virginem a Carthagine
+							arcessit maturatque nuptias;</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>et inter aliam gratulationem, ut publicum quoque foedus privato
@@ -31822,12 +31739,12 @@
 							testes atque arbitros conventorum fallat.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
-						<p>ceterum quando neque celari adventus Numidarum
-							poterat<!--&mdash;-->vagati enim in urbe obversatique praetorio
-							erant<!--&mdash;-->et, si sileretur, quid petentes venissent, periculum
-							erat, ne vera eo ipso, quod celarentur, sua sponte magis emanarent,
-							timorque in exercitum incideret, ne simul cum rege et Carthaginiensibus
-							foret bellandum, avertit a vero falsis praeoccupando mentes hominum</p>
+						<p>ceterum quando neque celari adventus Numidarum poterat — vagati enim in
+							urbe obversatique praetorio erant — et, si sileretur, quid petentes
+							venissent, periculum erat, ne vera eo ipso, quod celarentur, sua sponte
+							magis emanarent, timorque in exercitum incideret, ne simul cum rege et
+							Carthaginiensibus foret bellandum, avertit a vero falsis praeoccupando
+							mentes hominum</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>et vocatis ad contionem militibus non ultra esse cunctandum ait; instare,
@@ -31942,9 +31859,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>cum viginti rostratis se ac L. Scipionem ab dextro cornu, ab laevo
-							totidem rostratas et C. Laelium praefectum classis cum M. Porcio
-							Catone<!--&mdash;-->quaestor is tum erat <!--&mdash;--> onerariis
-							futurum praesidio.</p>
+							totidem rostratas et C. Laelium praefectum classis cum M. Porcio Catone
+							— quaestor is tum erat — onerariis futurum praesidio.</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>lumina in navibus singula rostratae, bina onerariae haberent; in
@@ -31964,9 +31880,9 @@
 				<div type="textpart" subtype="chapter" n="26">
 					<div type="textpart" subtype="section" n="1">
 						<p>multae classes Romanae e Sicilia atque ipso illo portu profectae erant;
-							ceterum non eo bello solum<!--&mdash;-->nec id mirum, praedatum enim
-							tantummodo <pb n="518"/> pleraeque classes ierant<!--&mdash;-->, sed ne
-							priore quidem ulla profectio tanti spectaculi fuit;</p>
+							ceterum non eo bello solum — nec id mirum, praedatum enim tantummodo <pb
+								n="518"/> pleraeque classes ierant — , sed ne priore quidem ulla
+							profectio tanti spectaculi fuit;</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>quamquam, si magnitudine classes aestimares, et bini consules cum binis
@@ -32166,8 +32082,7 @@
 							erat. regnum ad fratrem regis <choice>
 								<sic>Oezalcen</sic>
 								<corr>Oezalcem</corr>
-							</choice> pergrandem natu<!--&mdash;-->ita mos apud Numidas
-							est<!--&mdash;-->pervenit.</p>
+							</choice> pergrandem natu — ita mos apud Numidas est — pervenit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>haud multo post Oezalce quoque mortuo maior ex duobus filiis eius
@@ -32205,8 +32120,8 @@
 				<div type="textpart" subtype="chapter" n="30">
 					<div type="textpart" subtype="section" n="1">
 						<p>et Masinissa, audita morte patrui, dein nece fratris patruelis, ex
-							Hispania in Mauretaniam <!--&mdash;--> Baga ea tempestate rex Maurorum
-							erat<!--&mdash;-->traiecit.</p>
+							Hispania in Mauretaniam — Baga ea tempestate rex Maurorum erat —
+							traiecit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>ab eo supplex intimis precibus auxilium itineri quoniam bello non
@@ -32309,10 +32224,9 @@
 							Maesulios fundit fugatque.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
-						<p>Masinissa cum paucis equitibus ex acie in montem<!--&mdash;-->Bellum
-							incolae vocant perfugit. familiae aliquot cum mapalibus pecoribusque
-							suis<!--&mdash;-->ea pecunia illis est<!--&mdash;-->persecuti sunt
-							regem;</p>
+						<p>Masinissa cum paucis equitibus ex acie in montem — Bellum incolae vocant
+							perfugit. familiae aliquot cum mapalibus pecoribusque suis — ea pecunia
+							illis est — persecuti sunt regem;</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>cetera Maesuliorum <choice>
@@ -32343,7 +32257,7 @@
 					<div type="textpart" subtype="section" n="1">
 						<p>Bucar ex praefectis regiis, vir acer et inpiger, ad id delectus. ei data
 							quattuor milia peditum, duo equitum; praemiorumque ingentium spe
-							oneratus, si caput Masinissae rettulisset aut vivum<!--&mdash;-->id vero
+							oneratus, si caput Masinissae rettulisset aut vivum — id vero
 							inaestimabile gaudium fore cepisset.</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
@@ -32377,9 +32291,9 @@
 							sequebatur.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
-						<p>amnis ingens fugientes accepit<!--&mdash;-->neque enim cunctanter, ut
-							quos maior metus urgeret, immiserant equos<!--&mdash;-->raptique gurgite
-							in obliquum praelati.</p>
+						<p>amnis ingens fugientes accepit — neque enim cunctanter, ut quos maior
+							metus urgeret, immiserant equos — raptique gurgite in obliquum
+							praelati.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>duobus in conspectu hostium in praerapidum gurgitem haustis ipse, perisse
@@ -32412,17 +32326,16 @@
 						<p>incolumem cernebant, fecit, ut intra paucos dies sex milia peditum
 							armatorum, quattuor equitum ad eum convenirent, iamque non in
 							possessione modo paterni regni esset, sed etiam socios Carthaginiensium
-							populos Masaesuliorumque fines<!--&mdash;-->id Syphacis regnum
-							erat<!--&mdash;-->vastaret. inde inritato ad bellum Syphace, inter
-							Cirtam Hipponemque in iugis opportunorum ad omnia montium consedit.</p>
+							populos Masaesuliorumque fines — id Syphacis regnum erat — vastaret.
+							inde inritato ad bellum Syphace, inter Cirtam Hipponemque in iugis
+							opportunorum ad omnia montium consedit.</p>
 					</div>
 				</div>
 				<div type="textpart" subtype="chapter" n="33">
 					<div type="textpart" subtype="section" n="1">
 						<p>maiorem igitur iam rem Syphax ratus, quam ut per praefectos ageret, cum
-							filio iuvene<!--&mdash;-->nomen Vermina erat<!--&mdash;-->parte
-							exercitus missa imperat, ut circumducto agmine in se intentum hostem ab
-							tergo invadat.</p>
+							filio iuvene — nomen Vermina erat — parte exercitus missa imperat, ut
+							circumducto agmine in se intentum hostem ab tergo invadat.</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>nocte profectus Vermina, qui ex occulto adgressurus erat; Syphax autem
@@ -32506,9 +32419,8 @@
 						<p><choice>
 								<sic>nee</sic>
 								<corr>nec</corr>
-							</choice> aliarum gentium aspernatus, maxime tamen
-							Numidas<!--&mdash;-->id longe primum equitum in Africa est
-							genus<!--&mdash;-->conducit.</p>
+							</choice> aliarum gentium aspernatus, maxime tamen Numidas — id longe
+							primum equitum in Africa est genus — conducit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>iam ad quattuor milia equitum habebat, cum Salaecam nomine urbem
@@ -32634,12 +32546,12 @@
 					<div type="textpart" subtype="section" n="12">
 						<p>quorum adventus hoc tamen momenti fecit, ut Scipio, cum quadraginta ferme
 							dies nequiquam omnia experiens obsedisset Uticam, abscederet inde inrito
-							incepto. et<!--&mdash;--></p>
+							incepto. et — </p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
-						<p>iam enim hiems instabat<!--&mdash;-->castra hiberna in promunturio, quod
-							tenui iugo continenti adhaerens in aliquantum maris spatium extenditur,
-							communit; uno vallo et navalia castra amplectitur.</p>
+						<p>iam enim hiems instabat — castra hiberna in promunturio, quod tenui iugo
+							continenti adhaerens in aliquantum maris spatium extenditur, communit;
+							uno vallo et navalia castra amplectitur.</p>
 					</div>
 					<div type="textpart" subtype="section" n="14">
 						<p>iugo medio legionum castris inpositis latus ad septentrionem versum
@@ -32867,18 +32779,17 @@
 					sua detraxit; excusata deinde temeritate facti ipse pacem suasit. Masinissae
 					regnum restitutum est. reversus in urbem Scipio amplissimum nobilissimumque egit
 					triumphum, quem Q. Terentius Culleo senator pilleatus secutus est. Scipio
-					Africanus<!--&mdash;--> incertum militari prius favore an populari aura ita
-					cognominatus sit<!--&mdash;--> primus certe hic imperator victae a se nomine
-					gentis nobilitatus est. Mago, bello qui in agro Insubrium cum Romanis
-					conflixerat, vulneratus, cum in Africam per legatos revocatus reverteretur, ex
-					vulnere mortuus est.</p>
+					Africanus — incertum militari prius favore an populari aura ita cognominatus sit
+					— primus certe hic imperator victae a se nomine gentis nobilitatus est. Mago,
+					bello qui in agro Insubrium cum Romanis conflixerat, vulneratus, cum in Africam
+					per legatos revocatus reverteretur, ex vulnere mortuus est.</p>
 			</div>
 			<div type="textpart" subtype="book" n="30">
 				<head>liber XXX</head>
 				<div type="textpart" subtype="chapter" n="1">
 					<div type="textpart" subtype="section" n="1">
-						<p>Cn. Servilius et C. Servilius consules<!--&mdash;-->sextus decimus is
-							annus belli Punici erat<!--&mdash;-->cum de re publica belloque et</p>
+						<p>Cn. Servilius et C. Servilius consules — sextus decimus is annus belli
+							Punici erat — cum de re publica belloque et</p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>provinciis ad senatum rettulissent, censuerunt patres, ut consules inter
@@ -32886,9 +32797,9 @@
 							Hannibalem, uter Etruriam ac Ligures provinciam haberet;</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
-						<p>cui Bruttii evenissent, exercitum a P. Sempronio acciperet; P.
-							Sempronius<!--&mdash;-->ei quoque enim pro consule imperium in annum
-							prorogabatur<!--&mdash;-->P. Licinio succederet.</p>
+						<p>cui Bruttii evenissent, exercitum a P. Sempronio acciperet; P. Sempronius
+							— ei quoque enim pro consule imperium in annum prorogabatur — P. Licinio
+							succederet.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>is Romam reverteretur, bello quoque bonus habitus ad cetera, quibus nemo
@@ -32915,8 +32826,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>iuris dictionem urbanam Paetus Aelius, Sardiniam P. Lentulus, Siciliam P.
-							Villius, Ariminum cum duabus legionibus<!--&mdash;-->sub Sp. Lucretio
-							eae fuerant <!--&mdash;--> Quinctilius Varus est sortitus.</p>
+							Villius, Ariminum cum duabus legionibus — sub Sp. Lucretio eae fuerant —
+							Quinctilius Varus est sortitus.</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>et Lucretio prorogatum imperium, ut Genuam oppidum a Magone Poeno dirutum
@@ -32952,9 +32863,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>et Italiae ora, quia incertum erat, quo missuri classem Carthaginienses
-							forent<!--&mdash;-->videbantur autem, quidquid nudatum praesidiis esset,
-							petituri<!--&mdash;-->M. Marcio, praetori prioris anni, cum totidem
-							navibus tuenda data est.</p>
+							forent — videbantur autem, quidquid nudatum praesidiis esset, petituri —
+							M. Marcio, praetori prioris anni, cum totidem navibus tuenda data
+							est.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>tria milia militum in <choice>
@@ -33029,9 +32940,9 @@
 							desciturum adferebatur.</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
-						<p>haec per nuntios acta magis equidem crediderim <!--&mdash;--> et ita pars
-							maior auctores sunt<!--&mdash;-->quam ipsum Syphacem, ut Antias Valerius
-							prodit, in castra Romana ad conloquium venisse.</p>
+						<p>haec per nuntios acta magis equidem crediderim — et ita pars maior
+							auctores sunt — quam ipsum Syphacem, ut Antias Valerius prodit, in
+							castra Romana ad conloquium venisse.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>primo eas condiciones imperator Romanus vix auribus admisit; postea, ut
@@ -33102,8 +33013,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>ita tollit indutias, ut libera fide incepta exsequeretur; deductisque
-							navibus<!--&mdash;-->et iam veris principium erat<!--&mdash;-->machinas
-							tormentaque, velut a mari adgressurus Uticam, imponit,</p>
+							navibus — et iam veris principium erat — machinas tormentaque, velut a
+							mari adgressurus Uticam, imponit,</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>et duo milia militum ad capiendum quem antea tenuerat <choice>
@@ -33130,9 +33041,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>ita ut imperaverat signa sub occasum solis efferri sunt coepta. ad primam
-							ferme vigiliam agmen explicaverunt; media nocte<!--&mdash;-->septem enim
-							milia itineris erant <!--&mdash;--> modico gradu ad castra hostium
-							perventum est.</p>
+							ferme vigiliam agmen explicaverunt; media nocte — septem enim milia
+							itineris erant — modico gradu ad castra hostium perventum est.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>ibi Scipio partem copiarum Laelio Masinissamque ac Numidas adtribuit et
@@ -33302,9 +33212,9 @@
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>primo in tumulo quattuor milia ferme distante ab castris regiis consedit;
-							postero die cum equitatu in Magnos<!--&mdash;-->ita
-							vocant<!--&mdash;-->campos subiectos ei tumulo degressus succedendo ad
-							stationes hostium lacessendoque levibus proeliis diem absumpsit.</p>
+							postero die cum equitatu in Magnos — ita vocant — campos subiectos ei
+							tumulo degressus succedendo ad stationes hostium lacessendoque levibus
+							proeliis diem absumpsit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>et per insequens <pb n="541"/> biduum tumultuosis hinc atque illinc
@@ -33448,8 +33358,8 @@
 						<p>si maturassent, omnia permixta turba trepidantium primo impetu
 							oppressissent, perculsi terrestribus cladibus atque inde ne mari quidem,
 							ubi ipsi plus poterant, satis fidentes, die segni navigatione absumpto
-							sub occasum solis in portum<!--&mdash;-->Rusucmona Afri
-							vocant<!--&mdash;-->classem adpulere;</p>
+							sub occasum solis in portum — Rusucmona Afri vocant — classem
+							adpulere;</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>postero die sub ortum solis instruxere ab alto naves velut ad iustum
@@ -33479,8 +33389,8 @@
 							ambiguo ictu suis inciderent.</p>
 					</div>
 					<div type="textpart" subtype="section" n="16">
-						<p>postremo asseres ferreo unco praefixi<!--&mdash;-->harpagones vocant
-							<!--&mdash;--> ex Punicis navibus inici in Romanas coepti.</p>
+						<p>postremo asseres ferreo unco praefixi — harpagones vocant — ex Punicis
+							navibus inici in Romanas coepti.</p>
 					</div>
 					<div type="textpart" subtype="section" n="17">
 						<p>quos cum neque ipsos neque catenas,</p>
@@ -33793,9 +33703,8 @@
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>hanc te quoque ad ceteras tuas eximias virtutes, Masinissa, adiecisse
-							velim. non est, non<!--&mdash;-->mihi crede<!--&mdash;-->tantum ab
-							hostibus armatis aetati nostrae periculi, quantum ab circumfusis undique
-							voluptatibus.</p>
+							velim. non est, non — mihi crede — tantum ab hostibus armatis aetati
+							nostrae periculi, quantum ab circumfusis undique voluptatibus.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>qui eas temperantia sua frenavit ac domuit, multo maius decus maioremque
@@ -33827,14 +33736,14 @@
 						<p>Masinissae haec audienti non rubor solum suffusus, sed lacrimae etiam
 							obortae; et cum se quidem in potestate futurum imperatoris dixisset
 							orassetque eum, ut, quantum res sineret, fidei suae temere obstrictae
-							consuleret<!--&mdash;--></p>
+							consuleret — </p>
 					</div>
 					<div type="textpart" subtype="section" n="2">
 						<p>promisisse enim se in nullius potestatem <choice>
 								<sic>ear</sic>
 								<corr>eam</corr>
-							</choice> traditurum<!--&mdash;-->, ex praetorio in tabernaculum suum
-							confusus concessit.</p>
+							</choice> traditurum — , ex praetorio in tabernaculum suum confusus
+							concessit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
 						<p>ibi arbitris remotis cum crebro suspiritu et gemitu, quod facile ab
@@ -33921,8 +33830,8 @@
 					<div type="textpart" subtype="section" n="4">
 						<p>id erat sanctius apud illos consilium maximaque ad ipsum senatum regendum
 							vis. qui ubi in castra Romana et in praetorium pervenerunt, more
-							adulantium<!--&mdash;-->accepto, credo, ritu ex ea regione, ex qua
-							oriundi erant<!--&mdash;-->procubuerunt.</p>
+							adulantium — accepto, credo, ritu ex ea regione, ex qua oriundi erant —
+							procubuerunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>conveniens oratio tam humili adulationi fruit, non culpam purgantium, sed
@@ -34146,9 +34055,9 @@
 							Africam traicere;</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
-						<p>id et fratrem eius Hannibalem<!--&mdash;-->nam ad eum quoque isse legatos
-							eadem iubentes<!--&mdash;-->facturum; non in eo esse Carthaginiensium
-							res, ut Galliam atque Italiam armis obtineant.</p>
+						<p>id et fratrem eius Hannibalem — nam ad eum quoque isse legatos eadem
+							iubentes — facturum; non in eo esse Carthaginiensium res, ut Galliam
+							atque Italiam armis obtineant.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>Mago non imperio modo senatus periculoque patriae motus, sed metuens
@@ -34165,13 +34074,12 @@
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>haec terra marique in parte Italiae qua iacet ad Alpes, gesta. consul C.
-							Servilius nulla memorabili re in provincia Etruria
-							Galliaque<!--&mdash;--></p>
+							Servilius nulla memorabili re in provincia Etruria Galliaque — </p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
-						<p>nam eo quoque processerat<!--&mdash;-->gesta, patre C. Servilio et C.
-							Lutatio ex servitute post sextum decimum annum receptis, qui ad vicum
-							Tannetum a Bois capti fuerant,</p>
+						<p>nam eo quoque processerat — gesta, patre C. Servilio et C. Lutatio ex
+							servitute post sextum decimum annum receptis, qui ad vicum Tannetum a
+							Bois capti fuerant,</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
 						<p>hinc patre, hinc Catulo lateri circumdatis privato magis quam publico
@@ -34342,7 +34250,7 @@
 					<div type="textpart" subtype="section" n="5">
 						<p>si quis quid vellet, legatos praetor fecisset, senioresque, qui
 							foederibus interfuerant, alii alia interrogarent, nec meminisse se per
-							aetatem<!--&mdash;-->etenim omnes ferme iuvenes erant<!--&mdash;--></p>
+							aetatem — etenim omnes ferme iuvenes erant — </p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>dicerent legati, conclamatum ex omni parte curiae est Punica fraude
@@ -34431,10 +34339,9 @@
 							Apollinis promunturium tenuit;</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
-						<p>onerariae pars maxima ad Aegimurum <!--&mdash;--> insula ea sinum ab alto
-							claudit, in quo sita Carthago est, triginta ferme milia ab
-							urbe<!--&mdash;-->, aliae adversus urbem ipsam ad Calidas Aquas delatae
-							sunt.</p>
+						<p>onerariae pars maxima ad Aegimurum — insula ea sinum ab alto claudit, in
+							quo sita Carthago est, triginta ferme milia ab urbe — , aliae adversus
+							urbem ipsam ad Calidas Aquas delatae sunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>omnia in conspectu Carthaginis erant. itaque ex tota urbe in forum
@@ -34442,11 +34349,11 @@
 							fremere, ne tanta ex oculis manibusque amitteretur praeda.</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
-						<p>cum quidam <pb n="560"/> pacis petitae, alii
-							indutiarum<!--&mdash;-->necdum enim dies exierat<!--&mdash;-->fidem
-							opponerent, permixto paene senatus populique concilio consensum est, ut
-							classem quinquaginta navium Hasdrubal Aegimurum traiceret, inde per
-							litora portusque dispersas Romanas naves colligeret.</p>
+						<p>cum quidam <pb n="560"/> pacis petitae, alii indutiarum — necdum enim
+							dies exierat — fidem opponerent, permixto paene senatus populique
+							concilio consensum est, ut classem quinquaginta navium Hasdrubal
+							Aegimurum traiceret, inde per litora portusque dispersas Romanas naves
+							colligeret.</p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
 						<p>desertae fuga nautarum primum ab Aegimuro, deinde ab Aquis onerariae
@@ -34474,9 +34381,9 @@
 							stationem habebat.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
-						<p>ex ea tres quadriremes <!--&mdash;--> seu clam misso a Carthagine nuntio,
-							ut id fieret, seu Hasdrubale, qui classi praeerat, sine publica fraude
-							auso facinus<!--&mdash;--></p>
+						<p>ex ea tres quadriremes — seu clam misso a Carthagine nuntio, ut id
+							fieret, seu Hasdrubale, qui classi praeerat, sine publica fraude auso
+							facinus — </p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
 						<p>quinqueremem Romanam superantem promunturium ex alto repente adgressae
@@ -34569,8 +34476,7 @@
 					</div>
 					<div type="textpart" subtype="section" n="10">
 						<p>augur in locum eius inauguratus Q. Fabius Maximus filius; in eiusdem
-							locum pontifex<!--&mdash;-->nam duo sacerdotia habuit<!--&mdash;-->Ser.
-							Sulpicius Galba.</p>
+							locum pontifex — nam duo sacerdotia habuit — Ser. Sulpicius Galba.</p>
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>Ludi Romani diem unum plebei ter toti instaurati ab aedilibus M. Sextio
@@ -34600,8 +34506,8 @@
 							Scipionem iusserunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
-						<p>nihilo minus consules provinciam Africam <!--&mdash;--> ita enim senatus
-							decreverat<!--&mdash;-->in sortem coniecerunt.</p>
+						<p>nihilo minus consules provinciam Africam — ita enim senatus decreverat —
+							in sortem coniecerunt.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>Ti. Claudio Africa evenit, ut quinquaginta navium classem, omnes
@@ -34729,11 +34635,11 @@
 							prosequerentur, retro ad Hannibalem dimisit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
-						<p>Hannibal nihil quidem eorum, quae nuntiabantur<!--&mdash;-->nam et
-							Masinissam cum sex milibus peditum, quattuor equitum venisse eo ipso
-							forte die adferebant<!--&mdash;-->, laeto animo audivit, maxime hostis
-							fiducia <hi rend="italics">audaciaque,</hi> non de nihilo profecto
-							concepta, perculsus est.</p>
+						<p>Hannibal nihil quidem eorum, quae nuntiabantur — nam et Masinissam cum
+							sex milibus peditum, quattuor equitum venisse eo ipso forte die
+							adferebant — , laeto animo audivit, maxime hostis fiducia <hi
+								rend="italics">audaciaque,</hi> non de nihilo profecto concepta,
+							perculsus est.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>itaque quamquam et ipse causa belli erat et adventu sua turbaverat et
@@ -34810,7 +34716,7 @@
 						<p>ita aliena adpetivimus, ut de nostris dimicaremus, nec in Italia solum
 							nobis bellum, vobis in Africa esset, sed et vos in portis vestris prope
 							ac moenibus signa armaque hostium vidistis et nos ab Carthagine fremitum
-							castrorum Romanorum exaudim<!--&mdash;--></p>
+							castrorum Romanorum exaudim — </p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>s. quod igitur nos maxime abominaremur, vos ante omnia optaretis, in
@@ -35065,16 +34971,15 @@
 							Masinissam Numidasque ab dextro opposuit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="3">
-						<p>vias patentes inter manipulos antesignanorum velitibus<!--&mdash;-->ea
-							tunc levis armatura erat<!--&mdash;-->complevit, dato praecepto, ut ad
-							impetum elephantorum aut post directos refugerent ordines aut in dextram
-							laevamque discursu applicantes se antesignanis viam, qua inruerent in
-							ancipitia tela, beluis darent.</p>
+						<p>vias patentes inter manipulos antesignanorum velitibus — ea tunc levis
+							armatura erat — complevit, dato praecepto, ut ad impetum elephantorum
+							aut post directos refugerent ordines aut in dextram laevamque discursu
+							applicantes se antesignanis viam, qua inruerent in ancipitia tela,
+							beluis darent.</p>
 					</div>
 					<div type="textpart" subtype="section" n="4">
-						<p>Hannibal ad terrorem primos elephantos<!--&mdash;-->octoginta autem
-							erant, quot nulla umquam in acie ante
-							habuerat<!--&mdash;-->instruxit,</p>
+						<p>Hannibal ad terrorem primos elephantos — octoginta autem erant, quot
+							nulla umquam in acie ante habuerat — instruxit,</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>deinde auxilia Ligurum Gallorumque Baliaribus <choice>
@@ -35084,10 +34989,9 @@
 							Afrosque et Macedonum legionem;</p>
 					</div>
 					<div type="textpart" subtype="section" n="6">
-						<p>modico deinde intervallo relicto subsidiariam aciem Italicorum
-							militum<!--&mdash;-->Bruttii plerique erant, vi ac necessitate plures
-							quam sua voluntate decedentem ex Italia secuti <!--&mdash;-->
-							instruxit.</p>
+						<p>modico deinde intervallo relicto subsidiariam aciem Italicorum militum —
+							Bruttii plerique erant, vi ac necessitate plures quam sua voluntate
+							decedentem ex Italia secuti — instruxit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="7">
 						<p>equitatum et ipse circumdedit cornibus; dextrum Carthaginienses,
@@ -35304,12 +35208,12 @@
 							</choice> auxilio.</p>
 					</div>
 					<div type="textpart" subtype="section" n="8">
-						<p>pars exercitus cum omni equitatu <!--&dagger;--> Saturnalibus primis
-							agmen adgressa Numidarum levi certamine fudit. exitu quoque fugae
-							intercluso ab omni parte circumdatis equitibus quindecim milia hominum
-							caesa, mille et ducenti vivi capti, et equi Numidici mille et quingenti,
-							signa militaria duo et septuaginta. <pb n="575"/> regulus ipse inter
-							tumultum cum paucis effugit.</p>
+						<p>pars exercitus cum omni equitatu † Saturnalibus primis agmen adgressa
+							Numidarum levi certamine fudit. exitu quoque fugae intercluso ab omni
+							parte circumdatis equitibus quindecim milia hominum caesa, mille et
+							ducenti vivi capti, et equi Numidici mille et quingenti, signa militaria
+							duo et septuaginta. <pb n="575"/> regulus ipse inter tumultum cum paucis
+							effugit.</p>
 					</div>
 					<div type="textpart" subtype="section" n="9">
 						<p>tum ad Tynetem eodem quo antea loco castra posita, legatique triginta ab
@@ -35521,10 +35425,10 @@
 					</div>
 					<div type="textpart" subtype="section" n="4">
 						<p>tum patefacta gratulationi omnia in urbe templa, supplicationesque in
-							triduum decretae. legatis Carthaginiensium et Philippi
-							regis<!--&mdash;-->nam ii quoque venerant<!--&mdash;-->petentibus, ut
-							senatus sibi daretur, responsum iussu patrum ab dictatore est consules
-							novos iis senatum daturos esse. comitia inde habita.</p>
+							triduum decretae. legatis Carthaginiensium et Philippi regis — nam ii
+							quoque venerant — petentibus, ut senatus sibi daretur, responsum iussu
+							patrum ab dictatore est consules novos iis senatum daturos esse. comitia
+							inde habita.</p>
 					</div>
 					<div type="textpart" subtype="section" n="5">
 						<p>creati consules Cn. Cornelius Lentulus, P. Aelius Paetus; praetores M.
@@ -35560,11 +35464,11 @@
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>et in senatu et ad populum acta res postremo eo deducta est, ut senatui
-							permitterent. patres igitur iurati<!--&mdash;--></p>
+							permitterent. patres igitur iurati — </p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
-						<p>ita enim convenerat<!--&mdash;-->censuerunt, uti consules provincias
-							inter se conpararent sortirenturve, uter Italiam, uter classem navium
+						<p>ita enim convenerat — censuerunt, uti consules provincias inter se
+							conpararent sortirenturve, uter Italiam, uter classem navium
 							quinquaginta haberet; cui classis obvenisset, in Siciliam navigaret;</p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
@@ -35694,14 +35598,12 @@
 					</div>
 					<div type="textpart" subtype="section" n="11">
 						<p>cum hoc tam tristi responso dimissis Macedonibus legati Carthaginienses
-							vocati; quorum aetatibus dignitatibusque conspectis<!--&mdash;-->nam
-							longe primi civitatis erant<!--&mdash;-->tum pro se quisque dicere vere
-							de pace agi.</p>
+							vocati; quorum aetatibus dignitatibusque conspectis — nam longe primi
+							civitatis erant — tum pro se quisque dicere vere de pace agi.</p>
 					</div>
 					<div type="textpart" subtype="section" n="12">
-						<p>insignis tamen inter ceteros Hasdrubal erat <!--&mdash;--> Haedum
-							populares cognomine appellabant<!--&mdash;-->pacis semper auctor
-							adversusque factioni Barcinae.</p>
+						<p>insignis tamen inter ceteros Hasdrubal erat — Haedum populares cognomine
+							appellabant — pacis semper auctor adversusque factioni Barcinae.</p>
 					</div>
 					<div type="textpart" subtype="section" n="13">
 						<p>eo tum plus illi auctoritatis fuit belli culpam in paucorum cupiditatem
@@ -35736,10 +35638,9 @@
 							esse, ac plus paene parcendo victis quam vincendo imperium auxisse,</p>
 					</div>
 					<div type="textpart" subtype="section" n="18">
-						<p><!--&mdash;--> ceterorum miserabilior oratio fuit commemorantium, ex
-							quantis opibus quo reccidissent Carthaginiensium res: nihil iis, qui
-							modo orbem prope terrarum obtinuerint armis, superesse praeter
-							Carthaginis moenia;</p>
+						<p> — ceterorum miserabilior oratio fuit commemorantium, ex quantis opibus
+							quo reccidissent Carthaginiensium res: nihil iis, qui modo orbem prope
+							terrarum obtinuerint armis, superesse praeter Carthaginis moenia;</p>
 					</div>
 					<div type="textpart" subtype="section" n="19">
 						<p>his inclusos non terra, non mari quicquam sui iuris cernere; urbem quoque
