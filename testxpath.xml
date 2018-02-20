@@ -2,7 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.19/tei-epidoc.rng"	schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/8.19/tei-epidoc.rng"	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader type="text">
+    <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Ab urbe condita</title>
@@ -55,23 +55,23 @@
                                 <publisher>Teubner</publisher>
                                 <date>1884-1911</date>
                             </imprint>
-                            <biblScope type="volume">1-4</biblScope>
+                            <biblScope>1-4</biblScope>
                         </monogr>
                     </biblStruct>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl>
-                <!-- la capitainisation -->
-                <refsDecl n="CTS">
-                    <cRefPattern n="section" matchPattern="(\w).(\w).(\w).(\w).(\w)"
-                        replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='part' and @n='$1']/tei:div[@subtype='book' and @n='$2']/tei:div[@subtype='chapter' and @n='$3']/tei:div[@subtype='section' and @n='$4'])">
-                        <p>This pointer pattern extracts edition, parts, books, chapters and
-                            sections.</p>
-                    </cRefPattern>
-                </refsDecl>
+
+            <!-- la capitainisation -->
+            <refsDecl n="CTS">
+                <cRefPattern n="section" matchPattern="(\w).(\w).(\w).(\w).(\w)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='part' and @n='$1']/tei:div[@subtype='book' and @n='$2']/tei:div[@subtype='chapter' and @n='$3']/tei:div[@subtype='section' and @n='$4'])">
+                    <p>This pointer pattern extracts edition, parts, books, chapters and
+                        sections.</p>
+                </cRefPattern>
             </refsDecl>
+
         </encodingDesc>
         <profileDesc>
             <langUsage>
