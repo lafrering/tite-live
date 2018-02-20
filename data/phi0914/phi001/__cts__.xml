@@ -1,0 +1,10 @@
+	<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:latinLit:phi0914" projid="latinLit:phi001" urn="urn:cts:latinLit:phi0914.phi001" xml:lang="lat">
+		<ti:title xml:lang="lat">Ab urbe condita</ti:title>
+		<ti:edition urn="urn:cts:latinLit:phi0914.phi001.perseus-lat1" workUrn="urn:cts:latinLit:phi0914.phi001">
+	      <ti:label xml:lang="lat">Ab urbe condita</ti:label>
+	      <ti:description xml:lang="lat">Titi Livi ab urbe condita libri editionem priman curavit
+									Guilelmus Weissenborn editio altera auam curavit Mauritius Mueller
+									Pars I-IV. Libri I-XL. Editio Stereotypica. 1884-1911.</ti:description>
+	      <ti:memberof collection="Perseus:collection:Greco-Roman" />
+		</ti:edition>   
+	</ti:work>
